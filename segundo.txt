@@ -1,0 +1,578 @@
+<html>
+ <head>
+  <!-- Google Tag Manager -->
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);       
+                                          })(window,document,'script','dataLayer','GTM-T53TTH3');  </script>
+  <!-- End Google Tag Manager -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="S-MART | El rey de las Ofertas." name="title"/>
+  <meta content="Recuerda, S-Mart es el único supermercado que, en la mayoría de sus sucursales, 
+una vez que abre sus puertas, no las vuelve a cerrar. Comodidad." name="description"/>
+  <meta content="smart, s-mart, super mercado s-mart, s-mart ciudad juarez, smart ciudad juarez, 
+smart juarez, s-mart juarez, tiendas, mandado, frutas, verduras, recetas, recetas de comida, telefono de smart, pagina de smart ciudad juarez." name="keywords"/>
+  <meta content="grupokimera.com" name="author"/>
+  <meta content="grupokimera" name="copyright"/>
+  <meta content="global" name="distribution"/>
+  <meta content="Index, Follow" name="robots"/>
+  <meta content="es" http-equiv="Content-Language"/>
+  <meta content="info@grupokimera.com" http-equiv="Reply-to"/>
+  <meta content="01/08/2013" name="creation_Date"/>
+  <meta content="General" name="rating"/>
+  <meta content="ac2fa1c8c21be9caaa3b0cb37501a6c5" name="p:domain_verify"/>
+  <meta content="S-MART | El rey de las Ofertas." property="og:title"/>
+  <meta content="Recuerda, S-Mart es el único supermercado que, en la mayoría de sus sucursales, 
+una vez que abre sus puertas, no las vuelve a cerrar. Comodidad." property="og:description"/>    
+  <meta content="article" property="og:type"/>
+  <meta content="http://www.supermercadossmart.com/admin/views_yea/uploads/configuracion/LOGO SMART.png" property="og:url"/>
+  <meta content="" property="og:image"/>
+  <title>
+   S-MART | El rey de las Ofertas.
+  </title>
+  <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+  <link href="https://www.supermercadossmart.com/views_yea/img/pagina/Home/favicon-smart.png" rel="shortcut icon"/>
+  <!-- start: CSS -->
+  <!-- RESET -->
+  <link href="https://www.supermercadossmart.com/views_yea/css/reset.min.css" rel="stylesheet" type="text/css"/>
+  <!-- start: TEMAS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,800" rel="stylesheet" type="text/css"/>
+  <!-- end: TEMAS -->
+  <!-- Alertify -->
+  <link href="https://www.supermercadossmart.com/views_yea/js/temp/js/alertify.js/themes/alertify.core.min.css" rel="stylesheet"/>
+  <link href="https://www.supermercadossmart.com/views_yea/js/temp/js/alertify.js/themes/alertify.default.min.css" rel="stylesheet"/>
+  <!-- FancyBox -->
+  <link href="https://www.supermercadossmart.com/views_yea/js/temp/js/fancyapps-fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" rel="stylesheet" type="text/css"/>
+  <!-- style-yea -->
+  <link href="https://www.supermercadossmart.com/views_yea/css/style.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://www.supermercadossmart.com/views_yea/css/responsive.min.css" rel="stylesheet" type="text/css"/>
+  <!-- Parallax -->
+  <link href="https://www.supermercadossmart.com/views_yea/js/Parallax-Scrolling-master/css/style.css" rel="stylesheet"/>
+  <!-- Slider Home -->
+  <link href="https://www.supermercadossmart.com/views_yea/js/slippry-1.2.1/dist/slippry.min.css" rel="stylesheet" type="text/css"/>
+  <!-- end: CSS -->
+  <!-- Share Social -->
+  <link href="https://www.supermercadossmart.com/views_yea/js/temp/js/rrssb-master/css/rrssb.css" rel="stylesheet"/>
+  <!-- end: Share Social -->
+  <style>
+   ul.menu_footer li a {
+    font-weight: 600;
+}
+  </style>
+  <!--[if lt IE 9]>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+                <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>                <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+        <![endif]-->
+ </head>
+ <body style="background:transparent url(https://www.supermercadossmart.com/admin/views_yea/uploads/configuracion/u1p.jpg) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-T53TTH3" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="MyLoaderBackground">
+   <!-- Background del loader -->
+  </div>
+  <div id="MyLoader">
+   <img alt="Loader" src="https://www.supermercadossmart.com/views_yea/img/loader.GIF"/>
+  </div>
+  <!-- Flecha Ir Arriba -->
+  <div id="IrArriba">
+   <!-- <a href='#Arriba'> -->
+   <span>
+    <div class="flecha-up">
+     <img alt="arriba" src="https://www.supermercadossmart.com/views_yea/img/pagina/Home/up.png"/>
+    </div>
+   </span>
+   <!-- </a> -->
+  </div>
+  <!-- newletter -->
+  <a class="fancybox" href="#fancy-newletter" style="display:none;">
+  </a>
+  <div class="fancy-window" id="fancy-newletter" style="display:none;">
+   <div class="fancy-window-header">
+    <h2>
+     Promociones S-mart
+    </h2>
+   </div>
+   <div class="fancy-window-body">
+    <div class="form-newletter">
+     <input id="txt_nombre_newletter" placeholder="Nombre" type="text"/>
+     <div class="radiobuttons">
+      <p>
+       Sexo:
+      </p>
+      <input data-valor="Masculino" name="radioSex" style="margin-left:40%;" type="radio"/>      
+      <span>
+       M
+      </span>
+      <input checked="" data-valor="Femenino" name="radioSex" type="radio"/>
+      <span>
+       F
+      </span>
+     </div>
+     <input id="txt_correo_newletter" placeholder="Correo" type="text"/>
+     <input id="txt_intereses_newletter" placeholder="Intereses" type="text"/>
+     <textarea id="txt_comentario_newletter" placeholder="Comentario"></textarea>
+     <div class="term">
+      <input id="check_term" type="checkbox"/>
+      <a href="https://www.supermercadossmart.com/admin/views_yea/uploads/privacidad.pdf" style="text-decoration:underline" target="blank">
+       TÉRMINOS Y CONDICIONES
+      </a>
+     </div>
+     <div class="form_footer fancy_recaptcha">
+      <div id="g_recaptcha" style="display:block;">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="fancy-window-footer">
+    <button id="btnEnviaPromociones" onclick="newsletter()">
+     SUSCRIBIRME
+    </button>
+   </div>
+  </div>
+  <header>
+   <hgroup>
+    <div id="logo">
+     <a href="https://www.supermercadossmart.com/inicio">
+      <img alt="Logo Smart" id="imglogo" src="https://www.supermercadossmart.com/views_yea/img/pagina/Home/nuevologo-smart.png"/>
+     </a>
+    </div>
+    <div id="menu">
+     <ul class="menu">
+      <a href="https://www.supermercadossmart.com/ofertas">
+       <li class="nav_menu" id="nav_menu_0">
+        <img alt="ofertas" src="/admin/views_yea/uploads/landing_pages/ofertas b.png"/>
+       </li>
+      </a>
+      <a href="https://www.supermercadossmart.com/sucursales">
+       <li class="nav_menu" id="nav_menu_1">
+        <img alt="sucursales" src="/admin/views_yea/uploads/landing_pages/sucursales b.png"/>    
+       </li>
+      </a>
+      <a href="https://www.supermercadossmart.com/blog">
+       <li class="nav_menu" id="nav_menu_2">
+        <img alt="blog" src="/admin/views_yea/uploads/landing_pages/blog b.png"/>
+        <ul class="submenu_header">
+         <a href="https://www.supermercadossmart.com/blog_cat">
+          <li style="padding-top:10px;">
+           Blog X Categorías
+          </li>
+         </a>
+        </ul>
+       </li>
+      </a>
+      <a href="https://www.supermercadossmart.com/contacto">
+       <li class="nav_menu" id="nav_menu_4">
+        <img alt="contacto" src="/admin/views_yea/uploads/landing_pages/contacto b.png"/>        
+       </li>
+      </a>
+      <a href="https://facturacion.supermercadossmart.com/login">
+       <li class="nav_menu" id="nav_menu_5">
+        <img alt="Facturación" src="/admin/views_yea/uploads/landing_pages/facturacion b.png"/>  
+       </li>
+      </a>
+      <a href="https://www.monederoelectronicosmart.com/">
+       <li class="nav_menu" id="nav_menu_6">
+        <img alt="Monederoelectronico" src="/admin/views_yea/uploads/landing_pages/monedero b.png"/>
+       </li>
+      </a>
+      <!-- <a href="https://www.supermercadossmart.com/ofertas" id="ofertas">
+                                                <li class="nav_menu" id="nav_menu_0">
+                                                        <img src="/admin/views_yea/uploads/landing_pages/Imagen1.png" alt="test">
+                                                        <ul class="submenu_header">
+                                                                <a href="/inicio"><li>Hola</li></a>
+                                                                <a href="/inicio"><li>Hola</li></a>
+                                                                <a href="/inicio"><li>Hola</li></a>
+                                                        </ul>
+                                                </li>
+                                        </a>
+                                        <a href="https://www.supermercadossmart.com/sucursales" id="sucursales">
+                                                <li id="nav_sucursales" class="nav_menu">        
+                                                        <img src="/admin/views_yea/uploads/landing_pages/Imagen2.png" alt="test">
+                                                        <ul class="submenu_header">
+                                                                <a href="/inicio"><li>Hola</li></a>
+                                                                <a href="/inicio"><li>Hola</li></a>
+                                                                <a href="/inicio"><li>Hola</li></a>
+                                                        </ul>
+                                                </li>
+                                        </a>
+                                        <a href="https://www.supermercadossmart.com/blog" id="blog"><li id="nav_blog" class="nav_menu"> <img src="/admin/views_yea/uploads/landing_pages/Imagen3.png" alt="test"> </li></a>
+                                        <a href="https://www.supermercadossmart.com/marca_propia" id="marca_propia"><li id="nav_marca_propia" class="nav_menu"> <img src="/admin/views_yea/uploads/landing_pages/Imagen5.png" alt="test"> </li></a>
+                                        <a href="https://www.supermercadossmart.com/monedero" id="monedero"><li id="nav_monedero" class="nav_menu"> <img src="/admin/views_yea/uploads/landing_pages/Imagen6.png" alt="test"> </li></a>
+                                        <a href="https://www.supermercadossmart.com/contacto" id="contacto"><li id="nav_contacto" class="nav_menu"> <img src="/admin/views_yea/uploads/landing_pages/Imagen7.png" alt="test"> </li></a> -->
+     </ul>
+    </div>
+    <div id="menu_rd">
+     <div id="btnMenuRD" onclick="responsive_menu()">
+     </div>
+    </div>
+   </hgroup>
+   <div id="menu_rdB">
+    <ul class="menu_rd">
+     <a href="https://www.supermercadossmart.com/ofertas">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #FFFFFF'" onmouseover="this.style.cssText='color: #000000'" style="color:#FFFFFF">
+       ofertas
+      </li>
+     </a>
+     <a href="https://www.supermercadossmart.com/sucursales">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #FFFFFF'" onmouseover="this.style.cssText='color: #000000'" style="color:#FFFFFF">
+       sucursales
+      </li>
+     </a>
+     <a href="https://www.supermercadossmart.com/blog">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #FFFFFF'" onmouseover="this.style.cssText='color: #000000'" style="color:#FFFFFF">
+       blog
+      </li>
+     </a>
+     <a href="https://www.supermercadossmart.com/blog_cat">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #FFFFFF'" onmouseover="this.style.cssText='color: #000000'" style="font-size:20px; color:#BBB;">
+       -blog_cat
+      </li>
+     </a>
+     <a href="https://www.supermercadossmart.com/contacto">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #FFFFFF'" onmouseover="this.style.cssText='color: #000000'" style="color:#FFFFFF">
+       contacto
+      </li>
+     </a>
+     <a href="https://facturacion.supermercadossmart.com/login">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #FFFFFF'" onmouseover="this.style.cssText='color: #000000'" style="color:#FFFFFF">
+       Facturación
+      </li>
+     </a>
+     <a href="https://www.monederoelectronicosmart.com/">
+      <li class="nav_menu_dr" onmouseout="this.style.cssText='color: #ffffff'" onmouseover="this.style.cssText='color: #000000'" style="color:#ffffff">
+       Monederoelectronico
+      </li>
+     </a>
+     <!-- <a href="https://www.supermercadossmart.com/ofertas"><li class="nav_menu_dr">ofertas</li></a>
+                                <a href="https://www.supermercadossmart.com/sucursales"><li class="nav_menu_dr">sucursales</li></a>
+                                <a href="https://www.supermercadossmart.com/blog"><li class="nav_menu_dr">blog</li></a>
+                                <a href="https://www.supermercadossmart.com/marca_propia"><li class="nav_menu_dr">marca propia</li></a>
+                                <a href="https://www.supermercadossmart.com/monedero"><li class="nav_menu_dr">monedero electrónico</li></a>
+                                <a href="https://www.supermercadossmart.com/contacto"><li class="nav_menu_dr">contacto</li></a> -->
+    </ul>
+   </div>
+  </header>
+  <div id="barraHide" style="display:block; margin: 0 auto; height:100px; width:100%; overflow:hidden; background-color:#FFF;">
+  </div>
+  <section>
+   <ul id="slippry-demo">
+    <!-- <li>
+                                <a href="#"><img src="https://www.supermercadossmart.com/views_yea/img/pagina/Home/slider10.jpg" alt=""></a>
+                        </li>
+                        <li>
+                                <a href="#"><img src="https://www.supermercadossmart.com/views_yea/img/pagina/Home/slider11.jpg" alt=""></a>
+                        </li>
+                        <li>
+                                <a href="#"><img src="https://www.supermercadossmart.com/views_yea/img/pagina/Home/slider12.jpg" alt=""></a>
+                        </li> -->
+   </ul>
+  </section>
+  <footer>
+   <div id="fgroup">
+    <!-- Menu Footer TOP -->
+    <div class="shareContainer">
+     <!-- Texto contactanos -->
+     <div class="conectate">
+      <h3>
+       Conéctate con S-Mart en:
+      </h3>
+     </div>
+     <!-- Redes Sociales -->
+     <div class="shareNetwork">
+      <!-- Face -->
+      <a href="https://www.facebook.com/supermercadossmart" target="_blank">
+       <div class="network" id="network_1">
+       </div>
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/TiendasSMart" target="_blank">
+       <div class="network" id="network_2">
+       </div>
+      </a>
+      <!-- Printerest -->
+      <a href="https://www.pinterest.com.mx/supermercadossmart/" target="_blank">
+       <div class="network" id="network_3">
+       </div>
+      </a>
+     </div>
+     <!-- Promociones -->
+     <div id="promocionesFooter">
+      <h3 style="margin-top: 25px;">
+       Recibe antes que nadie promociones exclusivas!
+      </h3>
+      <br/>
+      <input id="txtEnviaPromociones" placeholder="Tu Email" type="email"/>
+      <button id="btnEnviaPromociones" onclick="fancy_newsletter()">
+       SUSCRIBIRME
+      </button>
+     </div>
+    </div>
+    <!-- Menu Footer -->
+    <div id="menu_footer">
+     <ul class="menu_footer">
+      <li>
+       <a href="https://www.supermercadossmart.com/mision_vision" style="color:#ffffff">
+        Misión Visión
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/locales" style="color:#ffffff">
+        Locales
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/carreras" style="color:#FFFFFF">
+        carreras
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/ecologia" style="color:#ffffff">
+        Ecologia
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/avisos_de_privacidad" style="color:#ffffff">  
+        Avisos de privacidad
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/servicio_pymes" style="color:#ffffff">        
+        Servicio Pymes
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://supermercadossmart.com//admin/views_yea/uploads/otros/Derechos%20Arco.pdf" style="color:#FFFFFF">
+        Derechos ARCO
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.s-martpatrocinios.com/" style="color:#FFFFFF">
+        Patrocinios
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/conoce_nuestra_marca_propia" style="color:#ffffff">
+        Conoce nuestra Marca Propia
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com" style="color:#FFFFFF">
+        Operadora de Ciudad Juarez SA de CV
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       *
+      </span>
+      <li>
+       <a href="https://www.supermercadossmart.com/sostenibilidad" style="color:#ffffff">        
+        Sostenibilidad
+       </a>
+      </li>
+      <span style="margin:0 5px 0 5px;">
+       <!-- <li><a href="https://www.supermercadossmart.com/inicio">Inicio </a> </li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/mision_vision">Misión y Visión </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/historia">Historia </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/locales">Locales </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/proveedores">Proveedores </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/carreras">Carreras </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/gtpw">GPTW </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/esr">ESR 
+</a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/meg">MEG 
+</a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/ecologia">Ecología </a></li><span style='margin:0 5px;'>*</span>
+                                        <li><a href="https://www.supermercadossmart.com/derechos_argo">Derechos Arco </a></li> -->
+      </span>
+     </ul>
+     <div class="derechos">
+      <p>
+       Copyright 2014. Super Mercados S-Mart
+       <span id="kimera">
+        Powered by
+        <a href="https://grupokimera.com/" target="_blank">
+         Kimera
+        </a>
+       </span>
+      </p>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- start: JS -->
+  <!-- jQuery 2.0.2 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js">
+  </script>
+  <script>
+   /* Si no se cargó jQuery del CDN, cargar la versión local de respaldo */
+                if(typeof window.jQuery == 'undefined')
+                        document.write("<script src='https://www.supermercadossmart.com/views_yea/js/jquery-2.0.2.min.js'><\/script>");
+  </script>
+  <!-- Recaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js?hl=es&amp;onload=CaptchaCallback&amp;render=explicit">
+  </script>
+  <!-- Alertify -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/temp/js/alertify.js/lib/alertify.min.js" type="text/javascript">
+  </script>
+  <!-- FancyBox -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/temp/js/fancyapps-fancyBox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript">
+  </script>
+  <script src="https://www.supermercadossmart.com/views_yea/js/temp/js/fancyapps-fancyBox/source/jquery.fancybox.js?v=2.1.5" type="text/javascript">
+  </script>
+  <!-- MONEDA -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/temp/js/monedaJS/moneda.js" type="text/javascript">
+  </script>
+  <!-- yea js -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/scripts.min.js" type="text/javascript">
+  </script>
+  <!-- Parallax -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/Parallax-Scrolling-master/js/script.min.js">
+  </script>
+  <!-- Slider Home -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/slippry-1.2.1/dist/slippry.min.js">
+  </script>
+  <!-- Libreria JSON para IE menor a 9 -->
+  <script src="https://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.min.js">
+  </script>
+  <!-- Share Social -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/temp/js/rrssb-master/js/rrssb.min.js">
+  </script>
+  <!-- end: Share Social -->
+  <!-- Facebook comments -->
+  <div id="fb-root">
+  </div>
+  <script>
+   window.fbAsyncInit = function()
+        {
+                FB.init
+                ({
+                        appId      : '1005379369494911',
+                        xfbml      : true,
+                        version    : 'v2.3'
+                });
+        };
+
+        var g_recaptcha;
+        var g_recaptcha1;
+        var gCaptchaResponse;
+        var gCaptchaResponse2;
+        var CaptchaCallback = function()
+        {
+                g_recaptcha = grecaptcha.render('g_recaptcha', {
+                'sitekey' : '6LdxjSMaAAAAAN4SWxIvDlb3YRZaSqoW0VsQdNAc',
+                'theme' : 'light'
+                });
+                gCaptchaResponse = grecaptcha.getResponse(0);
+
+
+                if('inicio' == 'monedero')
+                {
+                        g_recaptcha1 = grecaptcha.render('g_recaptcha1', {
+                        'sitekey' : '6LdxjSMaAAAAAN4SWxIvDlb3YRZaSqoW0VsQdNAc',
+                        'theme' : 'light'
+                        });
+                        gCaptchaResponse2 = grecaptcha.getResponse(1);
+                }
+                if('inicio' == 'contacto')
+                {
+                        g_recaptcha1 = grecaptcha.render('g_recaptcha1', {
+                        'sitekey' : '6LdxjSMaAAAAAN4SWxIvDlb3YRZaSqoW0VsQdNAc',
+                        'theme' : 'light'
+                        });
+                        gCaptchaResponse2 = grecaptcha.getResponse(1);
+                }
+                if('inicio' == 'carreras')
+                {
+                        g_recaptcha1 = grecaptcha.render('g_recaptcha1', {
+                        'sitekey' : '6LdxjSMaAAAAAN4SWxIvDlb3YRZaSqoW0VsQdNAc',
+                        'theme' : 'light'
+                        });
+                        gCaptchaResponse2 = grecaptcha.getResponse(1);
+                }
+        };
+        $(document).ready(function()
+        {
+                console.log("No refresca---"+'inicio');
+                if(location.protocol !== 'https:')
+                {
+                        if('inicio'!='monedero')
+                                location.replace(`https:${location.href.substring(location.protocol.length)}`);
+                }
+                if('inicio'=='monedero')
+                {
+                        ;
+                }
+
+                $('.fancybox').fancybox();
+                menuHover('inicio','','','','');
+
+                // cache de printeres:
+
+
+                // Facebook solo donde se necesita
+                if('inicio' == 'blog' || 'inicio' == 'marca_propia')
+                {
+                        (function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));        
+                        // (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=1005379369494911";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+                }
+        });
+  </script>
+  <!-- yea_model js -->
+  <script src="https://www.supermercadossmart.com/views_yea/js/scripts_model.min.js" type="text/javascript">
+  </script>
+  <!-- end: JS -->
+  <!-- Printerest -->
+  <!-- Please call pinit.js only once per page -->
+  <!--<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>-->
+  <!-- Google Analitics -->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');     
+                ga('create', 'UA-64343593-1', 'auto');
+                ga('send', 'pageview');
+  </script>
+  <script type="text/javascript">
+   var fc_CSS=document.createElement('link');fc_CSS.setAttribute('rel','stylesheet');var fc_isSecured = (window.location && window.location.protocol == 'https:');var fc_lang = document.getElementsByTagName('html')[0].getAttribute('lang'); var fc_rtlLanguages = ['ar','he']; var fc_rtlSuffix 
+= (fc_rtlLanguages.indexOf(fc_lang) >= 0) ? '-rtl' : '';fc_CSS.setAttribute('type','text/css');fc_CSS.setAttribute('href',((fc_isSecured)? 'https://d36mpcpuzc4ztk.cloudfront.net':'http://assets1.chat.freshdesk.com')+'/css/visitor'+fc_rtlSuffix+'.css');document.getElementsByTagName('head')[0].appendChild(fc_CSS);var fc_JS=document.createElement('script'); fc_JS.type='text/javascript'; fc_JS.defer=true;fc_JS.src=((fc_isSecured)?'https://d36mpcpuzc4ztk.cloudfront.net':'http://assets.chat.freshdesk.com')+'/js/visitor.js';(document.body?document.body:document.getElementsByTagName('head')[0]).appendChild(fc_JS);window.livechat_setting= 'eyJ3aWRnZXRfc2l0ZV91cmwiOiJzdXBlcm1lcmNhZG9zbWFydC5mcmVzaGRlc2suY29tIiwicHJvZHVjdF9pZCI6bnVsbCwibmFtZSI6IlMtTWFydCIsIndpZGdldF9leHRlcm5hbF9pZCI6bnVsbCwid2lkZ2V0X2lkIjoiZWZkYmM2NzMtN2M1My00YjVhLTkyOTUtOTg4MTZlOGEyM2I4Iiwic2hvd19vbl9wb3J0YWwiOnRydWUsInBvcnRhbF9sb2dpbl9yZXF1aXJlZCI6ZmFsc2UsImxhbmd1YWdlIjoiZXMiLCJ0aW1lem9uZSI6IkNoaWh1YWh1YSIsImlkIjoxNjAwMDAxMjg0NiwibWFpbl93aWRnZXQiOjEsImZjX2lkIjoiMTJkYTI0NmZmZWNjODBkMjNiYjhhZjExYjM5NzMyZWMiLCJzaG93IjoxLCJyZXF1aXJlZCI6MiwiaGVscGRlc2tuYW1lIjoiUy1NYXJ0IiwibmFtZV9sYWJlbCI6Ik5hbWUiLCJtZXNzYWdlX2xhYmVsIjoiTWVzc2FnZSIsInBob25lX2xhYmVsIjoiUGhvbmUiLCJ0ZXh0ZmllbGRfbGFiZWwiOiJUZXh0ZmllbGQiLCJkcm9wZG93bl9sYWJlbCI6IkRyb3Bkb3duIiwid2VidXJsIjoic3VwZXJtZXJjYWRvc21hcnQuZnJlc2hkZXNrLmNvbSIsIm5vZGV1cmwiOiJjaGF0LmZyZXNoZGVzay5jb20iLCJkZWJ1ZyI6MSwibWUiOiJNZSIsImV4cGlyeSI6MCwiZW52aXJvbm1lbnQiOiJwcm9kdWN0aW9uIiwiZW5kX2NoYXRfdGhhbmtfbXNnIjoiVGhhbmsgeW91ISEhIiwiZW5kX2NoYXRfZW5kX3RpdGxlIjoiRW5kIiwiZW5kX2NoYXRfY2FuY2VsX3RpdGxlIjoiQ2FuY2VsIiwic2l0ZV9pZCI6IjEyZGEyNDZmZmVjYzgwZDIzYmI4YWYxMWIzOTczMmVjIiwiYWN0aXZlIjoxLCJyb3V0aW5nIjp7ImNob2ljZXMiOnsibGlzdDEiOlsiMCJdLCJsaXN0MiI6WyIwIl0sImxpc3QzIjpbIjAiXSwiZGVmYXVsdCI6WyIwIl19LCJkcm9wZG93bl9iYXNlZCI6ImZhbHNlIn0sInByZWNoYXRfZm9ybSI6MSwiYnVzaW5lc3NfY2FsZW5kYXIiOm51bGwsInByb2FjdGl2ZV9jaGF0IjowLCJwcm9hY3RpdmVfdGltZSI6MTgwLCJzaXRlX3VybCI6InN1cGVybWVyY2Fkb3NtYXJ0LmZyZXNoZGVzay5jb20iLCJleHRlcm5hbF9pZCI6bnVsbCwiZGVsZXRlZCI6MCwibW9iaWxlIjoxLCJhY2NvdW50X2lkIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxNi0wNS0yN1QxNjoxMDoyNS4wMDBaIiwidXBkYXRlZF9hdCI6IjIwMTYtMTItMDlUMDI6MTM6NTQuMDAwWiIsImNiRGVmYXVsdE1lc3NhZ2VzIjp7ImNvYnJvd3Npbmdfc3RhcnRfbXNnIjoiWW91ciBzY3JlZW5zaGFyZSBzZXNzaW9uIGhhcyBzdGFydGVkIiwiY29icm93c2luZ19zdG9wX21zZyI6IllvdXIgc2NyZWVuc2hhcmluZyBzZXNzaW9uIGhhcyBlbmRlZCIsImNvYnJvd3NpbmdfZGVueV9tc2ciOiJZb3VyIHJlcXVlc3Qgd2FzIGRlY2xpbmVkIiwiY29icm93c2luZ19hZ2VudF9idXN5IjoiQWdlbnQgaXMgaW4gc2NyZWVuIHNoYXJlIHNlc3Npb24gd2l0aCBjdXN0b21lciIsImNvYnJvd3Npbmdfdmlld2luZ19zY3JlZW4iOiJZb3UgYXJlIHZpZXdpbmcgdGhlIHZpc2l0b3LigJlzIHNjcmVlbiAiLCJjb2Jyb3dzaW5nX2NvbnRyb2xsaW5nX3NjcmVlbiI6IllvdSBoYXZlIGFjY2VzcyB0byB2aXNpdG9y4oCZcyBzY3JlZW4gIiwiY29icm93c2luZ19yZXF1ZXN0X2NvbnRyb2wiOiJSZXF1ZXN0IHZpc2l0b3IgZm9yIHNjcmVlbiBhY2Nlc3MgIiwiY29icm93c2luZ19naXZlX3Zpc2l0b3JfY29udHJvbCI6IkdpdmUgYWNjZXNzIGJhY2sgdG8gdmlzaXRvciAiLCJjb2Jyb3dzaW5nX3N0b3BfcmVxdWVzdCI6IkVuZCB5b3VyIHNjcmVlbnNoYXJpbmcgc2Vzc2lvbiIsImNvYnJvd3NpbmdfcmVxdWVzdF9jb250cm9sX3JlamVjdGVkIjoiWW91ciByZXF1ZXN0IHdhcyBkZWNsaW5lZCIsImNvYnJvd3NpbmdfY2FuY2VsX3Zpc2l0b3JfbXNnIjoiU2NyZWVuc2hhcmluZyBpcyBjdXJyZW50bHkgdW5hdmFpbGFibGUiLCJjb2Jyb3dzaW5nX2FnZW50X3JlcXVlc3RfY29udHJvbCI6IkFnZW50IGlzIHJlcXVlc3RpbmcgYWNjZXNzIHRvIHlvdXIgc2NyZWVuIiwiY2Jfdmlld2luZ19zY3JlZW5fdmkiOiJBZ2VudCBjYW4gdmlldyB5b3VyIHNjcmVlbiAiLCJjYl9jb250cm9sbGluZ19zY3JlZW5fdmkiOiJBZ2VudCBoYXMgYWNjZXNzIHRvIHlvdXIgc2NyZWVuICIsImNiX3ZpZXdfbW9kZV9zdWJ0ZXh0IjoiWW91ciBhY2Nlc3MgdG8gdGhlIHNjcmVlbiBoYXMgYmVlbiB3aXRoZHJhd24gIiwiY2JfZ2l2ZV9jb250cm9sX3ZpIjoiQWxsb3cgYWdlbnQgdG8gYWNjZXNzIHlvdXIgc2NyZWVuICIsImNiX3Zpc2l0b3Jfc2Vzc2lvbl9yZXF1ZXN0IjoiQWdlbnQgc2Vla3MgYWNjZXNzIHRvIHlvdXIgc2NyZWVuICJ9fQ==';
+  </script>
+ </body>
+</html>

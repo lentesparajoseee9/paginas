@@ -1,0 +1,848 @@
+74457345618283587_Widget_ContentRecommendation_701_3074457345618283587">        
+          <!-- BEGIN Content_UI.jspf -->
+          <div class="left_espot header_content">
+           <h3>
+            Ofrecemos estos servicios para facilitarte la vida.
+           </h3>
+          </div>
+          <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is complete.</div> -->
+          <!-- END Content_UI.jspf -->
+         </div>
+        </div>
+        <!-- END ContentRecommendation_UI.jspf -->
+        <!-- END ContentRecommendation.jsp -->
+        <!-- BEGIN ContentRecommendation.jsp -->
+        <!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+                                          DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp,
+                                          SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+                                           , Footer.jsp , OrderCancelNotify.jsp 
+, OrderCreateNotify.jsp
+                                          OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+                                          PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp,
+                                          ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent,
+                                          Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp
+                                          UserTime-->
+        <!-- BEGIN ContentRecommendation_UI.jspf -->
+        <div class="contentRecommendationWidget carousel clip-true padding-true 
+background-false border-false" dataci_toolbar="3074457345618283588_espot" id="contentRecommendationWidget_16_-2000_3074457345618283588">
+         <div class="slick-carousel" dataci_espot="3074457345618283588_Widget_ContentRecommendation_701_3074457345618283588" id="ci_espot_3074457345618283588_Widget_ContentRecommendation_701_3074457345618283588">
+          <div>
+           <!-- BEGIN Content_UI.jspf -->
+           <div class="left_espot header_content">
+            <div class="fg-offers-services-list">
+             <div class="fg-offers-services-img-container">
+              <a href="/services">
+               <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/services/PAGA%20TU%20TARJETA%20Circular.png"/>       
+              </a>
+             </div>
+             <div class="fg-offers-services-content-container text-center">     
+              <a href="/services">
+               <h4 class="fg-offers-services-header">
+                Paga Tu Tarjeta
+               </h4>
+              </a>
+              <p>
+               Pagar o depositar a tus tarjetas de crédito es fácil y conveniente. Visita tu SuperFarmacia favorita y págala en pocos minutos.
+              </p>
+              <a class="fg-offers-services-learn-more" href="/services">        
+               VER MÁS
+              </a>
+             </div>
+            </div>
+           </div>
+           <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is 
+complete.</div> -->
+           <!-- END Content_UI.jspf -->
+          </div>
+          <div>
+           <!-- BEGIN Content_UI.jspf -->
+           <div class="left_espot header_content">
+            <div class="fg-offers-services-list">
+             <div class="fg-offers-services-img-container">
+              <a href="/services">
+               <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/SERVICES/servicio_2/DESKTOP_RETINA_360X360_RECIBE DINERO.png"/>
+              </a>
+             </div>
+             <div class="fg-offers-services-content-container text-center">     
+              <a href="/services">
+               <h4 class="fg-offers-services-header">
+                Cobro de remesas
+               </h4>
+              </a>
+              <p>
+               Recibir dinero de amigos o familiares en el extranjero es rápido 
+y fácil.
+              </p>
+              <a class="fg-offers-services-learn-more" href="/services">        
+               VER MÁS
+              </a>
+             </div>
+            </div>
+           </div>
+           <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is 
+complete.</div> -->
+           <!-- END Content_UI.jspf -->
+          </div>
+          <div>
+           <!-- BEGIN Content_UI.jspf -->
+           <div class="left_espot header_content">
+            <div class="fg-offers-services-list">
+             <div class="fg-offers-services-img-container">
+              <a href="/services">
+               <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/SERVICES/servicio_3/DESKTOP_RETINA_360X360_ENVIAR DINERO.png"/>
+              </a>
+             </div>
+             <div class="fg-offers-services-content-container text-center">     
+              <a href="/services">
+               <h4 class="fg-offers-services-header">
+                Super giro
+               </h4>
+              </a>
+              <p>
+               Enviar y recibir dinero dentro de México nunca ha sido tan fácil. Visita tu
+            SuperFarmacia
+              </p>
+              <a class="fg-offers-services-learn-more" href="/services">        
+               VER MÁS
+              </a>
+             </div>
+            </div>
+           </div>
+           <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is 
+complete.</div> -->
+           <!-- END Content_UI.jspf -->
+          </div>
+          <div>
+           <!-- BEGIN Content_UI.jspf -->
+           <div class="left_espot header_content">
+            <div class="fg-offers-services-list">
+             <div class="fg-offers-services-img-container">
+              <a href="/services">
+               <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/services/SERVICIOS%20DEL%20HOGAR%20Circular.png"/>   
+              </a>
+             </div>
+             <div class="fg-offers-services-content-container text-center">     
+              <a href="/services">
+               <h4 class="fg-offers-services-header">
+                Servicios del Hogar
+               </h4>
+              </a>
+              <p>
+               Pagar los servicios del hogar nunca ha sido tan fácil. Visita tu 
+SuperFarmacia favorita.
+              </p>
+              <a class="fg-offers-services-learn-more" href="/services">        
+               VER MÁS
+              </a>
+             </div>
+            </div>
+           </div>
+           <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is 
+complete.</div> -->
+           <!-- END Content_UI.jspf -->
+          </div>
+          <div>
+           <!-- BEGIN Content_UI.jspf -->
+           <div class="left_espot header_content">
+            <div class="fg-offers-services-list">
+             <div class="fg-offers-services-img-container">
+              <a href="/services">
+               <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/services/PAGO%20DE%20GOBIERNO%20Circular.png"/>      
+              </a>
+             </div>
+             <div class="fg-offers-services-content-container text-center">     
+              <a href="/services">
+               <h4 class="fg-offers-services-header">
+                Pago de Gobierno
+               </h4>
+              </a>
+              <p>
+               Pagar tus multas, predial o impuestos nunca ha sido tan fácil. Visita tu
+                SuperFarmacia favorita.
+              </p>
+              <a class="fg-offers-services-learn-more" href="/services">        
+               VER MÁS
+              </a>
+             </div>
+            </div>
+           </div>
+           <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is 
+complete.</div> -->
+           <!-- END Content_UI.jspf -->
+          </div>
+          <div>
+           <!-- BEGIN Content_UI.jspf -->
+           <div class="left_espot header_content">
+            <div class="fg-offers-services-list">
+             <div class="fg-offers-services-img-container">
+              <a href="/services">
+               <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/SERVICES/servicio_5/DESKTOP_RETINA_360X360_PAGA TU CATALOGO AVON.png"/>
+              </a>
+             </div>
+             <div class="fg-offers-services-content-container text-center">     
+              <a href="/services">
+               <h4 class="fg-offers-services-header">
+                Otros Servicios
+               </h4>
+              </a>
+              <p>
+               Ahora es más fácil pagar tus pedidos de catálogo, factura telefónica y
+            otros servicios.
+              </p>
+              <a class="fg-offers-services-learn-more" href="/services">        
+               VER MÁS
+              </a>
+             </div>
+            </div>
+           </div>
+           <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is 
+complete.</div> -->
+           <!-- END Content_UI.jspf -->
+          </div>
+         </div>
+        </div>
+        <!-- END ContentRecommendation_UI.jspf -->
+        <!-- END ContentRecommendation.jsp -->
+        <!-- BEGIN ContentRecommendation.jsp -->
+        <!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+                                          DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp,
+                                          SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+                                           , Footer.jsp , OrderCancelNotify.jsp 
+, OrderCreateNotify.jsp
+                                          OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+                                          PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp,
+                                          ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent,
+                                          Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp
+                                          UserTime-->
+        <!-- BEGIN ContentRecommendation_UI.jspf -->
+        <div class="contentRecommendationWidget" id="contentRecommendationWidget_16_-2000_3074457345618283589">
+         <div dataci_espot="3074457345618283589_Widget_ContentRecommendation_701_3074457345618283589" dataci_toolbar="3074457345618283589_espot" id="ci_espot_3074457345618283589_Widget_ContentRecommendation_701_3074457345618283589">        
+          <!-- BEGIN Content_UI.jspf -->
+          <div class="left_espot header_content">
+           <div class="section-footer col-xs-12 no-padding text-center">        
+            <a class="viewmorethings" href="/services">
+             Conoce todos nuestros servicios
+            </a>
+           </div>
+          </div>
+          <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is complete.</div> -->
+          <!-- END Content_UI.jspf -->
+         </div>
+        </div>
+        <!-- END ContentRecommendation_UI.jspf -->
+        <!-- END ContentRecommendation.jsp -->
+       </div>
+      </div>
+      <div class="col-xs-12" data-slot-id="17">
+      </div>
+      <div class="col-xs-12" data-slot-id="18">
+      </div>
+      <div class="col-xs-12" data-slot-id="19">
+      </div>
+      <div class="col-xs-12" data-slot-id="20">
+      </div>
+     </div>
+    </div>
+    <!-- END HomePageContainer.jsp -->
+   </div>
+   <div id="footerWrapper">
+    <!-- BEGIN Footer.jsp -->
+    <div aria-label="Información de contenido" id="footer" role="navigation">   
+     <div id="widget_guest_address" style="display:none;">
+      <div closeontimeout="false" dojotype="wc.widget.WCDialog" id="widget_guest_address_popup" title="???FG_TERMS_CONDITION???">
+       <div class="enter-yuor-address-guest-home enter-yuor-address-guest-home-change-address">
+        <div class="widget_guest_address_popup widget_site_popup fixed-scroll-1">
+         <!-- Top Border Styling -->
+         <div class="top">
+          <div class="left_border">
+          </div>
+          <div class="middle">
+          </div>
+          <div class="right_border">
+          </div>
+         </div>
+         <div class="clear_float">
+         </div>
+         <!-- Main Content Area -->
+         <div class="middle">
+          <div class="content_left_border">
+           <div class="content_right_border">
+            <div class="content modal_store">
+             <div class="header qr-code">
+              <span>
+               Ingresa un código postal
+              </span>
+              <a class="close_acce tlignore" href="javascript:dijit.byId('widget_guest_address_popup').hide();" id="close" title="CERRAR">
+               <img alt="CERRAR" class="closeImg" onmouseout="this.src='/wcsstore/FGSAS/images/colors/color1/close_normal.png'" onmouseover="this.src='/wcsstore/FGSAS/images/colors/color1/close_hover.png'" role="button" src="/wcsstore/FGSAS/images/colors/color1/close_normal.png"/>
+              </a>
+              <div class="clear_float">
+              </div>
+             </div>
+             <div class="strip_1">
+             </div>
+             <div class="body">
+              <div class="selectors">
+               <form id="guestShipZonePopupFindZoneForm" name="guestShipZonePopupFindZoneForm">
+                <input id="guestShipZonePopuplatitude" name="latitude" type="hidden" value=""/>
+                <input id="guestShipZonePopupstoreId" name="storeId" type="hidden" value="10151"/>
+                <input id="guestShipZonePopuplangId" name="langId" type="hidden" value="-24"/>
+                <input id="guestShipZonePopupcatalogId" name="catalogId" type="hidden" value="10052"/>
+                <input id="guestShipZonePopuplongitude" name="longitude" type="hidden" value=""/>
+                <input id="guestShipZonePopupcity" name="city" type="hidden" value=""/>
+                <input id="guestShipZonePopupState" name="state" type="hidden" value=""/>
+                <input id="guestShipZonePopupStateName" name="stateName" type="hidden" value=""/>
+                <input id="guestShipZonePopupzipCode" name="zipcode" type="hidden" value=""/>
+                <input id="guestShipZonePopupaddress1" name="address1" type="hidden" value=""/>
+                <input id="guestShipZonePopupaddress2" name="address2" type="hidden" value=""/>
+                <input id="guestShipZonePopupaddressField1" name="addressField1" type="hidden" value=""/>
+                Introduce el código postal en donde deseas recibir tu pedido    
+                <input class="input-field" id="guestShipZonePopupaddress" name="address" onfocus="findlocation('guestShipZonePopup');" placeholder="Código Postal"/>
+                <span class="msg-FG_PRODUCT_PRICE_DESCLAIMER">
+                 Los precios por producto pueden variar de acuerdo a la ciudad o CP de entrega.
+                </span>
+               </form>
+               <div class="button_footer_line no_float button_footer_line-location-direction">
+               </div>
+               <div class="button_footer_line no_float button_footer_line-location-right">
+                <a class="button_primary" href="#" id="WC_AddressZipcodeForm_Link_2" onclick="javascript:findShippingZone('guestShipZonePopup','guestShipZonePopupFindZoneForm');" role="button">
+                 <div class="left_border">
+                 </div>
+                 <div class="button_text">
+                  Aceptar
+                 </div>
+                 <div class="right_border">
+                 </div>
+                </a>
+               </div>
+              </div>
+             </div>
+             <!-- End content Section -->
+            </div>
+            <!-- End content_right_border -->
+           </div>
+           <!-- End content_left_border -->
+          </div>
+         </div>
+         <div class="clear_float">
+         </div>
+         <!-- Bottom Border Styling -->
+         <div class="bottom">
+          <div class="left_border">
+          </div>
+          <div class="middle">
+          </div>
+          <div class="right_border">
+          </div>
+         </div>
+         <div class="clear_float">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!--
+        <div id="footerRow1">
+                <div id="footerCustomerServiceSection" class="section">
+                        <div class="header">
+                                <a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Servicio de atención al cliente</span></a>
+                                <h3>Servicio de atención al cliente</h3>        
+                        </div>
+                        <ul>
+
+                                <li><a id="footerHelpLink" href="http://www.farmaciasguadalajara.com/GenericStaticContentPageLayoutView?storeId=10151&amp;pageId=1001&amp;urlLangId=-24&amp;urlRequestType=Base&amp;langId=-24&amp;catalogId=10052">Ayuda</a></li>
+                                <li><a id="footerContactUsLink" href="http://www.farmaciasguadalajara.com/GenericStaticContentPageLayoutView?storeId=10151&amp;pageId=1002&amp;urlLangId=-24&amp;urlRequestType=Base&amp;langId=-24&amp;catalogId=10052">Contáctanos</a></li>
+                                <li><a id="footerReturnPolicyLink" href="http://www.farmaciasguadalajara.com/es/farmaciasguadalajara/return-policy">Política de 
+devolución</a></li>
+                                <li><a id="footerPrivacyPolicyLink" href="http://www.farmaciasguadalajara.com/GenericStaticContentPageLayoutView?storeId=10151&amp;pageId=1004&amp;urlLangId=-24&amp;urlRequestType=Base&amp;langId=-24&amp;catalogId=10052">Política de privacidad</a></li>
+                        </ul>
+                </div><div id="footerCorporateInfoSection" class="section">     
+                        <div class="header">
+                                <a class="toggle" href="#" data-toggle="footerCorporateInfoSection" role="button"><span id="footerCorporateInfoSection_div_ACCE_Label" class="spanacce">Información corporativa</span></a>
+                                <h3>Información corporativa</h3>
+                        </div>
+                        <ul>
+                                <li><a id="footerAboutUsLink" href="http://www.farmaciasguadalajara.com/es/farmaciasguadalajara/corporate-info">Quiénes somos</a></li>
+                                <li><a id="footerCorporateContactUsLink" href="http://www.farmaciasguadalajara.com/es/farmaciasguadalajara/corporate-contact-us">Contáctanos</a></li>
+
+                                        <li><a id="footerStoreLocatorLink" href="http://www.farmaciasguadalajara.com/AjaxStoreLocatorDisplayView?catalogId=10052&amp;langId=-24&amp;storeId=10151">Localizador de tiendas</a></li>
+
+                        </ul>
+                </div><div id="footerExploreSection" class="section">
+                        <div class="header">
+                                <a class="toggle" href="#" data-toggle="footerExploreSection" role="button"><span id="footerExploreSection_div_ACCE_Label" class="spanacce">Explorar</span></a>
+                                <h3>Explorar</h3>
+                        </div>
+                        <ul>
+                                <li><a id="footerSiteMapLink" href="http://www.farmaciasguadalajara.com/es/farmaciasguadalajara/sitemap">Mapa del sitio</a></li>
+                                        <li><a id="footerAdvancedSearchLink" href="http://www.farmaciasguadalajara.com/AdvancedSearchDisplay?catalogId=10052&amp;langId=-24&amp;storeId=10151">Búsqueda avanzada</a></li>
+
+                        </ul>
+                </div>
+        </div>
+         -->
+     <!-- Start footer container -->
+     <!-- BEGIN ContentRecommendation.jsp -->
+     <!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+                                          DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp,
+                                          SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+                                           , Footer.jsp , OrderCancelNotify.jsp 
+, OrderCreateNotify.jsp
+                                          OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+                                          PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp,
+                                          ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent,
+                                          Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp
+                                          UserTime-->
+     <!-- BEGIN ContentRecommendation_UI.jspf -->
+     <div class="contentRecommendationWidget" id="contentRecommendationWidget_FG_FooterEspot">
+      <div dataci_espot="_FG_FooterEspot" dataci_toolbar="_espot" id="ci_espot__FG_FooterEspot">
+       <!-- BEGIN Content_UI.jspf -->
+       <div class="left_espot header_content">
+        <link href="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/landing/custom-fg/css/fg-styles.min.css" rel="stylesheet"/>
+        <div class="col-xs-12 afiliados__AMVO">
+         <div class="afiliados__AMVO-content">
+          <div class="afiliados__AMVO-methods">
+           <span class="afiliados__AMVO-content-span">
+            Formas de pago segura:
+           </span>
+           <div class="afiliados__AMVO-methods-logos">
+            <img alt="VISA" src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/footer/img/visa.svg" style="height: 16px"/>
+            <img alt="Master Card" src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/footer/img/master-card.svg"/>
+            <img alt="American Express" src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/footer/img/amex.svg"/>
+            <img alt="PayPal" src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/footer/img/paypal.svg"/>      
+           </div>
+          </div>
+          <div class="afiliados__AMVO-afil">
+           <span class="afiliados__AMVO-content-span">
+            Compra segura:
+           </span>
+           <img alt="Afiliado AMVO" src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/footer/img/amvo.svg"/>  
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-12 footerwrapper">
+         <div id="content">
+          <!--  <div class="col-lg-9 col-lg-offset-3 col-sm-8 col-sm-offset-4  col-xs-12 fg-email-subscirbe">
+                        <div class="col-lg-7 col-xs-12">
+                                <p>Suscríbete para recibir noticias y obtén un 10% de descuento en tu próximo pedido</p>
+                        </div>
+                        <div class="col-lg-5 col-xs-12">
+                                <div class="input-group add-on">
+                                        <input id="footerEmail" type="text" class="form-control subscriptionEmail" placeholder="Escribe tu correo ..." name="" >                                        <div class="input-group-btn">
+                                        <button onclick="submitEmailSubscribe(document.getElementById('footerEmail').value);" class="btn btn-default fg-subscribe-btn footer_email_sub_submit"  >ENVIAR</button>
+                                </div>
+                            </div>
+                            <span id = "subscriptionEmailSuccess" class ="hide">¡Gracias por suscribirte!</span>
+                        </div>
+                </div> -->
+          <div class="col-lg-3 col-sm-4 col-xs-12 fg-ft-details">
+           <div class="footerlogo">
+            <img onload="var h = 'https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/landing/custom-fg/js/script.js'; $.getScript(h, function(data, textStatus, jqxhr) {});" src="/wcsstore/FGSAS/images/footer/logo-fg.svg"/>
+           </div>
+           <div class="fg-addres">
+            Av. de las Américas #1254 - Int. UP6, P2
+            <br/>
+            Col. Country Club
+            <br/>
+            Guadalajara, Jalisco
+            <br/>
+            C.P. 44610
+            <br/>
+            <br/>
+            <b>
+             Teléfonos Contact Center:
+            </b>
+            <br/>
+            <a href="tel:+523338181818" style="color: white; text-decoration: underline">
+             (33) 3818 1818
+            </a>
+            <br/>
+            <a href="tel:+528332762242" style="color: white; text-decoration: underline">
+             (83) FARMACIA (32762242)
+            </a>
+           </div>
+           <!-- <div class="fg-social-wrapper">
+                                <div class="fg-sc-icon"><a href="#"><img src="/wcsstore/FGSAS/images/footer/icon-facebook.svg" class="hidden-xs visible-lg visible-md visible-sm"><img src="/wcsstore/FGSAS/images/footer/mobile/icon-facebook.svg" class="hidden-sm visible-xs"></a></div>
+                                <div class="fg-sc-icon"><a href="#"><img src="/wcsstore/FGSAS/images/footer/icon-youtube.svg"  class="hidden-xs visible-lg visible-md visible-sm"><img src="/wcsstore/FGSAS/images/footer/mobile/icon-youtube.svg" class="hidden-sm visible-xs"></a></div>
+                                <div class="fg-sc-icon"><a href="#"><img src="/wcsstore/FGSAS/images/footer/icon-twitter.svg"  class="hidden-xs visible-lg visible-md visible-sm"><img src="/wcsstore/FGSAS/images/footer/mobile/icon-twitter.svg" class="hidden-sm visible-xs"></a></div>
+                                <div class="fg-sc-icon"><a href="#"><img src="/wcsstore/FGSAS/images/footer/icon-Instagram.svg" class="hidden-xs visible-lg visible-md visible-sm"><img src="/wcsstore/FGSAS/images/footer/mobile/icon-Instagram.svg" class="hidden-sm visible-xs"></a></div>
+                                <div class="fg-sc-icon"><a href="#"><img src="/wcsstore/FGSAS/images/footer/icon-pinterest.svg" class="hidden-xs visible-lg visible-md visible-sm"><img src="/wcsstore/FGSAS/images/footer/mobile/icon-pinterest.svg" class="hidden-sm visible-xs"></a></div>
+                        </div> -->
+          </div>
+          <div class="col-lg-9 col-lg-offset-3 col-sm-8 col-sm-offset-4 col-xs-12 fg-links">
+           <div class="col-xs-12 fg-links-wrapper">
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+             <h3>
+              TIENDA EN LÍNEA:
+              <img class="hidden-sm visible-xs pull-right" src="/wcsstore/FGSAS/images/footer/mobile/icon-chevron-down-FFF.svg"/>
+             </h3>
+             <ul class="fg-link-box">
+              <li>
+               <a href="/salud-es">
+                Salud
+               </a>
+              </li>
+              <li>
+               <a href="/departamento/alimentos">
+                Alimentos
+               </a>
+              </li>
+              <li>
+               <a href="/bebes">
+                Bebés
+               </a>
+              </li>
+              <li>
+               <a href="/departamento/bebidas-es">
+                Bebidas
+               </a>
+              </li>
+              <li>
+               <a href="/departamento/higiene-y-belleza">
+                Higiene y Belleza
+               </a>
+              </li>
+              <li>
+               <a href="/departamento/electronicos">
+                Electrónico
+               </a>
+              </li>
+              <li>
+               <a href="/departamento/hogar">
+                Hogar
+               </a>
+              </li>
+              <li>
+               <a href="/departamento/jugueteria-es">
+                Juguetería
+               </a>
+              </li>
+              <li style="display: none">
+               <a href="/recarga-tiempo-aire">
+                Recarga de Tiempo Aire
+               </a>
+              </li>
+              <!--li><a href="/boletin-ofertas">Boletín de Ofertas</a></li-->   
+             </ul>
+            </div>
+            <!-- <div class="col-lg-3 col-sm-6 col-xs-12">
+                                        <h3>SERVICIOS <img src="/wcsstore/FGSAS/images/footer/mobile/icon-chevron-down-FFF.svg" class="hidden-sm visible-xs pull-right"></h3>
+                                        <ul class="fg-link-box">
+                                                !-- <li><a href="/consultation/conditions-and-medicines">Condiciones y Medicinas</a></li> --
+                                                <li><a href="#">Condiciones y Medicinas</a></li>
+                                                !-- <li><a href="/consultation">Consulta de Salud</a></li> --
+                                                <li><a href="#">Consulta de Salud</a></li>
+                                                !-- <li><a href="#">Doctor en Línea</a></li> --
+                                                !-- <li><a href="#">Fotografía</a></li> --
+                                        </ul>
+                                </div> -->
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+             <h3>
+              AYUDA
+              <img class="hidden-sm visible-xs pull-right" src="/wcsstore/FGSAS/images/footer/mobile/icon-chevron-down-FFF.svg"/>
+             </h3>
+             <ul class="fg-link-box">
+              <li>
+               <a class="fg-contact-us" href="/ayuda/contáctanos">
+                Contacto
+               </a>
+              </li>
+              <li>
+               <a href="/ayuda/preguntas-frecuentes--24">
+                Preguntas Frecuentes
+               </a>
+              </li>
+              <!--<li><a href="#">Noticias</a></li>-->
+              <li>
+               <a href="/ayuda/localizador-de-superfarmacias">
+                Encuentra Tu SuperFarmacia
+               </a>
+              </li>
+              <li>
+               <a href="/facturación-electrónica">
+                Factura Electrónica
+               </a>
+              </li>
+              <li>
+               <a href="/locker-inteligente">
+                Smart &amp; Collect
+               </a>
+              </li>
+              <!--li><a href="/msi-terminos">Beneficios Compra en Línea</a></li-->
+              <!--li><a href="http://lucy.cloud.farmaciasguadalajara.com/">Lucy</a></li-->
+             </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+             <h3>
+              EMPRESA
+              <img class="hidden-sm visible-xs pull-right" src="/wcsstore/FGSAS/images/footer/mobile/icon-chevron-down-FFF.svg"/>
+             </h3>
+             <ul class="fg-link-box">
+              <li>
+               <a href="/sobre-nosotros/sobre-nosotros">
+                Conócenos
+               </a>
+              </li>
+              <li>
+               <a href="/sobre-nosotros/informacion-corporativa">
+                Corporativo
+               </a>
+              </li>
+              <li>
+               <a href="/sobre-nosotros/relacion-con-inversionistas">
+                Relación con Inversionistas
+               </a>
+              </li>
+              <li>
+               <a href="https://fragua.csod.com/ux/ats/careersite/1/home?c=fragua" target="_blank">
+                Bolsa de Trabajo
+               </a>
+              </li>
+              <li>
+               <a href="/sobre-nosotros/politicas-de-privacidad">
+                Políticas de Privacidad
+               </a>
+              </li>
+              <li>
+               <a href="/sobre-nosotros/terminos-y-condiciones">
+                Términos y Condiciones
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 bolH">
+             <h3>
+              BOLETÍN DE OFERTAS
+              <img class="hidden-sm visible-xs pull-right" src="/wcsstore/FGSAS/images/footer/mobile/icon-chevron-down-FFF.svg"/>
+             </h3>
+             <ul class="fg-link-box">
+              <li>
+               <iframe class="boletin-frame" id="FooterBoletinThumbFrame" src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/images/content/site/static_pages/boletin/thumb.q1.html" style="overflow: hidden; height: 256px; display: block; width: 143px">
+               </iframe>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <div class="col-xs-12 fg-copyrt">
+           <div class="col-xs-12">
+            <p>
+             Los precios y promociones mostrados en esta página online son exclusivos y estos pueden diferir de los precios y promociones de sucursal.
+            </p>
+            <p style="margin-bottom: 10px">
+             Las imágenes mostradas son exclusivamente para uso ilustrativo.    
+            </p>
+            <p>
+             © Farmacia Guadalajara es una empresa de Corporativo Fragua, S.A.B. de C.V. Todos los derechos reservados
+            </p>
+           </div>
+           <!-- <div class="col-lg-5 col-sm-6 col-xs-12">
+                                <div class="fg-chat-box-button">
+                                        <span><img src="/wcsstore/FGSAS/images/footer/icon-chat-tab.svg">Doctor en linea</span>
+                                </div>
+                        </div> -->
+          </div>
+         </div>
+        </div>
+        <style>
+         @media (max-width: 767px) {
+    .boletin-frame {
+      margin: auto;
+    }
+  }
+
+  .fg-copyrt p {
+    line-height: 1.5;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) {
+    #headerCall {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 862px) and (min-width: 768px) {
+    #quickLinksBar > li:nth-child(4) {
+      max-width: 116px;
+    }
+  }
+
+  @media screen and (max-width: 862px) and (min-width: 768px) {
+    #quickLinksBar > li:nth-child(3) {
+      max-width: 144px;
+    }
+  }
+
+  @media screen and (max-width: 862px) and (min-width: 768px) {
+    #quickLinksBar > li:nth-child(2) {
+      max-width: 114px;
+    }
+  }
+
+  .afiliados__AMVO {
+    background: #fff;
+    border-top: 1px solid rgba(202, 202, 203, 0.5);
+    margin-top: 8px;
+  }
+
+  .afiliados__AMVO-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .afiliados__AMVO-content {
+      align-items: flex-start;
+      padding: 12px;
+      flex-direction: row;
+    }
+  }
+
+  .afiliados__AMVO-content-span {
+    color: #01579b;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .afiliados__AMVO-content-span {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .afiliados__AMVO-methods,
+  .afiliados__AMVO-afil {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  @media (min-width: 768px) {
+    .afiliados__AMVO-methods,
+    .afiliados__AMVO-afil {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  .afiliados__AMVO-methods-logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 768px) {
+    .afiliados__AMVO-methods-logos {
+      gap: 24px;
+    }
+  }
+
+  .afiliados__AMVO-methods-logos img {
+    max-height: 20px;
+  }
+
+  .afiliados__AMVO-afil img {
+    max-height: 35px;
+  }
+
+  .footerwrapper {
+    margin: 0 !important;
+  }
+
+  @media (min-width: 992px) {
+    .footerwrapper {
+      padding: 16px !important;
+    }
+  }
+
+  .fg-offers-services-wrapper {
+    border-bottom: none !important;
+  }
+        </style>
+       </div>
+       <!-- <div class="your-quick-checkout">Your Quick Checkout Profile is complete.</div> -->
+       <!-- END Content_UI.jspf -->
+      </div>
+     </div>
+     <!-- END ContentRecommendation_UI.jspf -->
+     <!-- END ContentRecommendation.jsp -->
+     <!-- End footer container -->
+    </div>
+    <script type="text/javascript">
+     dojo.addOnLoad(function() {
+                //Make sure page is loaded at this point
+                //Set requestedSubmitted to false
+                resetRequest();
+
+                // All div's whose id attribute contains dojoWidget subString -- dojo.query('div[id*="dojoWidget"]')
+                // All div's which contains dojoType attribute -- dojo.query(div[dojoType])
+                dojo.query('div[dojoType]').forEach(function(node, index, arr){ 
+                        addToWidgetsList(node.id);
+                });
+                parseAllWidgets();
+        });
+    </script>
+    <script type="text/javascript">
+     $(function() {
+                /************goTop start *********************/
+                var gotop = '<div class="go-top">';
+                gotop += '<img src="/wcsstore/FGSAS/images/arrow-up-btt.svg"/>';                gotop += '</div>';
+
+                showGotop();
+
+                /************goTop end *********************/
+
+                $(window).scroll(function() {
+                        showGotop()
+                });
+
+                function showGotop() {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 300) {
+                                if ($('.go-top').length == 0) {
+                                        $('body').append(gotop);
+                                } else {
+
+                                        $('.go-top').show()
+                                }
+
+                        } else {
+                                $('.go-top').hide()
+
+                        }
+                }
+
+                $(document).on('click', '.go-top', function() {
+                        $("HTML, BODY").animate({
+                                scrollTop : 0
+                        }, 800);
+                })
+
+        })
+    </script>
+    <!--
+
+//-->
+    <!-- END Footer.jsp -->
+   </div>
+  </div>
+  <!-- BEGIN LayoutPreviewSetup.jspf-->
+  <!-- layoutPreviewLayoutId/Name/Default needs to be set before calling widgetImport  -->
+  <!-- END LayoutPreviewSetup.jspf-->
+  <script src="/UlAd80/DwcRYI/Y74S/Fs-sKO/Vh8dA/7N5bwrVS4Qz9ua/OBoxAQ/e19O/YxxSdxo" type="text/javascript">
+  </script>
+ </body>
+ <!-- END TopCategoriesDisplay.jsp -->
+</html>

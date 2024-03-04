@@ -1,0 +1,15 @@
+#https://www.farmaciasguadalajara.com/
+#https://www.soriana.com/?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU7_sg7y01ZxsmEIMeN5wUgtglFuoOEh4ZSb-alSDk1UgBskqGPw2UWRoCk2sQAvD_BwE
+#https://www.supermercadossmart.com/
+#https://www.honda.mx/autos/civic
+#https://www.ae.com/mx/es/c/women/graphic-tops/pop-culture/15vkh6zZ10dh5if-filtered?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU7468FlF8Yr9fn38VHpCFjQb-XhR45MKUbZmzWux8g2aw5ec4B2QFhRoCjHgQAvD_BwE
+
+from bs4 import BeautifulSoup
+import requests
+
+webside = 'https://www.soriana.com/?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU7_sg7y01ZxsmEIMeN5wUgtglFuoOEh4ZSb-alSDk1UgBskqGPw2UWRoCk2sQAvD_BwE'
+results = requests.get(webside)
+content = results.text
+
+soup = BeautifulSoup(content,'lxml')
+print(soup.prettify())

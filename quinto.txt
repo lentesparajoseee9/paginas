@@ -1,0 +1,725 @@
+            <li class="menu-footer-item">
+             <a a="" class="menu-footer-link font-primary--regular" href="https://stgsetc29.soriana.com/default.aspx?p=12193 " rel="noopener noreferrer" target="_blank" title="Locatarios">      
+              Locatarios
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.soriana.com/falabella.html" title="Tarjeta Falabella Soriana">
+              Tarjeta Falabella Soriana
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.soriana.com/pago-de-servicios2/pago-de-servicios2.html" title="Pago de Servicios">
+              Pago de Servicios
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.soriana.com/consultorio-medico.html" title="Consultorio Médico">
+              Consultorio Médico
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.soriana.com/envio-de-dinero.html" title="Envío de dinero">
+              Envío de dinero
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.soriana.com/recarga-de-tiempo-aire-soriana.html" title="Tiempo Aire Soriana">
+              Tiempo Aire Soriana
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.segurossoloensoriana.com/?utm_source=referral&amp;utm_medium=soriana&amp;utm_campaign=sorianacom&amp;utm_content=menu" rel="noopener noreferrer" target="_blank" title="seguros solo en soriana">
+              Seguros sólo en Soriana
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://stgsetc29.soriana.com/default.aspx?p=9735" rel="noopener noreferrer" target="_blank" title="tarjetas-soriana">       
+              Tarjetas Soriana
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="footer-item col-lg-3 footer--organization collapsible-xl active border-right-0">
+           <div>
+            <button aria-controls="collapsible-organization" aria-expanded="false" class="title text-left btn-block px-0 d-lg-none font-primary--semi-bold border-0">
+             Organización Soriana
+            </button>
+            <p class="title d-none d-lg-block font-primary--medium">
+             Organización Soriana
+            </p>
+           </div>
+           <ul class="menu-footer content" id="collapsible-organization">
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/inversionistas.html" rel="noopener noreferrer" target="_blank" title="relación-con-inversionistas">
+              Relación con inversionistas
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/proveedores.html" rel="noopener noreferrer" target="_blank" title="proveedores">
+              Proveedores
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a a="" class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/responsabilidad_comercial.html" rel="noopener noreferrer" target="_blank" title="desarrollo-de-proveedores">
+              Desarrollo de proveedores
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/bolsa.html" rel="noopener noreferrer" target="_blank" title="bolsa-de-trabajo">
+              Bolsa de trabajo
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/sala_prensa.html" rel="noopener noreferrer" target="_blank" title="sala-de-prensa">      
+              Sala de prensa
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/centros_de_distribucion.html" rel="noopener noreferrer" target="_blank" title="Centro de 
+distribución">
+              Centro de distribución
+             </a>
+            </li>
+            <li class="menu-footer-item">
+             <a class="menu-footer-link font-primary--regular" href="https://www.organizacionsoriana.com/Contacto.html" rel="noopener noreferrer" target="_blank" title="Oficinas centrales">     
+              Oficinas centrales
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer-item footer--legal-wrapper">
+       <div class="content-asset cbt-wrapper" data-cbt="{}">
+        <div class="collapsible-md arrow-white">
+         <p aria-controls="collapsible-legal" aria-expanded="false" class="title d-lg-none font-primary--semi-bold">
+          Legales
+         </p>
+         <ul class="menu-footer content mb-0 d-lg-flex justify-content-between" id="collapsible-legal">
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/static-pages/terminos-y-condiciones.html" title="Términos y condiciones de uso">
+             Términos y condiciones de uso
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/static-pages/politicas-de-privacidad.html" title="Políticas de privacidad">
+             Políticas de privacidad
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/preguntas-frecuentes.html" title="Preguntas Frecuentes">
+             Preguntas Frecuentes
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/politicas-programa-de-recompensas.html" title="Términos y condiciones Soriana Ya">        
+             Términos y Condiciones Soriana YA
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/condiciones-de-las-promociones.html" title="Condiciones de las promociones">
+             Condiciones de las promociones
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/derechos-del-consumidor.html" title="Legales ">
+             Derechos del Consumidor
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/comocompro/contrato.html" title="Legales ">
+             Contrato
+            </a>
+           </span>
+          </li>
+          <li class="menu-footer-item d-lg-flex justify-content-lg-center align-items-lg-center">           <span style="font-size:12px;">
+            <a class="menu-footer-link link--light font-primary--regular" href="https://www.soriana.com/codigo-de-etica.html" title="Legales ">
+             Código de ética
+            </a>
+           </span>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container">
+      <div class="footer-item">
+       <div class="content-asset cbt-wrapper" data-cbt="{}">
+        <div class="footer--smallest-flex-column flex-row justify-content-center align-items-center footer--app-stores-wrapper">
+         <p class="mb-0 align-self-center font-primary--semi-bold footer--app-stores-text">      
+          Soriana en todos lados, descarga la app
+         </p>
+         <div class="d-flex flex-row justify-content-between footer--button-app-content">        
+          <a class="footer--app-store" href="https://apps.apple.com/mx/app/soriana-app/id1469594088">
+           <img alt="Apple Store" class="img-fluid lazyload" data-src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dw767535a9/images/footer/footer-apple-store.png" loading="lazy" src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dwbeecc033/images/i.png"/>
+          </a>
+          <a class="footer--app-store" href="https://play.google.com/store/apps/details?id=com.soriana.appsoriana&amp;hl=es_MX&amp;gl=US">
+           <img alt="Google Play" class="img-fluid lazyload" data-src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dw9fa3fc99/images/footer/google-play.png" loading="lazy" src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dwbeecc033/images/i.png"/>
+          </a>
+          <a class="footer--app-store" href="https://appgallery.huawei.com/app/C106914369">      
+           <img alt="App Gallery" class="img-fluid lazyload" data-src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dw0ac6511d/images/footer/app-gallery-store-huawei.jpeg" loading="lazy" src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dwbeecc033/images/i.png"/>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer-item">
+       <div class="content-asset cbt-wrapper" data-cbt="{}">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center footer--copy-wrapper">
+         <div class="footer--logo">
+          <img alt="Soriana Logo" class="img-fluid lazyload" data-src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dwd066cc03/images/footer/logo-soriana.svg" loading="lazy" src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dwbeecc033/images/i.png" title="Soriana"/>
+         </div>
+         <p class="mb-0 text-center align-self-center footer--copy-text">
+          D.R. © Tiendas Soriana, S.A. de C.V. Alejandro de Rodas 3102-A Col. Cumbres 8º Sector C.P. 64610 Monterrey, N.L. México
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <div class="live-chat position-fixed text-right" id="live-chat">
+    <div class="live-chat-collapse collapse" id="live-chat-content">
+     <div class="text-center live-chat__content-icon-wrapper">
+      <svg class="live-chat__content-icon" height="52" width="52" xmlns="http://www.w3.org/2000/svg">
+       <g transform="translate(-614 -299)">
+        <circle cx="26" cy="26" fill="#e2211c" r="26" transform="translate(614 299)">
+        </circle>
+        <path d="M650.003 313.371a6.841 6.841 0 00-5.486 2.887 4.548 4.548 0 00-.688 1.421 5.8 5.8 0 00.944 5.067 14.749 14.749 0 002.847 2.691 16.31 16.31 0 011.755 1.659 5.474 5.474 0 011.255 
+2.2 5.167 5.167 0 01.168 2.376c2.951-2.95 6.174-6.78 6.174-10.946a6.944 6.944 0 00-6.969-7.355z" 
+fill="#fff">
+        </path>
+        <path d="M643.842 329.411a24.382 24.382 0 00-3.811-3.776c-.51-.468-1.069-.813-1.483-1.228a8.211 8.211 0 01-2.443-7.442 7.8 7.8 0 012.942-5.053 9.782 9.782 0 00-5.923-1.911 10.018 10.018 
+0 00-10.12 10.1c.253 10.06 12.772 18.636 17.927 20.39a7.619 7.619 0 004.227-6.811 7.755 7.755 0 00-1.316-4.269z" fill="#c0c740">
+        </path>
+       </g>
+      </svg>
+     </div>
+     <div class="live-chat__content bg-white border-radius text-right box-shadow-increased px-3 pt-2 mb-3">
+      <div class="clear-both pb-2">
+       <button aria-controls="live-chat-content" class="p-0 border-0 bg-transparent" data-target=".live-chat-collapse" data-toggle="collapse">
+        <svg class="icon-fill-dark live-chat__content-close" height="24px" viewbox="0 0 24 24" width="24px">
+         <use role="presentation" xlink:href="#sori-icon-close">
+         </use>
+        </svg>
+       </button>
+      </div>
+      <div class="live-chat__content-text font-size-15 pb-3 text-left">
+       <a href="https://tpclient29.tpmex.com/ChatSorianaR/CHAT_SorianaRetail/ChatQuestion_SorianaRetail.aspx?ModeSource=CHECKSCHEDULE&amp;ChatType=TEXT&amp;Queue=CHSORE1" rel="noopener noreferrer" target="_blank">
+        ¡Hola! ¿Hay algo en lo que te podamos ayudar?
+       </a>
+       .
+      </div>
+     </div>
+    </div>
+    <button aria-controls="live-chat-content" aria-label="Chat en vivo" class="live-chat__start p-0 border-0 bg-transparent" data-target=".live-chat-collapse" data-toggle="collapse" id="live-chat-start">
+     <svg class="live-chat__chat-icon" height="24px" viewbox="0 0 24 24" width="24px">
+      <use role="presentation" xlink:href="#sori-icon-chat">
+      </use>
+     </svg>
+    </button>
+   </div>
+   <div aria-hidden="true" aria-labelledby="quickViewModal-title" class="modal fade" id="quickViewModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content ct-modal-dialog-white">
+      <div class="modal-header modal-header--white">
+       <div class="d-flex modal-title--wrapper w-100 mr-3">
+        <p class="modal-title sr-only ct-h3" id="quickViewModal-title">
+         Quickview
+        </p>
+       </div>
+       <button aria-label="button.close" class="close text-white" data-dismiss="modal" id="close-modal" title="Cerrar" type="button">
+        <svg class="use-svg" height="24px" viewbox="0 0 24 24" width="24px">
+         <use role="presentation" xlink:href="#sori-icon-close">
+         </use>
+        </svg>
+       </button>
+      </div>
+      <div class="modal-body">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div aria-hidden="true" aria-labelledby="shoppinglistmodal-title" class="modal fade" id="shoppinglistmodal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered store-select-modal" role="document">
+     <div class="modal-content ct-modal-dialog-white">
+      <div class="modal-header">
+       <div class="modal-title--wrapper w-100 mr-3">
+        <p class="modal-title ct-h3" id="shoppinglistmodal-title">
+         Agregar producto a lista
+        </p>
+        <span class="modal-subtitle p-sory">
+         Selecciona la lista a la que deseas agregar el producto
+        </span>
+       </div>
+       <button aria-label="button.close" class="close text-white" data-dismiss="modal" id="close-modal" title="Cerrar" type="button">
+        <svg class="use-svg" height="24px" viewbox="0 0 24 24" width="24px">
+         <use role="presentation" xlink:href="#sori-icon-close">
+         </use>
+        </svg>
+       </button>
+      </div>
+      <div class="modal-body">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div aria-hidden="true" aria-labelledby="zipCode" class="modal fade" id="store-select" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered store-select-modal mb-5 mt-1" role="document">     <div class="modal-content ct-modal-dialog-white">
+      <div class="modal-header">
+       <div class="d-flex modal-title--wrapper w-100 mr-3">
+        <p class="modal-title ct-h3" id="store-select-title">
+         Selecciona tu método de entrega
+        </p>
+       </div>
+       <button aria-label="button.close" class="close text-white" data-dismiss="modal" id="close-modal" title="Cerrar" type="button">
+        <svg class="use-svg" height="24px" viewbox="0 0 24 24" width="24px">
+         <use role="presentation" xlink:href="#sori-icon-close">
+         </use>
+        </svg>
+       </button>
+      </div>
+      <div id="shipmentTypeSelector">
+       <div class="container-fluid p-0">
+        <div class="row content-option-direction m-0" data-default-tab="homeDelivery" data-defaultdeliverystoreguest="null" data-defaultdeliverystorepc="null" data-is-guest="true" data-urlselector="/on/demandware.store/Sites-Soriana-Site/default/Stores-SelectorMethod" id="deliveryHeader">  
+         <div class="col-6 pr-0 option-modal-direction position-relative">
+          <div class="js_shipping-method-selector-pc" data-value="pickup">
+           <div class="shipment-selector-pc-col d-block custom-control borderSelector blockpickup selectorpc-block" data-addresstext="Selecciona tu método de entrega" id="blockpickup">
+            <div class="form-group custom-control custom-radio d-inline-block js_shipping-method-selector-pc my-3 selector-method padding-left w-100" data-value="pickup">
+             <input checked="" class="custom-control-input d-none d-sm-block" id="pickup-pc" name="method-selector-pc" type="radio" value="true"/>
+             <label class="custom-control-label w-100 label-direction-modal" for="pickup-pc">    
+              <span class="align-middle aling-left-px align-self-center font-primary--medium">   
+               Entrega en tienda
+              </span>
+              <img alt="Soriana tienda" class="align-middle mx-auto img-pickSorianaB ml-2 d-none 
+d-none" loading="lazy" src="/on/demandware.static/Sites-Soriana-Site/-/default/dw5a968742/images/pickupOn.svg"/>
+              <img alt="Soriana tienda" class="align-middle mx-auto img-pickSoriana ml-2" loading="lazy" src="/on/demandware.static/Sites-Soriana-Site/-/default/dwc298ff86/images/pickupOff.svg"/>
+             </label>
+            </div>
+           </div>
+          </div>
+          <div class="opacity-selector-modal pickup-pc js-click-shadow">
+          </div>
+         </div>
+         <div class="col-6 px-0 option-modal-direction position-relative">
+          <div class="js_shipping-method-selector-pc" data-url="/on/demandware.store/Sites-Soriana-Site/default/Stores-ListAddress" data-value="homeDelivery">
+           <div class="d-flex justify-content-between shipment-selector-pc-col custom-control borderSelector blockhome selectorpc-block-default px-3 py-0" data-hometext="Selecciona tu método de 
+entrega" id="blockhome">
+            <div class="form-group custom-control custom-radio d-inline-block js_shipping-method-selector-pc my-3 selector-method padding-left w-100" data-url="/on/demandware.store/Sites-Soriana-Site/default/Stores-ListAddress" data-value="homeDelivery">
+             <input checked="" class="custom-control-input w-100" id="homeDelivery-pc" name="method-selector-pc" type="radio" value="false"/>
+             <label class="custom-control-label w-100 align-items-center label-direction-modal" for="homeDelivery-pc">
+              <span class="align-middle aling-left-px align-self-center font-primary--medium">   
+               Envío a domicilio
+              </span>
+              <img alt="Soriana domicilio" class="align-middle mx-auto lazyload img-truckSoriana 
+mx-2" loading="lazy" src="/on/demandware.static/Sites-Soriana-Site/-/default/dw9893635f/images/truckSorianaOn.svg"/>
+              <img alt="Soriana domicilio" class="align-middle mx-auto lazyload img-truckSorianaB mx-2" loading="lazy" src="/on/demandware.static/Sites-Soriana-Site/-/default/dw3b49c9ce/images/truckSorianaOff.svg"/>
+             </label>
+            </div>
+           </div>
+          </div>
+          <div class="opacity-selector-modal homeDelivery-pc js-click-shadow">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="modal-body p-0">
+       <div class="d-none" id="homeDeliveríOption">
+        <input class="timePostalCode" name="timePostalCode" type="hidden" value="30.0"/>
+        <fieldset class="shipment-selector-block modal-card p-3 mb-1 bg-white d-none">
+         <input class="isStoreChangeAddress" name="isStoreChangeAddress" type="hidden" value="false"/>
+         <input class="formValidationOnly" name="formValidationOnly" type="hidden" value="true"/>         <p class="font-primary--medium text-general-modal">
+          Elige una dirección para enviar tu pedido
+         </p>
+         <div class="justify-content-around- bg-white section-delivery-list-pc">
+         </div>
+        </fieldset>
+        <div class="d-flex content-direction-home mb-2 px-5 address d-none">
+         <button class="detect-location font-primary--bold text--green small btn button--transparent ml-md-1 mt-0 p-0 text-center text-general-modal btnAdress" disabled="">
+          <span>
+           Ver direcciones
+          </span>
+         </button>
+         <a aria-label="Editar direcciones" class="detect-location font-primary--bold text--green small btn button--transparent ml-md-1 mt-0 p-0 text-center text-general-modal" href="/mis-direcciones">
+          <span>
+           Editar direcciones
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="d-none maps-container" id="pickuppc">
+        <div class="col-12 pt-2 pb-1">
+         <form action="https://www.soriana.com/buscador-de-tiendas?isModal=false&amp;isHeader=true&amp;isSearchPostal=true" class="store-locator mb-3" method="get" name="storelocator">
+          <div class="store-header__search-form mx-0 px-0">
+           <div class="containter">
+            <p class="font-primary--medium mx-0 store-locator__search-title mb-3 text-general-modal">
+             Ingresa tu código postal, colonia o municipio para ver las tiendas disponibles      
+            </p>
+            <div class="d-flex content-pickup-option mx-0">
+             <div class="form-group w-50 mb-0">
+              <input autocomplete="off" autofocus="" class="form-control form-zip-direction js-zip-format" data-missing-error="Este campo es requerido" data-msgnoresult="Lo sentimos, no pudimos 
+encontrar resultados con el dato capturado, favor de intentar nuevamente" id="store-postal-code-header" name="postalCode" required="" type="text" value=""/>
+              <button aria-label="Find stores using my search term" class="btn btn-primary btn-storelocator-search-pc position-absolute d-flex align-items-center justify-content-center p-0 mt-0" type="button">
+               <svg class="icon-fill-white store-locator__search-icon" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-271 -69)">
+                 <path class="shape" d="M21.392 19.978c.389.389.39 1.018-.003 1.411-.39.39-1.022.393-1.411.003l-5.429-5.429C13.287 16.927 11.711 17.5 10 17.5c-4.142 0-7.5-3.358-7.5-7.5 0-4.142 3.358-7.5 7.5-7.5 4.142 0 7.5 3.358 7.5 7.5 0 1.71-.573 3.287-1.537 4.55l5.43 5.428zM10 15.5c3.038 0 5.5-2.462 5.5-5.5S13.038 4.5 10 4.5 4.5 6.962 4.5 10s2.462 5.5 5.5 5.5z" transform="translate(271 69)">
+                 </path>
+                </g>
+               </svg>
+              </button>
+              <div class="invalid-feedback mt-0 position-absolute">
+              </div>
+             </div>
+             <div class="d-flex w-50 justify-content-center">
+              <button aria-label="Obtener mi ubicación" class="detect-location font-primary--semi-bold text--green btn button--transparent mt-0 p-0 ml-lg-2 text-left btnLocation btn-location-modal" data-action="" type="reset">
+               <svg class="store-locator__detect-icon" height="24px" viewbox="0 0 24 24" width="24px">
+                <use role="presentation" xlink:href="#sori-icon-detect-location">
+                </use>
+               </svg>
+               Obtener mi ubicación
+              </button>
+             </div>
+            </div>
+           </div>
+          </div>
+         </form>
+         <div class="row justify-content-around bg-white section-store-list-pc store-results d-none">
+         </div>
+         <div class="card-body js-store-pc-results d-none" id="resultError">
+          <div class="no-result-cp d-flex flex-column align-items-center">
+           <img alt="" class="img-no-result-cp" loading="lazy" src="/on/demandware.static/Sites-Soriana-Site/-/default/dw000e86f4/images/no-result-cp.svg"/>
+           <span class="title-bold-cp mt-4">
+            Lo sentimos.
+           </span>
+           <span class="mb-4">
+            No hay tiendas disponibles en tu zona, ingresa un nuevo CP.
+           </span>
+          </div>
+         </div>
+        </div>
+        <div class="div-mye-msj container-fluid d-none" id="mye_msj_warning">
+         <div class="alert alert-warning alert-warning-mye" role="alert">
+          La tienda que estás seleccionando no corresponde a Mercado y Express, los precios de productos pueden variar
+         </div>
+        </div>
+        <div class="shadow-list-direction justify-content-center mb-3 pt-3 d-none" id="pickuppcshadow">
+         <button aria-label="button.close" class="btn border-danger cancelarbtn noHover btn-modal-direction px-0 py-1 mr-2" data-dismiss="modal" data-toggle="collapse" type="button">
+          Cancelar
+         </button>
+         <button class="btn btn-primary btn-modal-direction px-0 py-1 ml-2 js-select-store-modal">
+          Aceptar
+         </button>
+         <input id="JsonCBT" type="hidden" value='{"event":"virtualEvent","eventTypes":"click","categoryDimension":"Soriana WEB - Metodo de entrega","actionDimension":"Checkout","labelDimension":"Entrega en tienda - [[sucursal]]"}'/>
+         <div id="contenBtnCBT">
+         </div>
+        </div>
+       </div>
+       <div class="store-form--wrapper update-store-form-wrapper" data-modal-title="Selecciona tu método de entrega" data-remove-not-available-items-action="https://www.soriana.com/on/demandware.store/Sites-Soriana-Site/default/Cart-RemoveNotAvailableItems?updateQuantity=true">
+        <div class="update-store-form-wrapper px-3 pt-3 pb-1 'aling-postalCode'">
+         <div class="d-flex">
+          <span class="font-primary--medium store-form--description mb-0 text-general-modal">    
+           Si ya tienes direcciones guardadas
+           <a class="store-form--link text-general-modal" href="https://www.soriana.com/iniciar-sesion" id="refLogin">
+            inicia sesión
+           </a>
+          </span>
+         </div>
+         <div class="d-flex">
+          <span class="font-primary--medium store-form--description mb-2 text-general-modal">    
+           Ingresa el código postal en el que quieres recibir tu pedido
+          </span>
+         </div>
+         <form action="/on/demandware.store/Sites-Soriana-Site/default/Stores-UpdateStoreByPostalCode" class="update-store-form mt-2" id="formPostalcode" method="POST" name="update-store">      
+          <div class="form-group required">
+           <input aria-required="true" autocomplete="postal-code" class="form-control js-zip-format format-icon-error" data-missing-error="Este campo es requerido" data-pattern-mismatch="Por favor rellena el formato requerido." id="zipCode" maxlength="5" minlength="5" name="dwfrm_storeUpdate_postalCode" pattern="(^([0-9]){5}$)" required="" type="text" value=""/>
+           <button aria-label="Find stores using my search term" class="btn btn-primary btn-storelocator-search-pc position-absolute d-flex align-items-center justify-content-center p-0 mt-0 js-submit-direction" type="submit">
+            <svg class="icon-fill-white store-locator__search-icon" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+             <g transform="translate(-271 -69)">
+              <path class="shape" d="M21.392 19.978c.389.389.39 1.018-.003 1.411-.39.39-1.022.393-1.411.003l-5.429-5.429C13.287 16.927 11.711 17.5 10 17.5c-4.142 0-7.5-3.358-7.5-7.5 0-4.142 3.358-7.5 7.5-7.5 4.142 0 7.5 3.358 7.5 7.5 0 1.71-.573 3.287-1.537 4.55l5.43 5.428zM10 15.5c3.038 0 
+5.5-2.462 5.5-5.5S13.038 4.5 10 4.5 4.5 6.962 4.5 10s2.462 5.5 5.5 5.5z" transform="translate(271 69)">
+              </path>
+             </g>
+            </svg>
+           </button>
+           <div class="invalid-feedback" id="zipCode-error">
+           </div>
+          </div>
+         </form>
+        </div>
+        <div class="shadow-list-direction d-flex justify-content-center mb-3 pt-3" id="pickuppcshadow">
+         <button class="btn btn-primary btn-modal-direction px-0 py-1 ml-2 js-modal-cp-direccion" type="button">
+          Aceptar
+         </button>
+         <button class="cbt-envio-domicilio d-none" data-cbt='{"event":"virtualEvent","eventTypes":"click","categoryDimension":"Soriana WEB - Metodo de entrega","actionDimension":"Checkout","labelDimension":"Envio a domicilio"}' type="submit">
+         </button>
+        </div>
+       </div>
+       <div class="d-none store-form--error-wrapper px-3 pt-3 pb-1">
+        <span class="store-form--error-msg" data-title-message="Aceptar">
+        </span>
+        <div class="store-form--action-wrapper d-flex justify-content-center flex-wrap">
+         <button class="store-form--btn js-action-accept-postal btn btn-primary expanded-down mb-3 mb-lg-0 mx-lg-2 order-lg-2" data-accept-text="Aceptar" data-continue-text="Sí, cambiar" type="button">
+          Aceptar
+         </button>
+         <button class="store-form--btn js-action-decline-postal btn btn-outline-secondary expanded-down mx-lg-2 order-lg-1" type="submit">
+          Cancelar
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="content-asset cbt-wrapper" data-cbt="{}">
+    <div class="livight" id="chat-whatsapp">
+     <a href="https://clxt.ch/wasoriana" target="_blank">
+      <img alt="5550628019" class="cari-button-whatsapp cursor-pointer" src="https://www.soriana.com/on/demandware.static/-/Library-Sites-SorianaSharedLib/default/dw09bfaf16/assets-ts4/whatsapp/whatsapp.png"/>
+     </a>
+     <div class="popup">
+      <div class="popup-content">
+       5550628019
+      </div>
+     </div>
+    </div>
+   </div>
+   <script defer="" src="/on/demandware.static/Sites-Soriana-Site/-/default/v1709568483471/js/bubbleChat.js">
+   </script>
+   <svg height="0" style="position:absolute" width="0">
+    <symbol id="sori-icon-account" viewbox="0 0 28.893 28.893" xmlns="http://www.w3.org/2000/svg">
+     <path d="M0 0h28.893v28.893H0Z" data-name="Path 555" fill="none">
+     </path>
+     <path d="M14.447 2.408a12.039 12.039 0 1 0 12.038 12.039A12.043 12.043 0 0 0 14.447 2.408Zm-5.939 19.6c.518-1.083 3.672-2.143 5.935-2.143s5.429 1.059 5.935 2.143a9.541 9.541 0 0 1-11.87 0Zm13.6-1.747c-1.722-2.095-5.9-2.8-7.657-2.8s-5.935.71-7.657 2.8a9.631 9.631 0 1 1 15.313 0ZM14.447 
+7.223a4.214 4.214 0 1 0 4.214 4.214 4.2 4.2 0 0 0-4.214-4.214Zm0 6.019a1.806 1.806 0 1 1 1.806-1.806 1.8 1.8 0 0 1-1.806 1.807Z" data-name="Path 556" fill="currentColor">
+     </path>
+    </symbol>
+    <symbol class="bremove-btn__icon" id="sori-icon-bin" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path class="bshape" d="M6.469 20.657h11.564c-.002 0-.002-11.329-.002-15.032H6.47v15.032zm13.875 0a2.313 2.313 0 0 1-2.31 2.312H6.466a2.31 2.31 0 0 1-2.31-2.312V5.625C3.516 5.625 3 5.111 3 
+4.469c0-.639.514-1.157 1.157-1.157h5.78a2.313 2.313 0 0 1 4.626.001h5.78c.639 0 1.157.513 1.157 1.156 0 .638-.514 1.155-1.156 1.156v15.032zM13.406 9.09c0-.637.513-1.153 1.156-1.153.64 0 1.157.516 1.157 1.153v8.1c0 .636-.513 1.153-1.156 1.153-.64 0-1.157-.516-1.157-1.154v-8.1zm-4.625 0c0-.637.513-1.153 1.156-1.153.64 0 1.157.516 1.157 1.153v8.1c0 .636-.513 1.153-1.156 1.153-.64 0-1.157-.516-1.157-1.154v-8.1z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-cart" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path class="cshape" d="m5.766 4.538 15.905.975a.856.856 0 0 1 .814 1.037l-1.302 6.969c-.1.542-.63.981-1.182.981H8.066l.23 1H19.5a1 1 0 0 1 0 2h-12a.998.998 0 0 1-.974-.775L3.633 4.19 2.07 
+3.405a1 1 0 1 1 .893-1.79l1.984.99c.268.133.461.38.528.67l.292 1.263zM19.339 12.5l.947-5.07-14.05-.86 1.368 5.93H19.34zm-1.839 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 17.5 22.5zm-9 0a2 2 0 1 1-.001-3.999A2 2 0 0 1 8.5 22.5z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-chat" viewbox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+      <style>
+       .dprefix__b{fill:#fff}
+      </style>
+     </defs>
+     <g fill="#e2211c">
+      <circle cx="31" cy="31" r="31">
+      </circle>
+      <circle cx="31" cy="31" fill="none" r="29.5">
+      </circle>
+     </g>
+     <path class="dprefix__b" d="M42.95 24.982H27.369a2.683 2.683 0 0 0-2.679 2.679V38.51a2.677 2.677 0 0 0 2.679 2.672h8.915a.768.768 0 0 1 .534.225l4.43 4.085c.246.239.654.141.654-.2v-3.561c0-.422.267-.555.689-.555h.07a2.927 2.927 0 0 0 2.96-2.672V27.661a2.668 2.668 0 0 0-2.671-2.679z">  
+     </path>
+     <path class="dprefix__b" d="M25.266 23.26H37.74v-4.592a2.293 2.293 0 0 0-2.292-2.292H18.671a2.293 2.293 0 0 0-2.292 2.292v11.616a2.293 2.293 0 0 0 2.292 2.292h4.3v-7.024a2.3 2.3 0 0 1 2.295-2.292z">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-close" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path class="eshape" d="M19.707 5.708a1 1 0 0 0-1.414-1.415L12 10.586 5.707 4.293a1 1 0 0 0-1.414 1.415L10.586 12l-6.293 6.293a1 1 0 0 0 1.414 1.414L12 13.414l6.293 6.293a1 1 0 0 0 1.414-1.414L13.414 12l6.293-6.292z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-collapse" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">      
+     <path d="m12 9.4-6.3 6.3c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l7-7c.4-.4 1-.4 1.4 0l7 7c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L12 9.4z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-detect-location" style="enable-background:new 0 0 512 512" viewbox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+     <path d="M496 240h-48.8C439.456 146.88 365.12 72.544 272 64.8V16c0-8.832-7.168-16-16-16s-16 
+7.168-16 16v48.8C146.88 72.544 72.544 146.912 64.8 240H16c-8.832 0-16 7.168-16 16s7.168 16 16 16h48.8c7.744 93.12 82.08 167.456 175.2 175.2V496c0 8.832 7.168 16 16 16s16-7.168 16-16v-48.8c93.12-7.744 167.456-82.08 175.2-175.2H496c8.832 0 16-7.136 16-16 0-8.8-7.168-16-16-16zM256 416c-88.224 
+0-160-71.776-160-160S167.776 96 256 96s160 71.776 160 160-71.776 160-160 160z">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-expand" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">        
+     <path d="M18.3 8.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-7 7c-.4.4-1 .4-1.4 0l-7-7c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l6.3 6.3 6.3-6.3z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-facebook" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">      
+     <path d="M22.172 23.333a1.16 1.16 0 0 0 1.161-1.16V5.827a1.16 1.16 0 0 0-1.16-1.161H5.827a1.16 1.16 0 0 0-1.161 1.16v16.345c0 .642.52 1.161 1.16 1.161H14v-7h-1.167a1.166 1.166 0 1 1 0-2.333H14c0-2.213.25-3.608 1.288-4.77 1.026-1.148 2.226-1.647 3.379-1.647a1.167 1.167 0 0 1 0 2.334c-.51 0-1.072.233-1.64.868-.516.578-.694 1.571-.694 3.215h2.334a1.166 1.166 0 0 1 0 2.333h-2.334v7h5.84zm-19.839-1.16V5.827a3.495 3.495 0 0 1 3.495-3.495h16.344a3.495 3.495 0 0 1 3.495 3.495v16.344a3.495 3.495 0 0 1-3.495 3.495H5.828a3.495 3.495 0 0 1-3.495-3.495z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol class="jd-none jd-custom-block jhide-icon-menu" id="sori-icon-gamburger" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path class="jshape" d="M3 18c0-.552.445-1 1-1h16c.552 0 1 .444 1 1 0 .552-.445 1-1 1H4c-.552 0-1-.444-1-1zm0-6c0-.552.579-1 1.28-1h15.44c.707 0 1.28.444 1.28 1 0 .552-.579 1-1.28 1H4.28C3.573 13 3 12.556 3 12zm0-6c0-.552.445-1 1-1h16c.552 0 1 .444 1 1 0 .552-.445 1-1 1H4c-.552 0-1-.444-1-1z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-instagram" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+     <path d="M8.161 2.333H19.84a5.828 5.828 0 0 1 5.828 5.828V19.84a5.828 5.828 0 0 1-5.828 5.828H8.16a5.828 5.828 0 0 1-5.828-5.828V8.16A5.828 5.828 0 0 1 8.16 2.332zM4.667 19.84a3.494 3.494 0 0 0 3.494 3.494H19.84a3.494 3.494 0 0 0 3.494-3.494V8.16a3.494 3.494 0 0 0-3.494-3.494H8.16A3.494 3.494 0 0 0 4.666 8.16v11.68zm3.5-5.84c0-3.222 2.611-5.833 5.833-5.833s5.833 2.611 5.833 5.833-2.611 5.833-5.833 5.833S8.167 17.222 8.167 14zm9.333 0a3.5 3.5 0 1 0-7 0 3.5 3.5 0 0 0 7 0zm2.333-4.667a1.166 1.166 0 1 1 0-2.332 1.166 1.166 0 0 1 0 2.332z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-left-arrow" viewbox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">    
+     <g data-name="Group 11135">
+      <path d="M0 0h23v23H0z" data-name="Rectangle 6097" fill="#fff">
+      </path>
+      <path d="m10.812 18.77-7.083-7.083a.776.776 0 0 1-.178-.255.748.748 0 0 1-.051-.28.748.748 
+0 0 1 .051-.28.775.775 0 0 1 .178-.255l7.108-7.108a.691.691 0 0 1 .51-.2.733.733 0 0 1 .535.229.733.733 0 0 1 .229.535.733.733 0 0 1-.229.535l-5.783 5.784h12.637a.743.743 0 0 1 .548.216.743.743 
+0 0 1 .217.548.742.742 0 0 1-.217.548.742.742 0 0 1-.548.217H6.1l5.809 5.809a.691.691 0 0 1 .2.51.733.733 0 0 1-.229.535.733.733 0 0 1-.535.229.734.734 0 0 1-.533-.234Z" fill="#4d4f53">
+      </path>
+     </g>
+    </symbol>
+    <symbol id="sori-icon-phone" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path d="M22.667 16.667c-1.6 0-3.334-.267-4.8-.8h-.4c-.4 0-.667.133-.934.4L13.6 19.2c-3.733-2-6.933-5.067-8.8-8.8l2.933-2.933c.4-.4.534-.934.267-1.334-.4-1.466-.667-3.2-.667-4.8C7.333.667 6.667 0 6 0H1.333C.667 0 0 .667 0 1.333 0 13.867 10.133 24 22.667 24c.666 0 1.333-.667 1.333-1.333V18c0-.667-.667-1.333-1.333-1.333m-20-14h2c.133 1.2.4 2.4.666 3.466l-1.6 1.6C3.2 6.133 2.8 4.4 2.667 2.667m18.666 18.666c-1.733-.133-3.466-.533-5.066-1.066l1.6-1.6c1.066.266 2.266.533 3.466.533v2.133z" fill="currentColor" fill-rule="nonzero">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-pin" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path class="nshape nicon-symbol" d="M12 2a8 8 0 0 1 8 8c0 2.921-1.345 5.788-3.54 8.394C14.84 20.314 12.801 22 12 22s-2.841-1.685-4.46-3.606C5.346 15.788 4 12.921 4 10a8 8 0 0 1 8-8zm0 2a6 
+6 0 0 0-6 6c0 2.375 1.15 4.828 3.07 7.106a18.15 18.15 0 0 0 2.254 2.248c.297.245.676.52.676.52s.421-.31.676-.52c.737-.61 1.53-1.39 2.254-2.248C16.85 14.828 18 12.375 18 10a6 6 0 0 0-6-6zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-pinterest" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">     
+     <path d="M15.997 19.845a6.926 6.926 0 0 0 5.99-3.416c.935-1.594 1.346-3.235 1.346-5.346 0-5.446-3.864-8.75-9.333-8.75-5.237 0-9.318 3.738-9.318 8.822-.007.3.023.724.116 1.226a7.11 7.11 0 0 
+0 .845 2.298A6.452 6.452 0 0 0 7.49 16.7a1.166 1.166 0 1 0 1.353-1.9 4.14 4.14 0 0 1-1.185-1.297c-.492-.844-.655-1.72-.644-2.312 0-3.783 2.994-6.524 6.986-6.524 4.255 0 7 2.347 7 6.416 0 1.71-.31 2.943-1.026 4.165a4.612 4.612 0 0 1-3.977 2.264c-1.65 0-2.444-.708-2.947-2.179-.007-.021 1.493-5.696 1.493-5.696.168-.623-.36-1.591-.983-1.759-.622-.167-1.877.115-2.322 1.874-.42 1.66.205 2.424-.218 3.997L8.207 24.197a1.166 1.166 0 1 0 2.253.606l1.724-6.405c.899.928 2.142 1.447 3.813 1.447z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-plus" viewbox="0 0 16.506 16.506" xmlns="http://www.w3.org/2000/svg">  
+     <g data-name="Group 11768" fill="none" stroke="#b6bf00" stroke-linecap="round" stroke-width="3">
+      <path d="M1.5 8.253h13.506" data-name="Line 53">
+      </path>
+      <path d="M8.253 1.5v13.506" data-name="Line 54">
+      </path>
+     </g>
+    </symbol>
+    <symbol id="sori-icon-remove" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">        
+     <path class="qshape" d="M6.469 20.657h11.564c-.002 0-.002-11.329-.002-15.032H6.47v15.032zm13.875 0a2.313 2.313 0 0 1-2.31 2.312H6.466a2.31 2.31 0 0 1-2.31-2.312V5.625C3.516 5.625 3 5.111 3 
+4.469c0-.639.514-1.157 1.157-1.157h5.78a2.313 2.313 0 0 1 4.626.001h5.78c.639 0 1.157.513 1.157 1.156 0 .638-.514 1.155-1.156 1.156v15.032zM13.406 9.09c0-.637.513-1.153 1.156-1.153.64 0 1.157.516 1.157 1.153v8.1c0 .636-.513 1.153-1.156 1.153-.64 0-1.157-.516-1.157-1.154v-8.1zm-4.625 0c0-.637.513-1.153 1.156-1.153.64 0 1.157.516 1.157 1.153v8.1c0 .636-.513 1.153-1.156 1.153-.64 0-1.157-.516-1.157-1.154v-8.1z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-search" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">        
+     <path class="rshape" d="M21.392 19.978a.995.995 0 0 1-.003 1.411.997.997 0 0 1-1.411.003l-5.429-5.429a7.5 7.5 0 1 1 1.414-1.413l5.43 5.428zM10 15.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11z" fill="currentColor">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-triangle-warning" viewbox="0 0 20.244 20.244" xmlns="http://www.w3.org/2000/svg">
+     <path d="M0 0h20.244v20.244H0Z" data-name="Path 43864" fill="none">
+     </path>
+     <path d="M1.473 18.875a.876.876 0 0 1-.466-.128.907.907 0 0 1-.326-.338 1.024 1.024 0 0 1-.128-.455.838.838 0 0 1 .128-.478l8.625-14.92a.917.917 0 0 1 .361-.35.965.965 0 0 1 .455-.117.965.965 0 0 1 .455.117.917.917 0 0 1 .361.35l8.625 14.92a.838.838 0 0 1 .128.478 1.024 1.024 0 0 1-.128.455.908.908 0 0 1-.326.338.876.876 0 0 1-.466.128Zm1.609-1.865h14.08l-7.04-12.12Zm7.04-.932a.9.9 0 0 0 .664-.268.9.9 0 0 0 .268-.664.9.9 0 0 0-.268-.664.9.9 0 0 0-.664-.268.9.9 0 0 0-.664.268.9.9 0 0 0-.268.664.9.9 0 0 0 .268.664.9.9 0 0 0 .664.267Zm0-2.8a.9.9 0 0 0 .664-.268.9.9 0 0 0 .268-.664v-2.8a.9.9 0 0 0-.268-.664.9.9 0 0 0-.664-.268.9.9 0 0 0-.664.268.9.9 0 0 0-.268.664v2.8a.9.9 0 0 0 .268.664.9.9 0 0 0 .664.27Zm0-2.329Z" fill="#d52b1e">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-twitter" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">       
+     <path d="M9.089 18.283c.75.508.661 1.64-.16 2.024-.308.144-3.044.883-3.044.883 1.09.642 2.618.977 4.615.977 6.408 0 11.084-4.707 11.089-11.752 0-.121-.006-.465-.006-.498 0-2.426-1.272-4.095-3.494-4.084-2.237.012-3.506 1.669-3.506 4.084l-.003 1.152c0 .7-.612 1.242-1.307 1.158A13.178 13.178 0 0 1 5.641 8.6s-.27 1.016-.336 1.483c.038.045.762.778 1.174 1.072.317.226.66.431 1.03.61a1.166 1.166 0 1 1-1.017 2.1 9.398 9.398 0 0 1-1.043-.588c.462 1.886 1.629 3.647 3.64 5.006zM24.433 5.845c1.176-.063 1.59.669.911 1.635l-1.436 2.046c.006.129.014.735.014.89C23.916 18.747 18.2 24.5 10.5 24.5c-3.803 0-6.26-.993-7.952-3.312a1.167 1.167 0 0 1 .723-1.834c.039-.007 2.731-.589 2.731-.589-3.556-3.596-3.884-8.704-1.78-12.869a1.167 1.167 0 0 1 1.969-.181 10.815 10.815 0 0 0 6.066 3.962c.116-3.502 2.25-6.158 5.82-6.177 2.13-.011 3.75.935 4.738 2.432l1.618-.087z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-unit-kg" viewbox="0 0 8.564 8.564" xmlns="http://www.w3.org/2000/svg"> 
+     <g data-name="Group 4058" fill="currentColor">
+      <path d="M4.274 8.564H.795a.754.754 0 0 1-.795-.8V.799a.754.754 0 0 1 .8-.8h6.966a.753.753 
+0 0 1 .8.8v6.965a.754.754 0 0 1-.8.8ZM4.291.502H.804c-.207 0-.3.094-.3.3v6.957c0 .211.094.3.306.3h6.949c.212 0 .307-.093.307-.3V.802a.262.262 0 0 0-.3-.3Z" data-name="Path 37375">
+      </path>
+      <path d="M7.16 2.443a1.036 1.036 0 0 1-.077.163q-.54.821-1.085 1.639c-.051.078-.1.157-.155.232a.219.219 0 0 1-.347.057 1.844 1.844 0 0 0-2.353-.058l-.053.042c-.153.122-.274.1-.388-.068l-.7-1.048-.521-.786a.306.306 0 0 1 .06-.471 4.207 4.207 0 0 1 5.5.02.32.32 0 0 1 .119.278Zm-2.637 1.1a2.345 2.345 0 0 1 1.069.4l.982-1.482a3.717 3.717 0 0 0-4.58.006l.98 1.477a2.346 2.346 0 0 1 1.068-.4V2.71a.242.242 0 1 1 .481 0v.4Z" data-name="Path 37376">
+      </path>
+     </g>
+    </symbol>
+    <symbol id="sori-icon-unit-pz" viewbox="0 0 10.057 7.052" xmlns="http://www.w3.org/2000/svg">     <g data-name="Group 4088">
+      <g data-name="Group 4055" fill="currentColor">
+       <path d="M10.053 3.505c0 .589-.01 1.177 0 1.766a1.04 1.04 0 0 1-.515.939 3.8 3.8 0 0 1-1.218.492 10.944 10.944 0 0 1-1.6.263 15.01 15.01 0 0 1-2 .08c-.552-.021-1.1-.053-1.653-.11A7.252 7.252 0 0 1 .913 6.43a1.866 1.866 0 0 1-.69-.471.862.862 0 0 1-.224-.581V1.65a.968.968 0 0 1 .5-.806A3.634 3.634 0 0 1 1.65.368a10.885 10.885 0 0 1 1.844-.3A17.092 17.092 0 0 1 5.66.012a12.422 12.422 0 0 1 2.876.394 3.16 3.16 0 0 1 1.089.5 1 1 0 0 1 .426.857c-.006.578.002 1.16.002 1.742Zm-1.1 2.643.028.024c.152-.092.309-.177.455-.278a.706.706 0 0 0 .3-.632c-.007-.935 0-1.87 0-2.805v-.122a2.608 2.608 0 0 1-.734.43.116.116 0 0 0-.047.09v.657c0 .11-.06.173-.156.173s-.155-.064-.158-.173v-.598a15.9 15.9 0 0 1-7.293-.021v3.278a.107.107 0 0 0 .091.122 8.173 8.173 0 0 0 1.756.336c.625.049 1.252.093 1.879.1a13.516 13.516 0 0 0 2.759-.241c.273-.053.543-.128.814-.192V4.139a.512.512 0 0 1 0-.1.157.157 0 0 1 .156-.137.154.154 0 0 1 .154.148V5.994ZM5.372 3.009c.321-.022.824-.049 1.325-.092a8.753 8.753 0 0 0 1.986-.378 2.208 2.208 0 0 0 .841-.446.547.547 0 0 0 .027-.837 1.174 1.174 0 0 0-.181-.149A3.206 3.206 0 0 0 8.345.681 12.564 12.564 0 0 0 5.572.327a16.249 16.249 0 0 
+0-2.009.054 11.714 11.714 0 0 0-1.7.26 3.714 3.714 0 0 0-1.186.467.6.6 0 0 0-.027 1.078 2.92 2.92 0 0 0 .626.315 7.813 7.813 0 0 0 1.765.381 19.577 19.577 0 0 0 2.334.127Zm-4.356 3.11a.161.161 0 0 0 .005-.029V2.816a.133.133 0 0 0-.063-.089l-.534-.3a1.016 1.016 0 0 1-.109-.087v.13c0 .928.013 1.856-.006 2.783-.011.404.247.689.71.865Z" data-name="Path 37372">
+       </path>
+       <path d="M5.029 2.625a13.069 13.069 0 0 1-2.68-.242 4.287 4.287 0 0 1-1.363-.466 1.113 1.113 0 0 1-.2-.154c-.113-.109-.122-.224 0-.318a2.679 2.679 0 0 1 .516-.312A5.651 5.651 0 0 1 2.696.759 14.143 14.143 0 0 1 5.47.583a11.088 11.088 0 0 1 2.834.392 6.3 6.3 0 0 1 .766.317.735.735 0 0 1 .2.154.188.188 0 0 1 0 .312 1.773 1.773 0 0 1-.346.235 4.873 4.873 0 0 1-1.322.409 13.294 13.294 0 0 1-2.573.223ZM4.178.898c-.51.064-.993.117-1.474.186a5.381 5.381 0 0 0-1.237.323c-.129.052-.252.121-.393.19l.076.049a3.409 3.409 0 0 0 .921.348 11.419 11.419 0 0 0 2.523.311 14.1 14.1 0 0 0 2.746-.174 6.131 6.131 0 0 0 1.273-.339c.121-.049.234-.116.351-.174l-.006-.039A8.084 8.084 0 0 0 5.883.915c.015.064.025.114.038.162a.338.338 0 0 1-.328.467c-.133.01-.268.008-.4.008-.245 0-.491 
+0-.736-.009a.335.335 0 0 1-.324-.461c.012-.049.023-.102.04-.184Zm.249.324h1.2c-.027-.106-.049-.2-.078-.291 0-.015-.043-.028-.066-.028h-.912c-.023 0-.061.013-.066.028-.032.092-.051.186-.078.291Z" data-name="Path 37374">
+       </path>
+      </g>
+     </g>
+    </symbol>
+    <symbol id="sori-icon-whatsapp" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">      
+     <path d="M14 1.167c6.443 0 11.667 5.223 11.667 11.666C25.667 19.277 20.443 24.5 14 24.5a11.66 11.66 0 0 1-2.69-.312c-.204.125-3.663 2.45-3.663 2.45a1.167 1.167 0 0 1-1.814-.971v-.779l-.002-.576v-.872l-.002-.665V21.974l-.002-.815a11.636 11.636 0 0 1-3.494-8.326C2.333 6.39 7.557 1.167 14 1.167zM14 3.5a9.333 9.333 0 0 0-9.333 9.333 9.304 9.304 0 0 0 3.111 6.957c.247.222.389.538.389.87v2.86l2.292-1.561c.285-.19.639-.245.968-.151a9.345 9.345 0 0 0 2.573.359A9.334 9.334 0 0 0 14 3.5zm-3.327 4.826a.553.553 0 0 1 .777 0l1.57 1.569a.554.554 0 0 1 0 .784.894.894 0 0 0-.183.9l.008.027.028.077c.083.216.33.746.93 1.344.782.783 1.448.966 1.448.966.279.122.686.035.902-.181a.553.553 0 0 1 .784 0l1.57 1.57a.55.55 0 0 1 0 .775l-.787.787c-.649.65-1.785.747-2.518.203 0 0-1.03-.617-2.982-2.569-1.952-1.951-2.538-2.944-2.538-2.944-.536-.744-.443-1.874.204-2.522z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+    <symbol id="sori-icon-youtube" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">       
+     <path d="M4.66 3.83S7.876 3.5 14 3.5s9.346.33 9.346.33c1.926.14 3.779 1.79 4.09 3.696 0 0 .564 2.099.564 6.474s-.566 6.485-.566 6.485c-.332 1.895-2.158 3.55-4.091 3.679 0 0-3.51.336-9.343.336s-9.35-.337-9.35-.337c-1.924-.136-3.775-1.782-4.085-3.69 0 0-.565-2.098-.565-6.473s.566-6.485.566-6.485C.898 5.62 2.73 3.96 4.661 3.83zM2.597 9.422c-.163 1.241-.263 2.766-.263 4.578 0 1.812.1 
+3.335.263 4.573a21.9 21.9 0 0 0 .271 1.525c.134.822 1.085 1.677 2.006 1.743.094.009 1.7.125 2.387.16 1.97.104 4.23.166 6.74.166s4.768-.062 6.737-.165c.685-.036 2.29-.152 2.383-.161.921-.062 1.868-.916 2.015-1.758 0 0 .176-.8.269-1.505.163-1.241.263-2.766.263-4.578 0-1.812-.1-3.335-.263-4.573-.092-.702-.271-1.525-.271-1.525-.135-.823-1.089-1.681-1.956-1.744a109.16 109.16 0 0 0-2.33-.163c-1.923-.1-4.208-.162-6.847-.162-2.639 0-4.923.061-6.844.162-.667.035-2.337.163-2.337.163-.854.058-1.807.917-1.954 1.759 0 0-.176.8-.269 1.505zm8.496 1.846c.001-.647.462-.916 1.02-.605l4.963 2.763c.562.313.557.825-.003 1.139l-4.976 2.789c-.564.316-1.02.046-1.018-.6l.014-5.486z" fill="currentColor" fill-rule="evenodd">
+     </path>
+    </symbol>
+   </svg>
+  </div>
+  <div class="error-messaging">
+  </div>
+  <div class="modal-background">
+  </div>
+  <!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+<script defer src="/on/demandware.static/Sites-Soriana-Site/-/default/v1709568483471/js/main.js"></script>
+
+    <script defer src="/on/demandware.static/Sites-Soriana-Site/-/default/v1709568483471/js/experienceGlobal.js"
+
+    >
+    </script>
+
+    <script defer src="/on/demandware.static/Sites-Soriana-Site/-/default/v1709568483471/js/experienceCarousels.js"
+
+    >
+    </script>
+
+
+<![endif]-->
+  <div aria-hidden="true" aria-labelledby="coexistenceCategory-title" class="modal fade" id="coexistenceCategory" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered store-select-modal" role="document">
+    <div class="modal-content ct-modal-dialog-white">
+     <div class="modal-header">
+      <div class="d-flex modal-title--wrapper w-100 mr-3">
+       <p class="modal-title ct-h3" id="coexistenceCategory-title">
+        Producto no agregado
+       </p>
+      </div>
+     </div>
+     <div class="container">
+      <br/>
+      <div class="row pr-md-4 pl-md-4">
+       <p class="col-12 font-primary--regular" id="mjsValidation">
+       </p>
+      </div>
+      <br/>
+      <div class="row pr-md-4 pl-md-4">
+       <div class="col-6">
+        <button class="btn btn-xs btn-outline-secondary btn-close clear-cart-add col btnPdcDigitales" data-dismiss="modal" data-pd="" data-url="/on/demandware.store/Sites-Soriana-Site/default/Cart-RemoveCart" id="btnDeleteAddPd" type="button">
+         Eliminar productos
+        </button>
+       </div>
+       <div class="col-6">
+        <button class="btn button btn-primary col btnPdcDigitales" data-dismiss="modal" type="button">
+         Continuar
+        </button>
+       </div>
+      </div>
+      <br/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   //<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.soriana.com/on/demandware.store/Sites-Soriana-Site/default/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+  </script>
+  <script async="async" onload="trackPage()" src="/on/demandware.static/Sites-Soriana-Site/-/default/v1709568483471/internal/jscript/dwanalytics-22.2.js" type="text/javascript">
+  </script>
+  <script async="async" src="/on/demandware.static/Sites-Soriana-Site/-/default/v1709568483471/internal/jscript/dwac-21.7.js" type="text/javascript">
+  </script>
+  <script async="async" src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript">
+  </script>
+  <script crossorigin="anonymous" data-cf-beacon='{"rayId":"85f397a8dc109a59","b":1,"version":"2024.2.4","token":"a1e6e16d78864dfca1bb7206d4673584"}' defer="" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317">
+  </script>
+ </body>
+</html>

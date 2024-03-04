@@ -1,0 +1,782 @@
+     </test-drive-component>
+       <!-- END test-drive -->
+      </div>
+     </div>
+     <!-- END test-drive -->
+     <!-- quote -->
+     <div class="content-fluid" id="quote">
+      <div class="p-0">
+       <div class="container">
+        <div class="row">
+         <div class="mt-6 col-12">
+          <h5 class="mb-3 text-center cars--subtitle">
+           Cotízalo
+          </h5>
+          <quote-component :initial-payments='{"value":"50","data":["20","30","40","50"],"range":[{"label":"20"},{"label":"30"},{"label":"40"},{"label":"50"}]}' :mean='"Org\u00e1nico"' :model='{"id":223,"uuid":"7f8d0281-de67-4c10-acec-db8daaytytp7","name":"Civic","slug":"civic","year":2024,"specs":{"versionName":"CIVIC","pdf_path":"#","menuLogo":"\/web\/img\/cars\/models\/civic\/2024\/logo-modelo.png","specsLegals":[{"content":"*3 Las im\u00e1genes utilizadas son solo como referencia y para fines informativos, por lo que la versi\u00f3n final del producto, puede no coincidir 
+con la imagen mostrada."},{"content":"Las especificaciones, equipamiento e ilustraciones est\u00e1n basados en la \u00faltima informaci\u00f3n disponible al momento de la publicaci\u00f3n; Honda de M\u00e9xico S.A. de C.V., se reserva el derecho de realizar cambios en cualquier momento sin 
+previo aviso en colores, especificaciones, materiales y modelos."},{"content":"*De acuerdo con la actualizaci\u00f3n del m\u00e9todo de medici\u00f3n SAE J 1349 (Revisi\u00f3n agosto 04)."},{"content":"**No todos los tel\u00e9fonos inteligentes son compatibles, verificar disponibilidad en su modelo telef\u00f3nico."}],"configuratorLegals":[{"content":"* Precio incluye IVA."},{"content":"Vigencia del 01 al 29 de febrero de 2024."},{"content":"Precio no incluye el costo de mano de obra de instalaci\u00f3n de accesorios. El valor equivalente a 10% del auto puede ser inclu\u00eddo en un plan de financiamiento, el resto deber\u00e1 ser cubierto por el cliente con otro m\u00e9todo o forma de pago, para m\u00e1s informaci\u00f3n contacte a su Distribuidor autorizado Honda\u00ae."}]}}' :months='{"value":"72","data":["12","24","36","48","60","72"],"range":[{"label":"12"},{"label":"24"},{"label":"36"},{"label":"48"},{"label":"60"},{"label":"72"}]}' :section-id='"9923f8cc-eff3-44af-b4e1-a7c5e483fc35"' :states-list='[{"uuid":"b72fe5ad-1ec8-4d54-8db7-2cf86dad3ab8","name":"Aguascalientes","abbrev":"Ags.","slug":"ags"},{"uuid":"eb3e3455-e648-4890-9dca-c76e2dc9d541","name":"Baja California","abbrev":"B.C.","slug":"bc"},{"uuid":"d100befb-a9ef-4342-91e9-cb0761341e3b","name":"Baja California Sur","abbrev":"B.C.S.","slug":"bcs"},{"uuid":"5dcdd654-a2da-4af5-8af5-d096e5ee5b4b","name":"Campeche","abbrev":"Camp.","slug":"camp"},{"uuid":"e10afb6a-41e5-48ea-a5ff-4f45712e0e55","name":"Chiapas","abbrev":"Chis.","slug":"chis"},{"uuid":"34105f70-439a-48a5-8a57-29597087334a","name":"Chihuahua","abbrev":"Chih.","slug":"chih"},{"uuid":"21b3bc47-3c35-4e87-a414-ab57f2a4b5ba","name":"Ciudad de M\u00e9xico","abbrev":"CDMX","slug":"cdmx"},{"uuid":"188fa438-2e42-4447-b8f2-30a28546d934","name":"Coahuila","abbrev":"Coah.","slug":"coah"},{"uuid":"bd371135-b6a3-45a0-8a8e-b18c85750dc5","name":"Colima","abbrev":"Col.","slug":"col"},{"uuid":"b9ad29fb-067f-4ff2-a5cb-e094f84e0a60","name":"Durango","abbrev":"Dgo.","slug":"dgo"},{"uuid":"429b2378-5df6-4b7b-8a74-a65fe39c64dc","name":"Guanajuato","abbrev":"Gto.","slug":"gto"},{"uuid":"4e011450-6477-4e91-9ee9-3f4ffc60fc0c","name":"Guerrero","abbrev":"Gro.","slug":"gro"},{"uuid":"dcab6d98-62e7-437e-abcd-85fe4f99b790","name":"Hidalgo","abbrev":"Hgo.","slug":"hgo"},{"uuid":"326219ec-3970-4329-b4c4-a5d8a315718e","name":"Jalisco","abbrev":"Jal.","slug":"jal"},{"uuid":"d47151cc-49ca-4738-b812-e40acbe57aaf","name":"Estado de M\u00e9xico","abbrev":"Edo. Mex.","slug":"mex"},{"uuid":"27946ea8-1ef3-44f1-b412-d18b5bf9ab13","name":"Michoac\u00e1n","abbrev":"Mich.","slug":"mich"},{"uuid":"05925dd1-8ead-45c0-9522-b3139427f2a7","name":"Morelos","abbrev":"Mor.","slug":"mor"},{"uuid":"03720018-007d-4194-b432-2156cb1b4511","name":"Nayarit","abbrev":"Nay.","slug":"nay"},{"uuid":"bfc73a2e-ec12-49c9-a297-fcb0ec5078cd","name":"Nuevo Le\u00f3n","abbrev":"NL","slug":"nl"},{"uuid":"9add8132-9212-4b36-90fc-a2eec2664c6b","name":"Oaxaca","abbrev":"Oax.","slug":"oax"},{"uuid":"cb05f92f-bc5f-4677-90a1-359d183b88dc","name":"Puebla","abbrev":"Pue.","slug":"pue"},{"uuid":"7bfdc329-0873-4f8c-b2e0-82fc52a514c8","name":"Quer\u00e9taro","abbrev":"Qro.","slug":"qro"},{"uuid":"ef1ff0aa-00c6-4673-958c-ecf9634bf92a","name":"Quintana Roo","abbrev":"Q. Roo","slug":"qroo"},{"uuid":"64dbe058-5016-435a-b883-efd7a1db6a81","name":"San Luis Potos\u00ed","abbrev":"SLP","slug":"slp"},{"uuid":"dec763d6-f9e5-44eb-9182-4fe10479df66","name":"Sinaloa","abbrev":"Sin.","slug":"sin"},{"uuid":"a8410d2c-bc19-4772-9a3e-1ff536059a13","name":"Sonora","abbrev":"Son.","slug":"son"},{"uuid":"c1257ddb-722f-4c70-a6a3-07457ffedd0a","name":"Tabasco","abbrev":"Tab.","slug":"tab"},{"uuid":"b5687599-2084-4b97-b77d-1d1f83e81e5f","name":"Tamaulipas","abbrev":"Tamps.","slug":"tamps"},{"uuid":"1ec23e9e-8774-44f4-b92b-4a8ebcae4277","name":"Tlaxcala","abbrev":"Tlax.","slug":"tlax"},{"uuid":"30d0d932-4d41-44ba-b79a-5ed382771034","name":"Veracruz","abbrev":"Ver.","slug":"ver"},{"uuid":"a1ed27a9-df68-4f8d-b27f-5083bd937f2a","name":"Yucat\u00e1n","abbrev":"Yuc.","slug":"yuc"},{"uuid":"c8f6d209-9fd5-4d39-bc91-97f1e6e04a10","name":"Zacatecas","abbrev":"Zac.","slug":"zac"}]' :versions='[{"id":290,"uuid":"257a8e13-a94b-4512-8db8-cb34a84ab2e0","name_car":"Civic","name_version":"i-Style","price":"$550,900.00","year":2024},{"id":291,"uuid":"01113f4f-585e-4c9c-b2bc-2bde590f14e0","name_car":"Civic","name_version":"Sport","price":"$610,900.00","year":2024},{"id":292,"uuid":"01113f4f-585e-4c9c-b2bc-2bbe59022azx","name_car":"Civic","name_version":"Touring","price":"$659,900.00","year":2024}]'>
+           <template quotedata="">
+            <p>
+             *Vigencia del 01 al 31 de marzo de 2024 o hasta agotar existencias. Precio sugerido. Tasa base de {{ quoteData.baseRate }}. Aplica en la compra de Honda® {{ quoteData.modelName }} en versión {{ quoteData.versionName }} en modelo {{ quoteData.versionYear }}; con un plazo de ({{ 
+quoteData.months }}) {{ quoteData.monthsText }} y enganches desde {{ quoteData.initialPaymentPercent }} ({{ quoteData.initialPaymentText }}) con un CAT de {{ quoteData.cat }} sin IVA promedio informativo que incluye seguro de vida, seguro de daños y comisión. No incluye accesorios del vehículo. Crédito exclusivo con Honda Finance. Aplican restricciones. Para mayor información acerca de requisitos y opciones de financiamiento visite su Distribuidor Honda® más cercano.
+            </p>
+            <p>
+             Este cotizador representa un ejercicio aritmético, el cual incluye parámetros estándar y no representa el monto de pago real de los planes de financiamiento que comunican es este sitio. Para obtener mayor detalle le recomendamos visitar su Distribuidor Honda más cercano, para poder realizar una cotización personalizada a sus requerimientos financieros.
+            </p>
+            <p>
+             <b>
+              **0% de comisión por apertura en la compra de un auto nuevo Honda® modelo 2023 y 2024 (excepto Honda® Odyssey®, Honda® Pilot®, Honda® CR-V® Touring HEV y Honda® Accord®).
+             </b>
+             <br/>
+             Vigencia del 01 al 31 de marzo de 2024 o hasta agotar existencias lo que suceda primero. Crédito exclusivo con Honda Finance®. Aplican restricciones. No incluye accesorios del vehículo. Para más información acerca de requisitos y opciones de financiamiento visite su Distribuidor autorizado Honda® más cercano.
+            </p>
+           </template>
+          </quote-component>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- END quote -->
+     <!-- contact form -->
+     <contact-form-component :section_uuid="'9923f8cc-eff3-44af-b4e1-a7c5e483fc35'">
+     </contact-form-component>
+     <!-- END contact form -->
+    </main>
+    <footer class="honda-bg-gray-600">
+     <div class="container px-5 pb-5">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
+       <div class="col">
+        <span class="footer--title">
+         MENÚ
+        </span>
+        <ul>
+         <li>
+          <a href="/home">
+           Inicio
+          </a>
+         </li>
+         <li>
+          <a href="/autos">
+           Autos Honda
+          </a>
+         </li>
+         <li>
+          <a href="/acura">
+           Autos Acura
+          </a>
+         </li>
+         <li>
+          <a href="/motos">
+           Honda Motos
+          </a>
+         </li>
+         <li>
+          <a href="/productos-de-fuerza">
+           Productos de fuerza
+          </a>
+         </li>
+         <li>
+          <a href="/marinos">
+           Honda Marine
+          </a>
+         </li>
+         <li>
+          <a href="/acerca">
+           Acerca de Honda
+          </a>
+         </li>
+         <li>
+          <a href="http://honda.mx/rp/" target="_blank">
+           Sala de prensa
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col">
+        <span class="footer--title">
+         CIVIC
+        </span>
+        <ul>
+         <li>
+          <a class="scroll-link" href="#inicio">
+           Inicio
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#apariencia">
+           Apariencia
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#confort">
+           Confort
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#tecnología">
+           Tecnología
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#seguridad">
+           Seguridad
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#desempeño">
+           Desempeño
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#colores">
+           Colores
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="#especificaciones">
+           Especificaciones
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col">
+        <span class="footer--title">
+         HONDA
+        </span>
+        <ul>
+         <li>
+          <a href="/mapa-distribuidores?seccion=autos">
+           Distribuidores
+          </a>
+         </li>
+         <li>
+          <a class="scroll-link" href="/#contact">
+           Contacto
+          </a>
+         </li>
+         <li>
+          <a href="https://bolsadetrabajo.honda.mx/" target="_blank">
+           Bolsa de trabajo
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col">
+        <span class="footer--title">
+         Honda de México
+        </span>
+        <span>
+         Síguenos en nuestras redes sociales oficiales
+        </span>
+        <ul class="social-networks">
+         <li>
+          <a href="https://www.facebook.com/HondaMexico/" target="_blank">
+           <i aria-hidden="true" class="fa fa-facebook">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/HondaMexico" target="_blank">
+           <i aria-hidden="true" class="fa fa-brands fa-x-twitter">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="https://www.youtube.com/user/hondademexico" target="_blank">
+           <i aria-hidden="true" class="fa fa-youtube">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="https://www.instagram.com/hondamexico/" target="_blank">
+           <i aria-hidden="true" class="fa fa-instagram">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="https://www.linkedin.com/company/hondamexico" target="_blank">
+           <i aria-hidden="true" class="fab fa-linkedin">
+           </i>
+          </a>
+         </li>
+        </ul>
+        <p>
+         <a href="">
+          Términos y condiciones
+         </a>
+        </p>
+        <p>
+         <a href="">
+          Aviso de privacidad
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="container-fluid bg-honda-gray-700">
+      <div class="container">
+       <div class="row">
+        <p class="px-5 py-3 my-0 copyright">
+         2024 © Honda - Todos los derechos reservados
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <!-- END content-page -->
+   <!-- Modal notice privacy -->
+   <!-- Modal notice privacy -->
+   <div class="modal fade" id="noticePrivacy" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+     <div class="modal-content">
+      <!-- header -->
+      <div class="modal-header">
+       <h4 class="modal-title">
+        Aviso de privacidad
+       </h4>
+       <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+        <span aria-hidden="true">
+         ×
+        </span>
+       </button>
+      </div>
+      <!-- END header -->
+      <!-- body -->
+      <div class="modal-body">
+       <div class="container-fluid">
+        <div class="row">
+         <div class="col-4">
+          <img alt="Logo Honda" class="img-fluid" src="/web/img/logo-honda.svg"/>
+          <p>
+           <strong>
+            Honda de México S.A. de C.V.
+           </strong>
+           Carretera a El Castillo No. 7250
+                        El Salto, Jalisco. C.P. 45680 México.
+          </p>
+         </div>
+        </div>
+        <div class="row">
+         <div class="col-12">
+          <h3>
+           AVISO DE PRIVACIDAD.
+          </h3>
+          <p>
+           <strong>
+            Honda de México Sociedad Anónima de Capital Variable
+           </strong>
+           , con domicilio ubicado en Carretera a El Castillo No. 7250, Parque Industrial, El Salto, Jalisco C.P. 45680; con denominación comercial
+           <strong>
+            “HONDA”
+           </strong>
+           , es el responsable del uso y protección de sus datos personales y al respecto se le informa lo siguiente:
+          </p>
+          <p>
+           Los
+           <strong>
+            Datos Personales
+           </strong>
+           , que
+           <strong>
+            Usted
+           </strong>
+           proporciona a
+           <strong>
+            Honda de México Sociedad Anónima de Capital Variable
+           </strong>
+           , a través del sitio web https://www.honda.mx/, o a través de su curricula y solicitud de empleo, únicamente son recabados para dar cumplimiento a las siguientes finalidades:
+          </p>
+          <p>
+           <strong>
+            1.-
+           </strong>
+           En el Caso de que Usted sea Cliente o Cliente Potencial:
+          </p>
+          <ul>
+           <li>
+            Proveerle un bien y/o servicio, solicitado.
+           </li>
+           <li>
+            Realizar actividades de análisis estadístico, prospección, mercadeo y publicidad en general.
+           </li>
+          </ul>
+          <p>
+           De manera adicional, sus datos personales, serán tratados para el siguiente fin:      
+          </p>
+          <ul>
+           <li>
+            Mantener actualizados nuestros registros para poder responder a sus consultas, invitarle a eventos, hacer válida la garantía de su vehículo, informarle acerca de llamados a revisión 
+de su vehículo, hacer de su conocimiento nuestras promociones, descuentos y lanzamientos, así como dar seguimiento a nuestra relación comercial.
+           </li>
+          </ul>
+          <p>
+           Si
+           <strong>
+            Usted NO
+           </strong>
+           desea que sus datos personales sean tratados para los fines adicionales arriba mencionados llene el formato correspondiente.
+          </p>
+          <p>
+           La negativa para el uso de sus datos personales para esta finalidad adicional no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.
+          </p>
+          <p>
+           Para llevar a cabo las finalidades descritas en el caso de que Usted sea un Cliente o 
+Cliente Potencial, recabaremos de Usted los siguientes datos personales:
+          </p>
+          <ul>
+           <li>
+            Nombre.
+           </li>
+           <li>
+            Correo Electrónico.
+           </li>
+           <li>
+            Domicilio.
+           </li>
+           <li>
+            Número Telefónico.
+           </li>
+          </ul>
+          <p>
+           Asimismo, le informamos que sus datos personales pueden ser transferidos y tratados dentro y fuera de los Estados Unidos Mexicanos, por personas distintas a esta empresa. En ese sentido, su información puede ser compartida por Honda de México, a sus sociedades subsidiarias, afiliadas o relacionadas, sus distribuidores autorizados y/o sus terceros proveedores de servicios con quienes tiene una relación jurídica, así como, en su caso, autoridades competentes para fines estadísticos, consultas, prospección comercial, mercadeo, publicidad, seguimiento, proporcionarle el bien o servicio solicitado, y/o para cualquier otra de las finalidades antes referidas , así como para cumplimiento legal.
+          </p>
+          <p>
+           <strong>
+            2.-
+           </strong>
+           En el caso de que Usted sea candidato a cubrir una vacante de empleo o bien sea asociado:
+          </p>
+          <ul>
+           <li>
+            Para que
+            <strong>
+             Honda de México Sociedad Anónima de Capital Variable
+            </strong>
+            . y sus empresas filiales, afiliadas y/o subsidiarias, puedan acceder y usar sus datos personales, durante el proceso al que aplica, los cuales sean utilizados con fines de reclutamiento, selección, evaluación de personal, y de relación laboral; por lo que autoriza a que dicha información sea proporcionada y/o recolectada a y por terceros, para cumplir con los procesos de reclutamiento solicitados por
+            <strong>
+             Honda de México Sociedad Anónima de Capital Variable
+            </strong>
+            .
+           </li>
+           <li>
+            De manera adicional, utilizaremos su información personal para futuros procesos de reclutamiento, selección y relaciones laborales.
+           </li>
+          </ul>
+          <p>
+           La veracidad de la información que proporcionó queda bajo su responsabilidad, por lo que
+           <strong>
+            Honda de México Sociedad Anónima de Capital Variable
+           </strong>
+           y sus empresas filiales, afiliadas y/o subsidiarias, en ningún momento se hacen responsable por la autenticidad de la misma, ni de daño o perjuicio, que surja en relación con la utilización de la información proporcionada.
+          </p>
+          <p>
+           Para llevar a cabo las finalidades en caso de ser candidato a cubrir una vacante de empleo o bien sea asociado, recabaremos de Usted los siguientes datos personales:
+          </p>
+          <ol>
+           <li>
+            <strong>
+             Datos Generales
+            </strong>
+            (Nombre, estado civil, lugar y fecha de nacimiento, edad, nacionalidad, fotografía de su persona, datos de contacto como: domicilio, correo electrónico, teléfono fijo, y/o teléfono celular).
+           </li>
+           <li>
+            <strong>
+             Información Académica
+            </strong>
+            (Profesión, escolaridad, títulos, cédula profesional, certificados, cursos, diplomados).
+           </li>
+           <li>
+            <strong>
+             Experiencia laboral:
+            </strong>
+            información sobre empleos anteriores, puesto, experiencia laboral y/o profesional, referencias laborales, fecha de ingreso y separación y/o causas de separación.
+           </li>
+           <li>
+            <strong>
+             Datos Familiares.
+            </strong>
+           </li>
+          </ol>
+          <p>
+           Asimismo, le informamos que sus datos personales pueden ser transferidos y tratados dentro y fuera de los Estados Unidos Mexicanos, por personas distintas a esta empresa. En ese sentido, su información puede ser compartida por Honda de México, a sus sociedades subsidiarias, afiliadas o relacionadas, sus distribuidores autorizados y/o sus terceros proveedores de servicios con quienes tiene una relación jurídica, así como, en su caso, autoridades competentes para fines estadísticos, consultas, y/o para cualquier cumplimiento legal.
+          </p>
+          <p>
+           <strong>
+            Usted
+           </strong>
+           tiene derecho a conocer con qué datos personales suyos contamos, para qué son utilizados y las condiciones de uso que le damos (
+           <strong>
+            A
+           </strong>
+           cceso), de igual manera tiene el derecho de que sus datos personales sean actualizados o bien sean corregidos por ser estos incorrectos o inexactos (
+           <strong>
+            R
+           </strong>
+           ectificación), así como que sean eliminados de nuestras bases de datos (
+           <strong>
+            C
+           </strong>
+           ancelación), y oponerse al uso de los mismos para fines específicos (
+           <strong>
+            O
+           </strong>
+           posición).
+          </p>
+          <p>
+           Para conocer dichos procedimientos, los requisitos y plazos, se puede poner en contacto con nuestro Centro de Atención a Clientes de HDM, en el teléfono 01-800-36-88-500 o visitar en 
+nuestra página de Internet www.honda.com.mx la sección de Servicio a Clientes.
+          </p>
+          <p>
+           Si Usted desea
+           <strong>
+            revocar
+           </strong>
+           su consentimiento, para el tratamiento de sus datos personales se puede poner en contacto con nuestro Centro de Atención a Clientes de HDM, en el teléfono 01-800-36-88-500 o visitar en nuestra página de Internet www.honda.com.mx la sección de Servicio a Clientes el cual, le dará 
+a conocer el procedimiento y requisitos necesarios, y le atenderá para cualquier duda o aclaración al respecto. Es importante que
+           <strong>
+            Usted
+           </strong>
+           tenga en cuenta que no en todos los casos
+           <strong>
+            Honda de México, Sociedad Anónima de Capital Variable
+           </strong>
+           , podrá atender su solicitud o concluir el tratamiento de forma inmediata, ya que es posible que por alguna disposición legal se continué tratando sus datos personales.
+          </p>
+          <p>
+           Con el objeto de que Usted pueda limitar el uso y divulgación de su información personal, le recomendamos:
+          </p>
+          <ul>
+           <li>
+            Su inscripción en el Registro Público para Evitar Publicidad, el cual esta a cargo de la Procuraduría Federal del Consumidor, con la finalidad de que sus datos personales no sean utilizados para recibir publicidad o promociones de proveedores de bienes o servicios. Para mayor información consulte el portal
+            <a href="https://www.profeco.gob.mx/">
+             www.profeco.gob.mx
+            </a>
+           </li>
+          </ul>
+          <p>
+           <strong>
+            Honda de México, Sociedad Anónima de Capital Variable
+           </strong>
+           podrá contratar a uno o varios
+           <strong>
+            Terceros
+           </strong>
+           , con quienes previamente haya celebrado contratos con cláusulas de confidencialidad y de protección de
+           <strong>
+            Datos Personales
+           </strong>
+           , como proveedores de servicios seleccionados para apoyar las actividades de promoción y comercialización de nuestros bienes y servicios, selección y/o reclutamiento de personal y manejo y administración de los
+           <strong>
+            Datos Personales
+           </strong>
+           que se recaban a través de los medios indicados,
+           <strong>
+            Honda de México, Sociedad Anónima de Capital Variable
+           </strong>
+           podrá incluso transferir sus
+           <strong>
+            Datos Personales
+           </strong>
+           a un Tercero sin un fin comercial, sino únicamente para cumplir con los fines indicados. En ningún caso
+           <strong>
+            Honda de México, Sociedad Anónima de Capital Variable
+           </strong>
+           comercializará, venderá o rentará sus
+           <strong>
+            Datos Personales
+           </strong>
+           a un Tercero.
+          </p>
+          <p>
+           <strong>
+            Honda de México, Sociedad Anónima de Capital Variable
+           </strong>
+           entiende su consentimiento para el uso y la transferencia de sus
+           <strong>
+            Datos Personales
+           </strong>
+           en caso de que Usted no manifieste su oposición.
+          </p>
+          <p>
+           El presente
+           <strong>
+            Aviso de Privacidad
+           </strong>
+           puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades comerciales, de reclutamiento de personal o por otras causas, en consecuencia
+           <strong>
+            Honda de México, Sociedad Anónima de Capital Variable
+           </strong>
+           se reserva el derecho de modificar o actualizar el presente
+           <strong>
+            Aviso de Privacidad
+           </strong>
+           , por lo que cualquier cambio o modificación se hará a través del portal
+           <a href="https://www.honda.mx/">
+            https://www.honda.mx/
+           </a>
+           .
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- END body -->
+      <!-- footer -->
+      <div class="modal-footer">
+       <a class="stretched-link" data-dismiss="modal">
+        Cerrar
+       </a>
+      </div>
+      <!-- END footer -->
+     </div>
+    </div>
+   </div>
+   <!-- END Modal notice privacy -->
+   <!-- END Modal notice privacy -->
+   <!-- Modal terms and conditions -->
+   <!-- Modal terms and conditions -->
+   <div class="modal fade" id="termsConditions" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+     <div class="modal-content">
+      <!-- header -->
+      <div class="modal-header">
+       <h4 class="modal-title">
+        Términos y condiciones
+       </h4>
+       <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+        <span aria-hidden="true">
+         ×
+        </span>
+       </button>
+      </div>
+      <!-- END header -->
+      <!-- body -->
+      <div class="modal-body">
+       <div class="container-fluid">
+        <div class="row">
+         <div class="col-12">
+          <p>
+           Esta página es propiedad de Honda de México, S.A.  de C.V. (en adelante HDM) y los productos aquí enunciados son comercializados únicamente en el territorio de los Estados Unidos Mexicanos directamente por nuestros Distribuidores Autorizados, por lo que le recomendamos verificar 
+directamente con nuestros Distribuidores Autorizados, los términos finales en que podrá realizarse la adquisición de los productos, así como los términos y condiciones bajos los cuales podrá hacer efectiva Usted la garantía del producto, así como los servicios de mantenimiento.
+          </p>
+          <p>
+           Estos términos y condiciones de uso (en lo sucesivo los “Términos y Condiciones”) tienen por objeto regular el uso de este sitio web que HDM pone a disposición de Usted. Por lo que nada de lo contenido en este sitio puede o deberá ser considerado como una compra-venta, ni como promesa de compra-venta, ni como una declaración unilateral de la voluntad, ni como cualquier tipo 
+de operación mercantil por parte de HDM, por lo que no resultan aplicables las disposiciones del 
+Código de Comercio relativas al comercio electrónico ni cualquier otro tipo de disposición.      
+          </p>
+          <p>
+           El uso que Usted haga de este sitio web, por sí mismo o por conducto de un tercero, le atribuye la calidad de usuario (en lo sucesivo usuario) e implica la aceptación plena, total y absoluta de todas y cada una de las condiciones generales de este sitio web.
+                        HDM puede, en cualquier momento y a su absoluta y total discreción, modificar total o parcialmente, los Términos y Condiciones de este sitio y sin previo aviso, por lo que le recomendamos que consulte los Términos y Condiciones cada vez que use este sitio web. Si usa este sitio web después de que se hayan modificado los Términos y Condiciones, se considerará que Usted ha aceptado los Términos y Condiciones modificados.
+          </p>
+          <p>
+           <span class="text-underline">
+            Limitación de uso.
+           </span>
+           <br/>
+           Las marcas comerciales y otras marcas de productos, logotipos o marcas de servicio; incluido pero no limitado a el logotipo de “Honda”, el logotipo de “Power of Dreams”, “Powered by Honda”, “Honda Racing ”, “Honda Marine ”, “PowerHouse ”, “Acura Advance ”, y demás textos, imágenes, gráficos, archivos de video y/o sonido y/o animaciones digitales, colores, cualquier representación gráfica, forma, tamaños, características, así como cualquier elemento que sirva para distinguir a los productos, siluetas, imágenes, servicios, marcas relacionadas con los vehículos, motocicletas, partes, servicios, refacciones, productos de poder y marinos, contenidos en este sitio web, están sujetos a derechos de autor y constituyen propiedad industrial de HDM; por lo que cualquier uso no autorizado del contenido de este sitio es considerado como violatorio en términos de 
+las leyes de propiedad industrial, civiles, penales, mercantiles y cualquier otra disposición aplicable.
+          </p>
+          <p>
+           También se prohíbe, independientemente de los motivos, el uso y reproducción total o parcial no autorizada de este sitio web con el propósito de causar daños o perjuicios a HDM y/o a 
+cualquier tercero.
+                        Adicionalmente, queda prohibido, el uso, carga o descarga de softwares dañinos tales como virus informáticos.
+          </p>
+          <p>
+           <span class="text-underline">
+            Marcas comerciales.
+           </span>
+           <br/>
+           Las marcas comerciales y otras marcas de productos, logotipos o marcas de servicio, incluido pero no limitado a el logotipo de “Honda ” y “Acura ”, el texto o leyenda de “Power of Dreams ”, “Powered by Honda ”, “Honda Racing ”, “Honda Marine ”, “PowerHouse ”, “Acura Advance ”, y 
+demás textos, imágenes, gráficos, archivos de video y/o sonido y/o animaciones digitales, colores, cualquier representación gráfica, forma, tamaños, características, así como cualquier elemento 
+que sirva para distinguir a los productos, siluetas, imágenes, servicios, marcas relacionadas con los vehículos, motocicletas, partes, servicios, refacciones, productos de poder y marinos son propiedad de Honda Motor Co. LTD y HDM es licenciataria  autorizada de dichas marcas para su uso y 
+explotación en los Estados Unidos Mexicanos.
+          </p>
+          <p>
+           En virtud de lo anterior, HDM no concede ningún tipo de licencia o autorización de uso personal al Usuario sobre dichos derechos de propiedad industrial, incluyendo pero no limitando 
+a sus marcas o sobre cualquier otro derecho relacionado con este sitio web y los servicios ofrecidos en el mismo.
+          </p>
+          <p>
+           En consecuencia, Usted como Usuario de este sitio web reconoce y acepta desde este momento que por el uso de este sitio web no adquiere ningún derecho de propiedad sobre este sitio web, ni sobre su contenido, ni sobre las marcas comerciales y otras marcas de productos, logotipos, textos o leyendas y marcas de servicio indicadas y contenidas en el sitio web, así como se hace 
+sabedor que  la reproducción, distribución, ejecución o modificación total o parcial del contenido de este sitio web sin autorización por escrito de HDM constituye una violación a esos derechos 
+de propiedad industrial e intelectual.
+          </p>
+          <p>
+           <span class="text-underline">
+            Venta de Productos.
+           </span>
+           <br/>
+           La venta de productos, ya sean vehículos automotores de la marca “Honda ”, “Acura ”, productos de fuerza, marinos y motocicletas, es exclusiva responsabilidad de los Distribuidores Autorizados de la marca, respectivamente; quienes son entidades independientes y ajenas a HDM.     
+          </p>
+          <p>
+           <span class="text-underline">
+            Disponibilidad de los Productos.
+           </span>
+           <br/>
+           Alguno o algunos de los productos ya sean vehículos automotores de la marca “Honda ”  
+y/o “Acura ”, productos de fuerza, marinos y motocicletas, anunciados y contenidos en este sitio 
+web, pueden no estar disponibles en su localidad al momento de su consulta, por lo que le recomendamos que previo a realizar cualquier compra de los productos aquí contenidos, se ponga en contacto con cualquiera de nuestros Distribuidores Autorizados.
+          </p>
+          <p>
+           Los montos de las cotizaciones mostradas, así como los precios y promociones de los productos contenidos en este sitio web, aplican únicamente para productos comercializados en territorio de los Estados Unidos Mexicanos y son precios sugeridos al público en general, por lo que dichos precios son expresados en moneda nacional, y no incluyen costos de seguros, costos de envío, ni ningún otro servicio; en consecuencia los precios y cotizaciones mostradas son meramente de carácter informativo y están sujetos a cambio sin previo aviso y no representan el precio de venta final del producto.
+          </p>
+          <p>
+           <span class="text-underline">
+            Garantía de contenido.
+           </span>
+           <br/>
+           Ni HDM, ni sus filiales garantizan la concurrencia, integridad, precisión, utilidad, ni idoneidad para ningún propósito particular respecto del contenido de este Sitio web. Para obtener información precisa sobre los productos previo a la compra y entrega del producto de su elección, le recomendamos que la verifique con su Distribuidor Autorizado.
+          </p>
+          <p>
+           En caso de ya haber adquirido el producto, consulte (en el caso de ser un usuario final) el manual del propietario proporcionado por HDM que corresponda a cada producto y (en el caso 
+de ser el técnico de un Distribuidor Autorizados) el manual del propietario y el manual de servicio proporcionado por HDM que corresponda a cada producto. Este sitio web no pretende ser una incitación a la venta o la compra de los productos relevantes. Honda y sus filiales no serán responsables de los errores, inexactitud o la insuficiencia de la información descrita que se encuentra en este sitio web.
+          </p>
+          <p>
+           Por lo que le informamos que todas las imágenes fotográficas y de video, internas y externas, de los productos contenidos en este sitio web así como sus colores, solo son ilustrativas y de referencia, por lo que pueden percibirse de diversas formas dependiendo del tipo de monitor, configuración de red y capacidad del sistema operativo del dispositivo por el cual visualiza este sitio web.
+          </p>
+          <p>
+           <span class="text-underline">
+            Exención de responsabilidad.
+           </span>
+           <br/>
+           Usted usará este sitio web bajo su propio riesgo, y ni HDM ni sus filiales garantizan 
+la funcionalidad ni seguridad (como la ausencia de virus informáticos, o algún otro elemento peligroso) de este sitio web. Ni HDM, ni ningún otro tercero relacionado que participe en la creación, soporte, hosting y otras operaciones de este sitio web serán responsables ante Usted o ante algún tercero, en caso de producirse daños (incluidos, entre otros, daños a su computadora personal, teléfono inteligente, tablet o red, independientemente de que ese daño sea directo o indirecto) 
+o reparaciones, u otros costos que puedan surgir del acceso o el uso (o la incapacidad de acceso 
+y uso) de este sitio web.
+          </p>
+          <p>
+           <span class="text-underline">
+            Sitios vinculados.
+           </span>
+           <br/>
+           El uso que Usted haga de este sitio web, lo puede direccionar o redireccionar a sitios web externos e independientes de este sitio y que son o pueden ser propiedad de un tercero, ajeno e independiente a HDM; por lo que ni HDM, ni sus filiales serán responsables ante Usted o ante 
+un tercero, por el contenido de los sitios web relacionados a través de enlaces a este sitio web 
+o desde él (“Sitios vinculados”) ni por ningún daño que surja del uso o la incapacidad de uso de 
+los sitios web vinculados. Tenga en cuenta que Usted y demás terceros tienen prohibido vincular a este Sitio web, sitios web administrados por Usted o por terceros.
+          </p>
+          <p>
+           <span class="text-underline">
+            Interrupción de funcionamiento de este Sitio web, detención de servidor y modificación del contenido o de los Términos y Condiciones.
+           </span>
+           <br/>
+           HDM puede interrumpir o suspender, parcial o total, temporal o permanentemente; el funcionamiento de este sitio web, los servicios proporcionados, la publicidad, y/o promociones publicadas a través de este sitio web o establecidos en él, en cualquier momento sin previo aviso. HDM y sus filiales no serán responsables por las desventajas ni por los daños y/o perjuicios que Usted o algún tercero sufran en relación con dicha interrupción, suspensión, detención, modificación, alteración o paralización.
+          </p>
+          <p>
+           <span class="text-underline">
+            Uso de Cookies.
+           </span>
+           <br/>
+           HDM utiliza “cookies” a través del sitio para mejorar la visita del usuario. Usted como usuario puede optar por desactivar o bloquear el uso de dichas “cookies” dentro de su buscador 
+(browser) pero al hacerlo probablemente no podrá visualizar en todo o en parte el contenido de este sitio lo que dificultará su navegación en él. Las “cookies” No nos proporcionan ningún tipo de información del usuario que pueda ser considerada como Datos Personales o Datos Personales Sensibles, únicamente brindan información sobre los hábitos de navegación del o los usuarios de un equipo de cómputo a través del cual se accede a este sitio web.
+          </p>
+          <p>
+           <span class="text-underline">
+            Jurisdicción y Legislación Aplicable en caso de Controversia.
+           </span>
+           <br/>
+           Usted al hacer uso de este sitio web y de los servicios proporcionados en él, acepta de manera expresa que en caso de controversia, se someterá a las leyes y a los tribunales competentes en el Estado de Jalisco, México.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- END body -->
+      <!-- footer -->
+      <div class="modal-footer">
+       <a class="stretched-link" data-dismiss="modal">
+        Cerrar
+       </a>
+      </div>
+      <!-- END footer -->
+     </div>
+    </div>
+   </div>
+   <!-- END Modal terms and conditions -->
+   <!-- END terms and conditions -->
+   <!-- Scroll to top button -->
+   <button class="scrollToTopBtn" id="scrollToTopBtn">
+    <i class="icon-to-top">
+     <svg aria-hidden="true" class="svg-inline--fa fa-arrow-circle-up fa-w-16" data-icon="arrow-circle-up" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z" style="fill:#CC0000;">
+      </path>
+     </svg>
+    </i>
+   </button>
+   <!-- END Scroll to top button -->
+   <!-- bottom-popup -->
+   <popup-component>
+   </popup-component>
+   <!-- END bottom-popup -->
+  </div>
+  <script defer="" src="https://www.honda.mx/web/js/utilities/Error.js">
+  </script>
+  <script defer="" src="https://www.honda.mx/web/js/utilities/Form.js">
+  </script>
+  <script defer="" src="/web/js/cars/detail.js?id=349551cc2e7e5b917cca">
+  </script>
+  <script defer="" src="https://www.honda.mx/web/js/global.js">
+  </script>
+  <script defer="" src="https://www.honda.mx/web/js/sliders.js">
+  </script>
+  <script defer="" src="https://www.honda.mx/web/js/checkBrowser.js">
+  </script>
+  <script defer="" type="text/javascript">
+   function onLoadHandler360View() {
+                var iframe = document.getElementById("container-360");
+                var el = iframe.contentWindow.document.getElementsByClassName("ggskin_container");
+                //remove DOM element, for prevent redirection inside iframe
+                if(el) el[3].remove();
+                var skinSvg = iframe.contentWindow.document.getElementsByClassName("ggskin_svg");                //view exterior_360 evt listener
+                if(skinSvg[16]) {
+                    var exteriorElementRedirection = skinSvg[16];
+                    exteriorElementRedirection.addEventListener("click", function(evt){
+                        iframe.src = "https://www.honda.mx/autos/civic/exterior_360";
+                        evt.stopPropagation();
+                        window.parent.goTestDrive();
+                    })
+                }
+                //view interior_360 evt listener
+                if(skinSvg[32]){
+                    var interiorElementRedirection =  skinSvg[32];
+                    interiorElementRedirection.addEventListener("click", function(evt){
+
+                        iframe.src = "https://www.honda.mx/autos/civic/interior_360";
+                        evt.stopPropagation();
+                        window.parent.goTestDrive();
+                    })
+                }
+            }
+
+            function goTestDrive() {
+                var optionMenuElement = document.getElementsByClassName("drive");
+                optionMenuElement[0].firstChild.click();
+                // // optionMenuElement[0].firstChild.classList.add("scroll-link");
+                window.location.href = "#test-drive";
+
+
+            }
+  </script>
+  <!-- Bottom Pixels -->
+  <!-- Honda Pixels -->
+  <!-- Honda RT -->
+  <script defer="" type="text/javascript">
+   var ssaUrl = 'https://' + 'pixel.sitescout.com/iap/24ac707ba25624b4';
+        new Image().src = ssaUrl;
+        (function(d) {
+            var syncUrl = 'https://' + 'pixel.sitescout.com/dmp/asyncPixelSync';
+            var iframe = d.createElement('iframe');
+            (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0; display: none;";
+            iframe.src = "javascript:false";
+            d.body.appendChild(iframe);
+            var doc = iframe.contentWindow.document;
+            doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">');
+            doc.close();
+        })(document);
+  </script>
+  <!-- END Honda RT -->
+  <!-- END Honda Pixels -->
+  <!-- END Bottom Pixels -->
+ </body>
+ <!-- END: Body -->
+</html>
