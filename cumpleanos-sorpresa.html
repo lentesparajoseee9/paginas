@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños</title>
+<style>
+  /* ============================================================
+     PERSONALIZA AQUÍ ABAJO EN EL BLOQUE <script id="config">
+     Todo lo demás (colores, animaciones) puedes dejarlo igual.
+     ============================================================ */
+  :root{
+    --pink: #ff6fa5;
+    --pink-dark: #e64980;
+    --purple: #8e6fff;
+    --gold: #ffd166;
+    --bg1: #2b0f3a;
+    --bg2: #4a1b5e;
+  }
+  *{ box-sizing: border-box; }
+  html,body{
+    margin:0; padding:0; min-height:100%;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: radial-gradient(circle at 50% 20%, var(--bg2), var(--bg1));
+    color:#fff;
+    overflow-x:hidden;
+  }
+  #hearts{
+    position:fixed; inset:0; pointer-events:none; z-index:1;
+  }
+  #confetti-canvas{
+    position:fixed; inset:0; pointer-events:none; z-index:50;
+  }
+  .screen{
+    min-height:100vh; width:100%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:40px 20px; position:relative; z-index:2; text-align:center;
+  }
+  h1{
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    margin:0 0 10px;
+    background: linear-gradient(90deg, var(--gold), var(--pink), var(--purple));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    text-shadow: 0 0 30px rgba(255,111,165,.3);
+  }
+  p.sub{ font-size:1.1rem; opacity:.9; max-width:600px; }
+
+  /* ---------- Pantalla 1: sobre ---------- */
+  #screen-intro{ cursor:pointer; }
+  .envelope{
+    width:220px; height:150px; position:relative; margin:30px auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  .envelope-body{
+    position:absolute; inset:0; background:var(--pink-dark);
+    border-radius:10px; box-shadow: 0 10px 40px rgba(0,0,0,.4);
+  }
+  .envelope-flap{
+    position:absolute; top:0; left:0; width:0; height:0;
+    border-left:110px solid transparent;
+    border-right:110px solid transparent;
+    border-top:75px solid var(--pink);
+    transform-origin: top;
+    transition: transform .5s ease;
+  }
+  .envelope.open .envelope-flap{ transform: rotateX(180deg); }
+  .heart-seal{
+    position:absolute; top:55px; left:50%; transform:translateX(-50%);
+    font-size:2rem; z-index:3;
+  }
+  @keyframes float{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
+  .tap-hint{ margin-top:18px; opacity:.7; font-size:.95rem; animation: pulse 1.6s infinite; }
+  @keyframes pulse{ 0%,100%{opacity:.4;} 50%{opacity:1;} }
+
+  /* ---------- Pantalla 2: pastel ---------- */
+  .cake{ font-size: 5rem; margin: 10px 0; position:relative; user-select:none; }
+  .candle{ cursor:pointer; display:inline-block; transition: transform .2s; }
+  .candle.out{ filter: grayscale(1) opacity(.5); transform: scale(.9); }
+  .btn{
+    margin-top:24px; padding:14px 30px; border:none; border-radius:40px;
+    background: linear-gradient(90deg, var(--pink), var(--purple));
+    color:#fff; font-size:1.05rem; font-weight:600; cursor:pointer;
+    box-shadow:0 8px 20px rgba(142,111,255,.4);
+    transition: transform .2s;
+  }
+  .btn:hover{ transform: translateY(-3px) scale(1.03); }
+  .btn:disabled{ opacity:.4; cursor:default; transform:none; }
+
+  /* ---------- Pantalla 3: contador de amor ---------- */
+  .counter-grid{
+    display:grid; grid-template-columns: repeat(4, 1fr); gap:14px;
+    margin: 24px auto; max-width:520px;
+  }
+  .counter-box{
+    background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15);
+    border-radius:14px; padding:16px 8px; backdrop-filter: blur(4px);
+  }
+  .counter-box .num{ font-size:1.8rem; font-weight:700; color: var(--gold); }
+  .counter-box .lbl{ font-size:.75rem; opacity:.8; text-transform:uppercase; letter-spacing:.05em; }
+
+  /* ---------- Pantalla 4: galería ---------- */
+  .gallery{
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    gap:14px; max-width:700px; margin-top:20px; width:100%;
+  }
+  .photo{
+    aspect-ratio: 1/1; border-radius:14px; overflow:hidden;
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    display:flex; align-items:center; justify-content:center;
+    font-size:2rem; box-shadow:0 8px 20px rgba(0,0,0,.35);
+  }
+  .photo img{ width:100%; height:100%; object-fit:cover; }
+
+  /* ---------- Pantalla 5: razones ---------- */
+  .reasons-grid{
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap:14px; max-width:720px; margin-top:20px; width:100%; perspective:1000px;
+  }
+  .reason-card{
+    background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15);
+    border-radius:14px; padding:18px 12px; min-height:100px;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; font-size:.95rem; transition: transform .5s;
+    transform-style: preserve-3d;
+  }
+  .reason-card .num{
+    font-size:1.4rem; font-weight:700; color:var(--gold);
+  }
+  .reason-card.flipped .num{ display:none; }
+  .reason-card.flipped{ background: rgba(255,111,165,.18); }
+
+  /* ---------- Pantalla 6: carta ---------- */
+  .letter{
+    max-width:600px; text-align:left; background: rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.15); border-radius:18px; padding:30px;
+    font-size:1.05rem; line-height:1.7; white-space:pre-wrap; min-height:180px;
+    box-shadow:0 10px 40px rgba(0,0,0,.3);
+  }
+  .cursor-blink{ display:inline-block; width:2px; background:#fff; margin-left:2px; animation: blink 1s step-start infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+
+  footer.credit{ margin-top:30px; font-size:.8rem; opacity:.5; }
+</style>
+</head>
+<body>
+
+<canvas id="hearts"></canvas>
+<canvas id="confetti-canvas"></canvas>
+
+<!-- 1. SOBRE -->
+<section class="screen" id="screen-intro">
+  <div class="envelope" id="envelope">
+    <div class="envelope-body"></div>
+    <div class="envelope-flap"></div>
+    <div class="heart-seal">💌</div>
+  </div>
+  <h1 id="intro-title">Tienes una sorpresa</h1>
+  <p class="sub" id="intro-sub">Toca el sobre para abrirlo...</p>
+  <p class="tap-hint">👆 haz clic aquí</p>
+</section>
+
+<!-- 2. PASTEL -->
+<section class="screen" id="screen-cake" style="display:none;">
+  <h1 id="cake-title">¡Feliz Cumpleaños!</h1>
+  <p class="sub" id="cake-sub">Pide un deseo y sopla las velitas 🕯️</p>
+  <div class="cake" id="cake">
+    🎂
+    <div id="candles"></div>
+  </div>
+  <button class="btn" id="btn-continue" disabled>Sopla todas las velas primero 🌬️</button>
+</section>
+
+<!-- 3. CONTADOR -->
+<section class="screen" id="screen-counter" style="display:none;">
+  <h1>Nuestro tiempo juntos</h1>
+  <p class="sub" id="counter-sub"></p>
+  <div class="counter-grid">
+    <div class="counter-box"><div class="num" id="c-years">0</div><div class="lbl">Años</div></div>
+    <div class="counter-box"><div class="num" id="c-days">0</div><div class="lbl">Días</div></div>
+    <div class="counter-box"><div class="num" id="c-hours">0</div><div class="lbl">Horas</div></div>
+    <div class="counter-box"><div class="num" id="c-secs">0</div><div class="lbl">Segundos</div></div>
+  </div>
+  <button class="btn" id="btn-to-gallery">Ver más 💕</button>
+</section>
+
+<!-- 4. GALERÍA -->
+<section class="screen" id="screen-gallery" style="display:none;">
+  <h1>Nuestros momentos</h1>
+  <p class="sub">Reemplaza estas fotos por las tuyas en la carpeta <code>fotos/</code></p>
+  <div class="gallery" id="gallery"></div>
+  <button class="btn" id="btn-to-reasons">Siguiente 💜</button>
+</section>
+
+<!-- 5. RAZONES -->
+<section class="screen" id="screen-reasons" style="display:none;">
+  <h1>Razones por las que te amo</h1>
+  <p class="sub">Toca cada tarjeta</p>
+  <div class="reasons-grid" id="reasons-grid"></div>
+  <button class="btn" id="btn-to-letter">Última sorpresa 💌</button>
+</section>
+
+<!-- 6. CARTA -->
+<section class="screen" id="screen-letter" style="display:none;">
+  <h1 id="letter-title">Para ti</h1>
+  <div class="letter" id="letter-text"></div>
+  <button class="btn" id="btn-replay" style="display:none;">Volver a empezar ↺</button>
+  <footer class="credit">Hecho con 💻 y ❤️</footer>
+</section>
+
+<script id="config">
+/* =====================================================================
+   ✏️  PERSONALIZA TODO AQUÍ. Es lo único que necesitas tocar.
+   ===================================================================== */
+const CONFIG = {
+  nombrePareja: "Mi Amor",              // Su nombre
+  tuNombre: "Tu novio",                 // Tu nombre (firma de la carta)
+
+  // Fecha en que empezaron a salir (año, mes, día, hora, minuto)
+  // OJO: en JS los meses van de 0 (enero) a 11 (diciembre)
+  fechaInicioRelacion: new Date(2024, 0, 1, 0, 0),
+
+  // Rutas de fotos dentro de la carpeta fotos/ (si no existen, se muestra un ícono)
+  fotos: [
+    "fotos/1.jpg",
+    "fotos/2.jpg",
+    "fotos/3.jpg",
+    "fotos/4.jpg"
+  ],
+
+  razones: [
+    "Tu sonrisa ilumina mi día",
+    "Me haces reír como nadie",
+    "Tu forma de cuidarme",
+    "Eres mi mejor amiga",
+    "Tu paciencia conmigo",
+    "Cómo me haces sentir en casa",
+    "Tu inteligencia y tu fuerza",
+    "Cada pequeño detalle tuyo",
+    "Cómo creces cada día",
+    "Simplemente, ser tú"
+  ],
+
+  carta: `Hoy es tu día, y quiero que sepas todo lo que significas para mí.
+
+Desde que llegaste a mi vida, todo se volvió más brillante. Gracias por tu amor, tu paciencia y por hacerme mejor persona cada día.
+
+Espero poder celebrar muchos cumpleaños más a tu lado.
+
+Te amo mucho.
+
+Con todo mi cariño,`
+};
+</script>
+
+<script>
+/* ===================== NO NECESITAS TOCAR DE AQUÍ EN ADELANTE ===================== */
+
+// Textos con nombre
+document.getElementById('intro-title').textContent = `${CONFIG.nombrePareja}, tienes una sorpresa`;
+document.getElementById('cake-title').textContent = `¡Feliz Cumpleaños, ${CONFIG.nombrePareja}!`;
+document.getElementById('letter-title').textContent = `Para ti, ${CONFIG.nombrePareja}`;
+
+/* ---------- Fondo de corazones flotantes ---------- */
+const heartsCanvas = document.getElementById('hearts');
+const hctx = heartsCanvas.getContext('2d');
+function resizeCanvas(){
+  heartsCanvas.width = window.innerWidth;
+  heartsCanvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+const hearts = Array.from({length: 22}, () => ({
+  x: Math.random()*window.innerWidth,
+  y: Math.random()*window.innerHeight + window.innerHeight,
+  size: 10 + Math.random()*18,
+  speed: 0.3 + Math.random()*0.8,
+  drift: (Math.random()-0.5)*0.5,
+  alpha: 0.15 + Math.random()*0.35
+}));
+
+function drawHeart(x,y,size,alpha){
+  hctx.save();
+  hctx.globalAlpha = alpha;
+  hctx.translate(x,y);
+  hctx.scale(size/20, size/20);
+  hctx.beginPath();
+  hctx.moveTo(0,4);
+  hctx.bezierCurveTo(0,-2,-10,-2,-10,5);
+  hctx.bezierCurveTo(-10,12,0,16,0,20);
+  hctx.bezierCurveTo(0,16,10,12,10,5);
+  hctx.bezierCurveTo(10,-2,0,-2,0,4);
+  hctx.fillStyle = '#ff6fa5';
+  hctx.fill();
+  hctx.restore();
+}
+
+function animateHearts(){
+  hctx.clearRect(0,0,heartsCanvas.width, heartsCanvas.height);
+  for(const h of hearts){
+    h.y -= h.speed;
+    h.x += h.drift;
+    if(h.y < -30){
+      h.y = heartsCanvas.height + 30;
+      h.x = Math.random()*heartsCanvas.width;
+    }
+    drawHeart(h.x, h.y, h.size, h.alpha);
+  }
+  requestAnimationFrame(animateHearts);
+}
+animateHearts();
+
+/* ---------- Confetti ---------- */
+const confettiCanvas = document.getElementById('confetti-canvas');
+const cctx = confettiCanvas.getContext('2d');
+confettiCanvas.width = window.innerWidth;
+confettiCanvas.height = window.innerHeight;
+window.addEventListener('resize', ()=>{
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+});
+let confettiParticles = [];
+const confettiColors = ['#ff6fa5','#ffd166','#8e6fff','#4dd4ac','#ff8e6f'];
+
+function burstConfetti(count=140){
+  for(let i=0;i<count;i++){
+    confettiParticles.push({
+      x: confettiCanvas.width/2 + (Math.random()-0.5)*200,
+      y: confettiCanvas.height/2,
+      vx: (Math.random()-0.5)*10,
+      vy: (Math.random()-1.3)*10,
+      size: 4 + Math.random()*6,
+      color: confettiColors[Math.floor(Math.random()*confettiColors.length)],
+      rot: Math.random()*Math.PI,
+      vrot: (Math.random()-0.5)*0.3,
+      life: 0
+    });
+  }
+}
+
+function animateConfetti(){
+  cctx.clearRect(0,0,confettiCanvas.width, confettiCanvas.height);
+  confettiParticles = confettiParticles.filter(p => p.life < 150);
+  for(const p of confettiParticles){
+    p.vy += 0.18;
+    p.x += p.vx;
+    p.y += p.vy;
+    p.rot += p.vrot;
+    p.life++;
+    cctx.save();
+    cctx.globalAlpha = Math.max(0, 1 - p.life/150);
+    cctx.translate(p.x, p.y);
+    cctx.rotate(p.rot);
+    cctx.fillStyle = p.color;
+    cctx.fillRect(-p.size/2, -p.size/2, p.size, p.size);
+    cctx.restore();
+  }
+  requestAnimationFrame(animateConfetti);
+}
+animateConfetti();
+
+/* ---------- Navegación entre pantallas ---------- */
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s => s.style.display = 'none');
+  document.getElementById(id).style.display = 'flex';
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* 1. Sobre */
+const envelope = document.getElementById('envelope');
+document.getElementById('screen-intro').addEventListener('click', () => {
+  envelope.classList.add('open');
+  burstConfetti(80);
+  setTimeout(() => showScreen('screen-cake'), 700);
+});
+
+/* 2. Velas del pastel */
+const NUM_VELAS = 5;
+const candlesWrap = document.getElementById('candles');
+for(let i=0;i<NUM_VELAS;i++){
+  const c = document.createElement('span');
+  c.className = 'candle';
+  c.textContent = '🕯️';
+  c.dataset.lit = 'true';
+  candlesWrap.appendChild(c);
+}
+function checkCandles(){
+  const remaining = candlesWrap.querySelectorAll('.candle[data-lit="true"]').length;
+  const btn = document.getElementById('btn-continue');
+  if(remaining === 0){
+    btn.disabled = false;
+    btn.textContent = 'Continuar 🎁';
+    burstConfetti(160);
+  }
+}
+candlesWrap.addEventListener('click', (e) => {
+  const target = e.target.closest('.candle');
+  if(!target || target.dataset.lit !== 'true') return;
+  target.dataset.lit = 'false';
+  target.classList.add('out');
+  checkCandles();
+});
+document.getElementById('btn-continue').addEventListener('click', () => showScreen('screen-counter'));
+
+/* 3. Contador de tiempo juntos */
+function updateCounter(){
+  const now = new Date();
+  const start = CONFIG.fechaInicioRelacion;
+  let diffMs = now - start;
+  if(diffMs < 0) diffMs = 0;
+  const totalSeconds = Math.floor(diffMs/1000);
+  const years = Math.floor(totalSeconds / (365.25*24*3600));
+  const days = Math.floor((totalSeconds % (365.25*24*3600)) / (24*3600));
+  const hours = Math.floor((totalSeconds % (24*3600)) / 3600);
+  const secs = totalSeconds % 60;
+  document.getElementById('c-years').textContent = years;
+  document.getElementById('c-days').textContent = days;
+  document.getElementById('c-hours').textContent = hours;
+  document.getElementById('c-secs').textContent = secs;
+}
+setInterval(updateCounter, 1000);
+updateCounter();
+document.getElementById('counter-sub').textContent =
+  `Desde el ${CONFIG.fechaInicioRelacion.toLocaleDateString('es-MX', {year:'numeric', month:'long', day:'numeric'})}`;
+document.getElementById('btn-to-gallery').addEventListener('click', () => showScreen('screen-gallery'));
+
+/* 4. Galería */
+const galleryEl = document.getElementById('gallery');
+CONFIG.fotos.forEach((src, i) => {
+  const div = document.createElement('div');
+  div.className = 'photo';
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = `Foto ${i+1}`;
+  img.onerror = () => { div.innerHTML = '📷'; };
+  div.appendChild(img);
+  galleryEl.appendChild(div);
+});
+document.getElementById('btn-to-reasons').addEventListener('click', () => showScreen('screen-reasons'));
+
+/* 5. Razones */
+const reasonsGrid = document.getElementById('reasons-grid');
+CONFIG.razones.forEach((texto, i) => {
+  const card = document.createElement('div');
+  card.className = 'reason-card';
+  card.innerHTML = `<div class="num">#${i+1}</div>`;
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+    card.textContent = card.classList.contains('flipped') ? texto : '';
+    if(card.classList.contains('flipped')){
+      card.textContent = texto;
+    } else {
+      card.innerHTML = `<div class="num">#${i+1}</div>`;
+    }
+  });
+  reasonsGrid.appendChild(card);
+});
+document.getElementById('btn-to-letter').addEventListener('click', () => {
+  showScreen('screen-letter');
+  burstConfetti(200);
+  typeLetter();
+});
+
+/* 6. Carta con efecto de máquina de escribir */
+let typed = false;
+function typeLetter(){
+  if(typed) return;
+  typed = true;
+  const el = document.getElementById('letter-text');
+  const fullText = CONFIG.carta + "\n\n" + CONFIG.tuNombre;
+  let i = 0;
+  el.textContent = '';
+  const cursor = document.createElement('span');
+  cursor.className = 'cursor-blink';
+  cursor.textContent = ' ';
+
+  function step(){
+    if(i <= fullText.length){
+      el.textContent = fullText.slice(0, i);
+      el.appendChild(cursor);
+      i += 2;
+      setTimeout(step, 18);
+    } else {
+      document.getElementById('btn-replay').style.display = 'inline-block';
+    }
+  }
+  step();
+}
+
+document.getElementById('btn-replay').addEventListener('click', () => {
+  location.reload();
+});
+</script>
+</body>
+</html>
