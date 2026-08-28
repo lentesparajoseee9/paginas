@@ -38,22 +38,19 @@
   .dot{ width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.25); transition: all .3s; }
   .dot.active{ background: var(--gold); transform:scale(1.5); }
 
-  #mini-player{
-    position:fixed; left:0; right:0; bottom:0; z-index:70;
-    transform: translateY(100%); transition: transform .6s ease;
-    background: rgba(20,10,35,.9); backdrop-filter: blur(8px);
-    padding:6px 10px calc(6px + env(safe-area-inset-bottom));
-    box-shadow: 0 -6px 25px rgba(0,0,0,.45);
+  #btn-music{
+    position:fixed; top:10px; right:14px; z-index:60;
+    width:42px; height:42px; border-radius:50%; border:none;
+    background:rgba(255,255,255,.12); color:#fff; font-size:1.15rem; cursor:pointer;
+    backdrop-filter: blur(4px); transition: transform .2s;
   }
-  #mini-player.show{ transform: translateY(0); }
-  #mini-player iframe{ width:100%; height:80px; border:none; border-radius:12px; display:block; max-width:600px; margin:0 auto; }
+  #btn-music:hover{ transform: scale(1.1); }
 
   .screen{
     min-height:100vh; width:100%;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
     padding:70px 20px 50px; position:relative; z-index:2; text-align:center;
   }
-  body.has-player .screen{ padding-bottom: 130px; }
   h1{
     font-size: clamp(2rem, 6vw, 3.2rem);
     margin:0 0 10px;
@@ -205,7 +202,9 @@
   @keyframes blink{ 50%{ opacity:0; } }
 
   /* ---------- Pantalla: gran final ---------- */
-  .finale-btns{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:10px; }
+  .song-embed{ margin-top:10px; width:100%; max-width:600px; }
+  .song-embed iframe{ border-radius:14px; }
+  .finale-btns{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:16px; }
 
   footer.credit{ margin-top:30px; font-size:.8rem; opacity:.5; }
 </style>
@@ -216,7 +215,7 @@
 <canvas id="hearts"></canvas>
 <canvas id="confetti-canvas"></canvas>
 <div id="progress"></div>
-<div id="mini-player"></div>
+<button id="btn-music" title="Música">🔇</button>
 
 <!-- 1. SOBRE -->
 <section class="screen" id="screen-intro">
@@ -310,6 +309,7 @@
 <section class="screen" id="screen-finale" style="display:none;">
   <h1 id="finale-title">Feliz Cumpleaños</h1>
   <p class="sub">Gracias por existir. Toca la pantalla para más fuegos artificiales ✨</p>
+  <div class="song-embed" id="song-embed"></div>
   <div class="finale-btns">
     <button class="btn" id="btn-more-fireworks">Más fuegos artificiales 🎆</button>
     <button class="btn ghost" id="btn-replay">Volver a empezar ↺</button>
@@ -604,22 +604,75 @@ function animateConfetti(){
 }
 animateConfetti();
 
-/* ---------- Música: la canción de Spotify arranca sola en el primer clic ---------- */
-// Los navegadores bloquean el audio con sonido si la página no ha tenido
-// ninguna interacción todavía, así que la enganchamos al primer clic real
-// (abrir el sobre) — así sí puede sonar "sola" el resto de la experiencia.
-let songStarted = false;
-function startBackgroundSong(){
-  const url = CONFIG.cancionSpotifyUrl;
-  if(!url || songStarted) return;
-  songStarted = true;
-  const cleanUrl = url.split('?')[0];
-  const embedUrl = cleanUrl.replace('open.spotify.com/', 'open.spotify.com/embed/') + '?autoplay=1';
-  const player = document.getElementById('mini-player');
-  player.innerHTML = `<iframe src="${embedUrl}" width="100%" height="80" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"></iframe>`;
-  player.classList.add('show');
-  document.body.classList.add('has-player');
+/* ---------- Música: "Feliz Cumpleaños" sintetizada con Web Audio ---------- */
+let audioCtx = null;
+let musicPlaying = false;
+let musicTimer = null;
+let activeOscillators = [];
+
+const NOTE_FREQ = { G4:392.00, A4:440.00, B4:493.88, C5:523.25, D5:587.33, E5:659.25, F5:698.46, G5:783.99 };
+const SONG = [
+  ['G4',0.75],['G4',0.25],['A4',1],['G4',1],['C5',1],['B4',2],
+  ['G4',0.75],['G4',0.25],['A4',1],['G4',1],['D5',1],['C5',2],
+  ['G4',0.75],['G4',0.25],['G5',1],['E5',1],['C5',1],['B4',1],['A4',2],
+  ['F5',0.75],['F5',0.25],['E5',1],['C5',1],['D5',1],['C5',2]
+];
+const BEAT = 0.4;
+
+function playNote(freq, startTime, duration){
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, startTime);
+  gain.gain.linearRampToValueAtTime(0.15, startTime + 0.02);
+  gain.gain.exponentialRampToValueAtTime(0.001, startTime + Math.max(duration - 0.02, 0.03));
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  osc.start(startTime);
+  osc.stop(startTime + duration);
+  activeOscillators.push(osc);
+  osc.addEventListener('ended', () => {
+    activeOscillators = activeOscillators.filter(o => o !== osc);
+  });
 }
+
+function scheduleSong(startTime){
+  let t = startTime;
+  for(const [note, beats] of SONG){
+    const dur = beats*BEAT;
+    playNote(NOTE_FREQ[note], t, dur*0.9);
+    t += dur;
+  }
+  return t;
+}
+
+function loopSong(){
+  if(!musicPlaying) return;
+  const startTime = audioCtx.currentTime + 0.1;
+  const endTime = scheduleSong(startTime);
+  const waitMs = (endTime - audioCtx.currentTime) * 1000;
+  musicTimer = setTimeout(loopSong, waitMs);
+}
+
+document.getElementById('btn-music').addEventListener('click', () => {
+  const btn = document.getElementById('btn-music');
+  if(!musicPlaying){
+    if(!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    if(audioCtx.state === 'suspended') audioCtx.resume();
+    musicPlaying = true;
+    loopSong();
+    btn.textContent = '🔊';
+  } else {
+    musicPlaying = false;
+    clearTimeout(musicTimer);
+    // Corta de inmediato cualquier nota que ya estuviera sonando o programada,
+    // en vez de dejarla terminar sola (así "apagar" silencia al instante).
+    activeOscillators.forEach(osc => { try{ osc.stop(audioCtx.currentTime); }catch(e){} });
+    activeOscillators = [];
+    btn.textContent = '🔇';
+  }
+});
 
 /* ---------- Navegación entre pantallas + barra de progreso ---------- */
 const SCREENS = [
@@ -646,7 +699,6 @@ const envelope = document.getElementById('envelope');
 document.getElementById('screen-intro').addEventListener('click', () => {
   envelope.classList.add('open');
   burstConfetti(80);
-  startBackgroundSong();
   setTimeout(() => showScreen('screen-cake'), 700);
 });
 
@@ -853,9 +905,24 @@ function typeLetter(){
   step();
 }
 
+function renderSongEmbed(){
+  const url = CONFIG.cancionSpotifyUrl;
+  if(!url) return;
+  const cleanUrl = url.split('?')[0];
+  const embedUrl = cleanUrl.replace('open.spotify.com/', 'open.spotify.com/embed/') + '?autoplay=1';
+  const wrap = document.getElementById('song-embed');
+  wrap.innerHTML = `
+    <iframe src="${embedUrl}" width="100%" height="152" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+    <p style="margin-top:10px; opacity:.8; font-size:.85rem;">
+      ¿No se ve el reproductor? <a href="${cleanUrl}" target="_blank" rel="noopener" style="color:var(--gold);">Escúchala en Spotify ↗</a>
+    </p>
+  `;
+}
+
 document.getElementById('btn-to-finale').addEventListener('click', () => {
   showScreen('screen-finale');
   fireworksShow();
+  renderSongEmbed();
 });
 
 /* 9. Gran final */
