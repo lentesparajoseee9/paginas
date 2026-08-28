@@ -302,7 +302,6 @@
 <section class="screen" id="screen-letter" style="display:none;">
   <h1 id="letter-title">Para ti</h1>
   <div class="letter" id="letter-text"></div>
-  <div class="song-embed" id="song-embed"></div>
   <button class="btn" id="btn-to-finale" style="display:none;">Ver el gran final 🎆</button>
 </section>
 
@@ -310,6 +309,7 @@
 <section class="screen" id="screen-finale" style="display:none;">
   <h1 id="finale-title">Feliz Cumpleaños</h1>
   <p class="sub">Gracias por existir. Toca la pantalla para más fuegos artificiales ✨</p>
+  <div class="song-embed" id="song-embed"></div>
   <div class="finale-btns">
     <button class="btn" id="btn-more-fireworks">Más fuegos artificiales 🎆</button>
     <button class="btn ghost" id="btn-replay">Volver a empezar ↺</button>
@@ -890,23 +890,24 @@ function typeLetter(){
       i += 2;
       setTimeout(step, 18);
     } else {
-      renderSongEmbed();
       document.getElementById('btn-to-finale').style.display = 'inline-block';
     }
   }
   step();
 }
 
+let songEmbedded = false;
 function renderSongEmbed(){
   const url = CONFIG.cancionSpotifyUrl;
-  if(!url) return;
+  if(!url || songEmbedded) return;
+  songEmbedded = true;
   const cleanUrl = url.split('?')[0];
-  const embedUrl = cleanUrl.replace('open.spotify.com/', 'open.spotify.com/embed/');
+  const embedUrl = cleanUrl.replace('open.spotify.com/', 'open.spotify.com/embed/') + '?autoplay=1';
   const wrap = document.getElementById('song-embed');
   wrap.innerHTML = `
-    <iframe src="${embedUrl}" width="100%" height="152" frameborder="0" allow="encrypted-media" loading="lazy"></iframe>
+    <iframe src="${embedUrl}" width="100%" height="152" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"></iframe>
     <p style="margin-top:10px; opacity:.8; font-size:.85rem;">
-      ¿No se ve el reproductor? <a href="${cleanUrl}" target="_blank" rel="noopener" style="color:var(--gold);">Escúchala en Spotify ↗</a>
+      ¿No suena sola? <a href="${cleanUrl}" target="_blank" rel="noopener" style="color:var(--gold);">Escúchala en Spotify ↗</a>
     </p>
   `;
 }
@@ -914,6 +915,7 @@ function renderSongEmbed(){
 document.getElementById('btn-to-finale').addEventListener('click', () => {
   showScreen('screen-finale');
   fireworksShow();
+  renderSongEmbed();
 });
 
 /* 9. Gran final */
