@@ -262,7 +262,7 @@
 
 <!-- 9. GRAN FINAL -->
 <section class="screen" id="screen-finale" style="display:none;">
-  <h1>Feliz Cumpleaños, mi amor</h1>
+  <h1 id="finale-title">Feliz Cumpleaños</h1>
   <p class="sub">Gracias por existir. Toca la pantalla para más fuegos artificiales ✨</p>
   <div class="finale-btns">
     <button class="btn" id="btn-more-fireworks">Más fuegos artificiales 🎆</button>
@@ -276,14 +276,16 @@
    ✏️  PERSONALIZA TODO AQUÍ. Es lo único que necesitas tocar.
    ===================================================================== */
 const CONFIG = {
-  nombrePareja: "Mi Amor",              // Su nombre
-  tuNombre: "Tu novio",                 // Tu nombre (firma de la carta)
+  nombrePareja: "Nubia Estela",         // Su nombre
+  tuNombre: "José Cristian",            // Tu nombre (firma de la carta)
 
   // Fecha en que empezaron a salir (año, mes, día, hora, minuto)
-  // OJO: en JS los meses van de 0 (enero) a 11 (diciembre)
-  fechaInicioRelacion: new Date(2024, 0, 1, 0, 0),
+  // OJO: en JS los meses van de 0 (enero) a 11 (diciembre) → 7 = agosto
+  // 2 de agosto de 2025: el día que le pediste que fuera tu novia
+  fechaInicioRelacion: new Date(2025, 7, 2, 0, 0),
 
   // Rutas de fotos dentro de la carpeta fotos/ (si no existen, se muestra un ícono)
+  // TODO: agrega tus fotos reales a la carpeta fotos/ con estos nombres (o cambia los nombres aquí)
   fotos: [
     "fotos/1.jpg",
     "fotos/2.jpg",
@@ -291,45 +293,56 @@ const CONFIG = {
     "fotos/4.jpg"
   ],
 
-  // Momentos importantes de su historia (edítalos con hechos reales)
+  // Momentos importantes de su historia
+  // TODO: si tienes fechas o detalles más exactos, cámbialos aquí
   momentos: [
-    { emoji: "✨", fecha: "El día que nos conocimos", texto: "Todo cambió para bien desde ese momento." },
-    { emoji: "💬", fecha: "Las primeras semanas", texto: "No podíamos dejar de hablar." },
-    { emoji: "❤️", fecha: "Nuestra primera cita", texto: "Ahí supe que quería muchos momentos más contigo." },
-    { emoji: "🎉", fecha: "Hoy", texto: "Celebrando tu día, muy agradecido de tenerte en mi vida." }
+    { emoji: "🚌", fecha: "El día que nos conocimos", texto: "Nos conocimos en el urbano, sin imaginar todo lo que vendría después." },
+    { emoji: "💬", fecha: "Las semanas siguientes", texto: "Cada vez hablábamos más, y yo no quería que eso cambiara." },
+    { emoji: "❤️", fecha: "2 de agosto de 2025", texto: "El día que te pedí que fueras mi novia... y dijiste que sí." },
+    { emoji: "🎉", fecha: "Hoy", texto: "Celebrando tu cumpleaños, muy feliz de tenerte a mi lado." }
   ],
 
-  // Preguntas del quiz "qué tanto sabes de nosotros" (edítalas con datos reales)
-  // correcta = índice (0,1,2,3) de la respuesta correcta dentro de "opciones"
+  // Preguntas del quiz "qué tanto sabes de nosotros"
+  // correcta = índice (0,1,2...) de la respuesta correcta dentro de "opciones"
   quiz: [
     {
       pregunta: "¿Dónde nos conocimos?",
-      opciones: ["En la escuela", "Por amigos en común", "En una fiesta", "Por redes sociales"],
-      correcta: 0
-    },
-    {
-      pregunta: "¿Cuál es nuestra canción?",
-      opciones: ["Ninguna todavía", "La que sonó en nuestra primera cita", "Una que cantamos juntos", "Sorpresa 😏"],
+      opciones: ["En la escuela", "En el urbano", "En redes sociales"],
       correcta: 1
     },
     {
-      pregunta: "¿Cuál es tu comida favorita?",
-      opciones: ["Pizza", "Tacos", "Sushi", "Pasta"],
-      correcta: 2
+      pregunta: "¿Cuál es mi comida favorita?",
+      opciones: ["Espagueti blanco o verde", "Pizza", "Bonelles"],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Cuál es mi color favorito?",
+      opciones: ["Azul", "Rosa", "Morado"],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Cuál es mi peluche favorito?",
+      opciones: ["Vaca", "Stitch", "Aguacate"],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué me gusta hacer en mis tiempos libres?",
+      opciones: ["Leer", "Ver doramas (películas, series)", "Jugar videojuegos"],
+      correcta: 1
     }
   ],
 
   razones: [
-    "Tu sonrisa ilumina mi día",
-    "Me haces reír como nadie",
-    "Tu forma de cuidarme",
-    "Eres mi mejor amiga",
-    "Tu paciencia conmigo",
-    "Cómo me haces sentir en casa",
-    "Tu inteligencia y tu fuerza",
-    "Cada pequeño detalle tuyo",
-    "Cómo creces cada día",
-    "Simplemente, ser tú"
+    "Cómo se te ilumina la cara cuando empieza un dorama nuevo",
+    "Que puedas hablarme horas de tu serie favorita y yo feliz de escucharte",
+    "Lo concentrada y apasionada que te pones jugando videojuegos",
+    "Que siempre tengas un libro pendiente por leer",
+    "Cómo abrazas a Stitch como si fuera lo más importante del mundo",
+    "Que compartamos ese gusto por el espagueti blanco y verde",
+    "Tu sonrisa cada vez que ves algo azul",
+    "Lo fácil que es hablar contigo de cualquier cosa",
+    "Tu forma tan tuya de ver la vida",
+    "Simplemente, ser tú, Nubia"
   ],
 
   carta: `Hoy es tu día, y quiero que sepas todo lo que significas para mí.
@@ -356,6 +369,7 @@ Con todo mi cariño,`,
 document.getElementById('intro-title').textContent = `${CONFIG.nombrePareja}, tienes una sorpresa`;
 document.getElementById('cake-title').textContent = `¡Feliz Cumpleaños, ${CONFIG.nombrePareja}!`;
 document.getElementById('letter-title').textContent = `Para ti, ${CONFIG.nombrePareja}`;
+document.getElementById('finale-title').textContent = `Feliz Cumpleaños, ${CONFIG.nombrePareja}`;
 
 /* ---------- Fondo de estrellas ---------- */
 const starsWrap = document.getElementById('stars');
