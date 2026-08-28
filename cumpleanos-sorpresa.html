@@ -180,12 +180,13 @@
   .quiz-opt:disabled{ cursor:default; }
 
   /* ---------- Pantalla: razones ---------- */
-  .reasons-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:14px; max-width:720px; margin-top:20px; width:100%; }
+  .reasons-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:14px; max-width:760px; margin-top:20px; width:100%; }
   .reason-card{
     background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15);
-    border-radius:14px; padding:18px 12px; min-height:100px;
+    border-radius:14px; padding:20px 16px; min-height:110px;
     display:flex; align-items:center; justify-content:center;
-    cursor:pointer; font-size:.95rem; transition: transform .3s, background .3s;
+    cursor:pointer; font-size:.9rem; line-height:1.45; text-align:center;
+    transition: transform .3s, background .3s;
   }
   .reason-card .num{ font-size:1.4rem; font-weight:700; color:var(--gold); }
   .reason-card.flipped{ background: rgba(255,111,165,.18); }
@@ -409,16 +410,16 @@ const CONFIG = {
   ],
 
   razones: [
-    "Cómo se te ilumina la cara cuando empieza un dorama nuevo",
-    "Que puedas hablarme horas de tu serie favorita y yo feliz de escucharte",
-    "Lo concentrada y apasionada que te pones jugando videojuegos",
-    "Que siempre tengas un libro pendiente por leer",
-    "Cómo abrazas a Stitch como si fuera lo más importante del mundo",
-    "Que compartamos ese gusto por el espagueti blanco y verde",
-    "Tu sonrisa cada vez que ves algo azul",
-    "Lo fácil que es hablar contigo de cualquier cosa",
-    "Tu forma tan tuya de ver la vida",
-    "Simplemente, ser tú, Nubia"
+    "Lo primero es tu mirada, la forma en que tus ojos se iluminan cuando sonríes y cómo me hacen sentir el hombre más afortunado del mundo con solo una palabra tuya.",
+    "Amo tu capacidad para ver la belleza en lo simple, desde la luna llena hasta una flor en el camino, y cómo compartes esa magia conmigo cada día.",
+    "Me fascina tu determinación inquebrantable, la fuerza con la que persigues tus sueños y cómo me inspiras a ser una mejor versión de mí mismo todos los días.",
+    "No puedo dejar de amar tu sentido del humor, esa risa contagiosa que llena cualquier habitación y cómo logras hacerme reír incluso en mis días más difíciles.",
+    "Amo la forma en que me cuidas, tu atención a los pequeños detalles que me hacen sentir valorado y protegido; a tu lado encontré mi refugio seguro.",
+    "Tu pasión por todo lo que haces es increíble, desde tus metas personales hasta cada uno de tus hobbies, poniéndole el corazón entero a cada cosa que tocas.",
+    "Me enamora tu bondad infinita, la forma genuina en que te preocupas por los demás y cómo siempre buscas hacer del mundo un lugar más cálido; eres luz pura.",
+    "Aprecio tanto nuestra conexión, la forma en que podemos hablar durante horas de todo y de nada, y cómo logramos entendernos a la perfección con solo una mirada.",
+    "Amo tus abrazos, esos momentos en los que el mundo se detiene por completo, el ruido desaparece y solo existimos nosotros dos; es el lugar más cálido del universo.",
+    "Y sobre todo, te amo simplemente por ser quien eres: mi compañera de vida, mi mejor amiga y mi amor eterno. Mi mundo es infinitamente mejor desde que estás en él."
   ],
 
   carta: `Hoy es tu día, y quiero que sepas todo lo que significas para mí.
