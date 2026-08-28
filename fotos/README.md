@@ -1,3 +1,5 @@
 # Fotos
 
-Coloca aquí tus fotos como `1.jpg`, `2.jpg`, `3.jpg`, `4.jpg` (o los nombres que pongas en el arreglo `fotos` dentro de `cumpleanos-sorpresa.html`). Si una foto no existe, la página muestra un ícono 📷 en su lugar, así que puedes probar la página incluso sin fotos.
+Ya no se usa esta carpeta: las fotos ahora están incrustadas directamente dentro de `cumpleanos-sorpresa.html` (como base64), para que la página funcione sola sin depender de archivos externos, sin importar cómo la abras o la compartas.
+
+Si quieres cambiar una foto, convierte la nueva imagen a base64 y reemplaza el string correspondiente en el arreglo `fotos` dentro del bloque `CONFIG` del archivo.
