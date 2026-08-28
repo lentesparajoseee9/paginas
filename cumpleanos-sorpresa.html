@@ -151,6 +151,19 @@
 
   /* ---------- Pantalla: quiz ---------- */
   #quiz-score{ font-size:1rem; opacity:.9; margin-bottom:10px; }
+  .quiz-result{
+    max-width:400px; width:100%; margin: 6px 0 22px; padding:24px;
+    background: linear-gradient(135deg, rgba(255,111,165,.18), rgba(142,111,255,.18));
+    border:1px solid rgba(255,255,255,.25); border-radius:20px;
+    text-align:center; box-shadow: 0 15px 40px rgba(0,0,0,.35);
+    animation: pop-in .5s ease;
+  }
+  @keyframes pop-in{ 0%{ transform: scale(.85); opacity:0; } 100%{ transform: scale(1); opacity:1; } }
+  .quiz-result-score{
+    font-size:3rem; font-weight:800; color: var(--gold);
+    text-shadow: 0 0 20px rgba(255,209,102,.4);
+  }
+  .quiz-result-msg{ margin-top:6px; font-size:1rem; opacity:.95; }
   .quiz-card{
     max-width:560px; width:100%; background: rgba(255,255,255,.06);
     border:1px solid rgba(255,255,255,.15); border-radius:16px; padding:20px; margin-bottom:16px; text-align:left;
@@ -268,6 +281,10 @@
 <section class="screen" id="screen-quiz" style="display:none;">
   <h1>¿Qué tanto sabes de nosotros?</h1>
   <p class="sub" id="quiz-score">Responde las preguntas</p>
+  <div class="quiz-result" id="quiz-result" style="display:none;">
+    <div class="quiz-result-score" id="quiz-result-score">0/0</div>
+    <div class="quiz-result-msg" id="quiz-result-msg"></div>
+  </div>
   <div id="quiz-container"></div>
   <button class="btn" id="btn-to-reasons" style="display:none;">Continuar 💜</button>
 </section>
@@ -785,12 +802,20 @@ document.getElementById('btn-to-quiz').addEventListener('click', () => showScree
 const quizContainer = document.getElementById('quiz-container');
 let quizAnswered = 0;
 let quizCorrect = 0;
+function quizResultMessage(ratio){
+  if(ratio === 1) return "¡Perfecto! Me conoces mejor que nadie 🥹";
+  if(ratio >= 0.7) return "¡Nos conocemos muy bien! 💕";
+  if(ratio >= 0.4) return "Nada mal... hay que hablar más de nosotros 😄";
+  return "Bueno, ahora sabes un poco más de mí 😅";
+}
 function updateQuizScore(){
+  const done = quizAnswered >= CONFIG.quiz.length;
   document.getElementById('quiz-score').textContent =
-    quizAnswered < CONFIG.quiz.length
-      ? `Pregunta ${quizAnswered+1} de ${CONFIG.quiz.length}`
-      : `¡Terminaste! Aciertos: ${quizCorrect} de ${CONFIG.quiz.length} 🎉`;
-  if(quizAnswered >= CONFIG.quiz.length){
+    done ? '' : `Pregunta ${quizAnswered+1} de ${CONFIG.quiz.length}`;
+  if(done){
+    document.getElementById('quiz-result').style.display = 'block';
+    document.getElementById('quiz-result-score').textContent = `${quizCorrect}/${CONFIG.quiz.length}`;
+    document.getElementById('quiz-result-msg').textContent = quizResultMessage(quizCorrect / CONFIG.quiz.length);
     document.getElementById('btn-to-reasons').style.display = 'inline-block';
     burstConfetti(120);
   }
