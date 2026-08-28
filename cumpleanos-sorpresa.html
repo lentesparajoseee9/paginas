@@ -25,16 +25,31 @@
     color:#fff;
     overflow-x:hidden;
   }
-  #hearts{
-    position:fixed; inset:0; pointer-events:none; z-index:1;
+  #stars{ position:fixed; inset:0; z-index:0; overflow:hidden; }
+  .star{ position:absolute; background:#fff; border-radius:50%; animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle{ 0%,100%{ opacity:.15; } 50%{ opacity:1; } }
+  #hearts{ position:fixed; inset:0; pointer-events:none; z-index:1; }
+  #confetti-canvas{ position:fixed; inset:0; pointer-events:none; z-index:50; }
+
+  #progress{
+    position:fixed; top:16px; left:50%; transform:translateX(-50%);
+    display:flex; gap:6px; z-index:60;
   }
-  #confetti-canvas{
-    position:fixed; inset:0; pointer-events:none; z-index:50;
+  .dot{ width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.25); transition: all .3s; }
+  .dot.active{ background: var(--gold); transform:scale(1.5); }
+
+  #btn-music{
+    position:fixed; top:10px; right:14px; z-index:60;
+    width:42px; height:42px; border-radius:50%; border:none;
+    background:rgba(255,255,255,.12); color:#fff; font-size:1.15rem; cursor:pointer;
+    backdrop-filter: blur(4px); transition: transform .2s;
   }
+  #btn-music:hover{ transform: scale(1.1); }
+
   .screen{
     min-height:100vh; width:100%;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
-    padding:40px 20px; position:relative; z-index:2; text-align:center;
+    padding:70px 20px 50px; position:relative; z-index:2; text-align:center;
   }
   h1{
     font-size: clamp(2rem, 6vw, 3.2rem);
@@ -45,7 +60,7 @@
   }
   p.sub{ font-size:1.1rem; opacity:.9; max-width:600px; }
 
-  /* ---------- Pantalla 1: sobre ---------- */
+  /* ---------- Pantalla: sobre ---------- */
   #screen-intro{ cursor:pointer; }
   .envelope{
     width:220px; height:150px; position:relative; margin:30px auto;
@@ -64,15 +79,12 @@
     transition: transform .5s ease;
   }
   .envelope.open .envelope-flap{ transform: rotateX(180deg); }
-  .heart-seal{
-    position:absolute; top:55px; left:50%; transform:translateX(-50%);
-    font-size:2rem; z-index:3;
-  }
+  .heart-seal{ position:absolute; top:55px; left:50%; transform:translateX(-50%); font-size:2rem; z-index:3; }
   @keyframes float{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
   .tap-hint{ margin-top:18px; opacity:.7; font-size:.95rem; animation: pulse 1.6s infinite; }
   @keyframes pulse{ 0%,100%{opacity:.4;} 50%{opacity:1;} }
 
-  /* ---------- Pantalla 2: pastel ---------- */
+  /* ---------- Pantalla: pastel ---------- */
   .cake{ font-size: 5rem; margin: 10px 0; position:relative; user-select:none; }
   .candle{ cursor:pointer; display:inline-block; transition: transform .2s; }
   .candle.out{ filter: grayscale(1) opacity(.5); transform: scale(.9); }
@@ -85,12 +97,10 @@
   }
   .btn:hover{ transform: translateY(-3px) scale(1.03); }
   .btn:disabled{ opacity:.4; cursor:default; transform:none; }
+  .btn.ghost{ background: rgba(255,255,255,.1); box-shadow:none; border:1px solid rgba(255,255,255,.25); }
 
-  /* ---------- Pantalla 3: contador de amor ---------- */
-  .counter-grid{
-    display:grid; grid-template-columns: repeat(4, 1fr); gap:14px;
-    margin: 24px auto; max-width:520px;
-  }
+  /* ---------- Pantalla: contador de amor ---------- */
+  .counter-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:14px; margin: 24px auto; max-width:520px; }
   .counter-box{
     background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15);
     border-radius:14px; padding:16px 8px; backdrop-filter: blur(4px);
@@ -98,11 +108,20 @@
   .counter-box .num{ font-size:1.8rem; font-weight:700; color: var(--gold); }
   .counter-box .lbl{ font-size:.75rem; opacity:.8; text-transform:uppercase; letter-spacing:.05em; }
 
-  /* ---------- Pantalla 4: galería ---------- */
-  .gallery{
-    display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
-    gap:14px; max-width:700px; margin-top:20px; width:100%;
+  /* ---------- Pantalla: línea de tiempo ---------- */
+  .timeline{ max-width:560px; margin-top:24px; text-align:left; width:100%; position:relative; padding-left:30px; }
+  .timeline::before{ content:''; position:absolute; left:10px; top:4px; bottom:4px; width:2px; background:linear-gradient(var(--pink), var(--purple)); }
+  .tl-item{ position:relative; margin-bottom:28px; }
+  .tl-item .tl-dot{
+    position:absolute; left:-30px; top:-2px; width:24px; height:24px; border-radius:50%;
+    background: var(--bg2); border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center; font-size:.9rem;
   }
+  .tl-date{ font-size:.78rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:.06em; }
+  .tl-text{ margin-top:3px; opacity:.95; }
+
+  /* ---------- Pantalla: galería ---------- */
+  .gallery{ display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap:14px; max-width:700px; margin-top:20px; width:100%; }
   .photo{
     aspect-ratio: 1/1; border-radius:14px; overflow:hidden;
     background: linear-gradient(135deg, var(--pink), var(--purple));
@@ -111,25 +130,35 @@
   }
   .photo img{ width:100%; height:100%; object-fit:cover; }
 
-  /* ---------- Pantalla 5: razones ---------- */
-  .reasons-grid{
-    display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap:14px; max-width:720px; margin-top:20px; width:100%; perspective:1000px;
+  /* ---------- Pantalla: quiz ---------- */
+  #quiz-score{ font-size:1rem; opacity:.9; margin-bottom:10px; }
+  .quiz-card{
+    max-width:560px; width:100%; background: rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.15); border-radius:16px; padding:20px; margin-bottom:16px; text-align:left;
   }
+  .quiz-q{ font-weight:600; margin-bottom:12px; }
+  .quiz-opt{
+    display:block; width:100%; text-align:left; padding:10px 14px; margin-bottom:8px;
+    border-radius:10px; border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.05);
+    color:#fff; cursor:pointer; transition: background .2s, border-color .2s; font-size:.95rem;
+  }
+  .quiz-opt:hover:not(:disabled){ background: rgba(255,255,255,.12); }
+  .quiz-opt.correct{ background: rgba(77,212,172,.35); border-color:#4dd4ac; }
+  .quiz-opt.wrong{ background: rgba(255,111,111,.3); border-color:#ff6f6f; }
+  .quiz-opt:disabled{ cursor:default; }
+
+  /* ---------- Pantalla: razones ---------- */
+  .reasons-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:14px; max-width:720px; margin-top:20px; width:100%; }
   .reason-card{
     background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15);
     border-radius:14px; padding:18px 12px; min-height:100px;
     display:flex; align-items:center; justify-content:center;
-    cursor:pointer; font-size:.95rem; transition: transform .5s;
-    transform-style: preserve-3d;
+    cursor:pointer; font-size:.95rem; transition: transform .3s, background .3s;
   }
-  .reason-card .num{
-    font-size:1.4rem; font-weight:700; color:var(--gold);
-  }
-  .reason-card.flipped .num{ display:none; }
+  .reason-card .num{ font-size:1.4rem; font-weight:700; color:var(--gold); }
   .reason-card.flipped{ background: rgba(255,111,165,.18); }
 
-  /* ---------- Pantalla 6: carta ---------- */
+  /* ---------- Pantalla: carta ---------- */
   .letter{
     max-width:600px; text-align:left; background: rgba(255,255,255,.06);
     border:1px solid rgba(255,255,255,.15); border-radius:18px; padding:30px;
@@ -138,14 +167,22 @@
   }
   .cursor-blink{ display:inline-block; width:2px; background:#fff; margin-left:2px; animation: blink 1s step-start infinite; }
   @keyframes blink{ 50%{ opacity:0; } }
+  .song-embed{ margin-top:20px; width:100%; max-width:600px; }
+  .song-embed iframe{ border-radius:14px; }
+
+  /* ---------- Pantalla: gran final ---------- */
+  .finale-btns{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:10px; }
 
   footer.credit{ margin-top:30px; font-size:.8rem; opacity:.5; }
 </style>
 </head>
 <body>
 
+<div id="stars"></div>
 <canvas id="hearts"></canvas>
 <canvas id="confetti-canvas"></canvas>
+<div id="progress"></div>
+<button id="btn-music" title="Música">🔇</button>
 
 <!-- 1. SOBRE -->
 <section class="screen" id="screen-intro">
@@ -180,18 +217,34 @@
     <div class="counter-box"><div class="num" id="c-hours">0</div><div class="lbl">Horas</div></div>
     <div class="counter-box"><div class="num" id="c-secs">0</div><div class="lbl">Segundos</div></div>
   </div>
-  <button class="btn" id="btn-to-gallery">Ver más 💕</button>
+  <button class="btn" id="btn-to-timeline">Ver más 💕</button>
 </section>
 
-<!-- 4. GALERÍA -->
+<!-- 4. LÍNEA DE TIEMPO -->
+<section class="screen" id="screen-timeline" style="display:none;">
+  <h1>Nuestra historia</h1>
+  <p class="sub">Algunos momentos que no olvido</p>
+  <div class="timeline" id="timeline"></div>
+  <button class="btn" id="btn-to-gallery">Siguiente 📸</button>
+</section>
+
+<!-- 5. GALERÍA -->
 <section class="screen" id="screen-gallery" style="display:none;">
   <h1>Nuestros momentos</h1>
   <p class="sub">Reemplaza estas fotos por las tuyas en la carpeta <code>fotos/</code></p>
   <div class="gallery" id="gallery"></div>
-  <button class="btn" id="btn-to-reasons">Siguiente 💜</button>
+  <button class="btn" id="btn-to-quiz">Un jueguito 🎮</button>
 </section>
 
-<!-- 5. RAZONES -->
+<!-- 6. QUIZ -->
+<section class="screen" id="screen-quiz" style="display:none;">
+  <h1>¿Qué tanto sabes de nosotros?</h1>
+  <p class="sub" id="quiz-score">Responde las preguntas</p>
+  <div id="quiz-container"></div>
+  <button class="btn" id="btn-to-reasons" style="display:none;">Continuar 💜</button>
+</section>
+
+<!-- 7. RAZONES -->
 <section class="screen" id="screen-reasons" style="display:none;">
   <h1>Razones por las que te amo</h1>
   <p class="sub">Toca cada tarjeta</p>
@@ -199,11 +252,22 @@
   <button class="btn" id="btn-to-letter">Última sorpresa 💌</button>
 </section>
 
-<!-- 6. CARTA -->
+<!-- 8. CARTA -->
 <section class="screen" id="screen-letter" style="display:none;">
   <h1 id="letter-title">Para ti</h1>
   <div class="letter" id="letter-text"></div>
-  <button class="btn" id="btn-replay" style="display:none;">Volver a empezar ↺</button>
+  <div class="song-embed" id="song-embed"></div>
+  <button class="btn" id="btn-to-finale" style="display:none;">Ver el gran final 🎆</button>
+</section>
+
+<!-- 9. GRAN FINAL -->
+<section class="screen" id="screen-finale" style="display:none;">
+  <h1>Feliz Cumpleaños, mi amor</h1>
+  <p class="sub">Gracias por existir. Toca la pantalla para más fuegos artificiales ✨</p>
+  <div class="finale-btns">
+    <button class="btn" id="btn-more-fireworks">Más fuegos artificiales 🎆</button>
+    <button class="btn ghost" id="btn-replay">Volver a empezar ↺</button>
+  </div>
   <footer class="credit">Hecho con 💻 y ❤️</footer>
 </section>
 
@@ -227,6 +291,34 @@ const CONFIG = {
     "fotos/4.jpg"
   ],
 
+  // Momentos importantes de su historia (edítalos con hechos reales)
+  momentos: [
+    { emoji: "✨", fecha: "El día que nos conocimos", texto: "Todo cambió para bien desde ese momento." },
+    { emoji: "💬", fecha: "Las primeras semanas", texto: "No podíamos dejar de hablar." },
+    { emoji: "❤️", fecha: "Nuestra primera cita", texto: "Ahí supe que quería muchos momentos más contigo." },
+    { emoji: "🎉", fecha: "Hoy", texto: "Celebrando tu día, muy agradecido de tenerte en mi vida." }
+  ],
+
+  // Preguntas del quiz "qué tanto sabes de nosotros" (edítalas con datos reales)
+  // correcta = índice (0,1,2,3) de la respuesta correcta dentro de "opciones"
+  quiz: [
+    {
+      pregunta: "¿Dónde nos conocimos?",
+      opciones: ["En la escuela", "Por amigos en común", "En una fiesta", "Por redes sociales"],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Cuál es nuestra canción?",
+      opciones: ["Ninguna todavía", "La que sonó en nuestra primera cita", "Una que cantamos juntos", "Sorpresa 😏"],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Cuál es tu comida favorita?",
+      opciones: ["Pizza", "Tacos", "Sushi", "Pasta"],
+      correcta: 2
+    }
+  ],
+
   razones: [
     "Tu sonrisa ilumina mi día",
     "Me haces reír como nadie",
@@ -248,7 +340,12 @@ Espero poder celebrar muchos cumpleaños más a tu lado.
 
 Te amo mucho.
 
-Con todo mi cariño,`
+Con todo mi cariño,`,
+
+  // Opcional: pega aquí el link de una canción de Spotify (track/álbum) y se
+  // mostrará un reproductor incrustado debajo de la carta. Déjalo vacío ("")
+  // si no quieres usar esta función.
+  cancionSpotifyUrl: ""
 };
 </script>
 
@@ -259,6 +356,20 @@ Con todo mi cariño,`
 document.getElementById('intro-title').textContent = `${CONFIG.nombrePareja}, tienes una sorpresa`;
 document.getElementById('cake-title').textContent = `¡Feliz Cumpleaños, ${CONFIG.nombrePareja}!`;
 document.getElementById('letter-title').textContent = `Para ti, ${CONFIG.nombrePareja}`;
+
+/* ---------- Fondo de estrellas ---------- */
+const starsWrap = document.getElementById('stars');
+for(let i=0;i<70;i++){
+  const s = document.createElement('div');
+  s.className = 'star';
+  const size = 1 + Math.random()*2;
+  s.style.width = size+'px';
+  s.style.height = size+'px';
+  s.style.left = Math.random()*100 + '%';
+  s.style.top = Math.random()*100 + '%';
+  s.style.animationDelay = (Math.random()*3) + 's';
+  starsWrap.appendChild(s);
+}
 
 /* ---------- Fondo de corazones flotantes ---------- */
 const heartsCanvas = document.getElementById('hearts');
@@ -310,7 +421,7 @@ function animateHearts(){
 }
 animateHearts();
 
-/* ---------- Confetti ---------- */
+/* ---------- Confetti + fuegos artificiales (canvas compartido) ---------- */
 const confettiCanvas = document.getElementById('confetti-canvas');
 const cctx = confettiCanvas.getContext('2d');
 confettiCanvas.width = window.innerWidth;
@@ -325,46 +436,163 @@ const confettiColors = ['#ff6fa5','#ffd166','#8e6fff','#4dd4ac','#ff8e6f'];
 function burstConfetti(count=140){
   for(let i=0;i<count;i++){
     confettiParticles.push({
+      shape:'square',
       x: confettiCanvas.width/2 + (Math.random()-0.5)*200,
       y: confettiCanvas.height/2,
       vx: (Math.random()-0.5)*10,
       vy: (Math.random()-1.3)*10,
+      gravity: 0.18,
       size: 4 + Math.random()*6,
       color: confettiColors[Math.floor(Math.random()*confettiColors.length)],
       rot: Math.random()*Math.PI,
       vrot: (Math.random()-0.5)*0.3,
-      life: 0
+      life: 0,
+      maxLife: 150
     });
+  }
+}
+
+function launchFirework(x, y, count=55){
+  const color = confettiColors[Math.floor(Math.random()*confettiColors.length)];
+  for(let i=0;i<count;i++){
+    const angle = (Math.PI*2*i)/count + Math.random()*0.2;
+    const speed = 2 + Math.random()*4;
+    confettiParticles.push({
+      shape:'spark',
+      x, y,
+      vx: Math.cos(angle)*speed,
+      vy: Math.sin(angle)*speed,
+      gravity: 0.045,
+      size: 2 + Math.random()*2.5,
+      color,
+      rot:0, vrot:0,
+      life: 0,
+      maxLife: 90
+    });
+  }
+}
+
+function fireworksShow(){
+  for(let i=0;i<3;i++){
+    setTimeout(() => {
+      const x = confettiCanvas.width*0.2 + Math.random()*confettiCanvas.width*0.6;
+      const y = confettiCanvas.height*0.15 + Math.random()*confettiCanvas.height*0.35;
+      launchFirework(x, y);
+    }, i*450);
   }
 }
 
 function animateConfetti(){
   cctx.clearRect(0,0,confettiCanvas.width, confettiCanvas.height);
-  confettiParticles = confettiParticles.filter(p => p.life < 150);
+  confettiParticles = confettiParticles.filter(p => p.life < p.maxLife);
   for(const p of confettiParticles){
-    p.vy += 0.18;
+    p.vy += p.gravity;
     p.x += p.vx;
     p.y += p.vy;
     p.rot += p.vrot;
     p.life++;
+    const alpha = Math.max(0, 1 - p.life/p.maxLife);
     cctx.save();
-    cctx.globalAlpha = Math.max(0, 1 - p.life/150);
-    cctx.translate(p.x, p.y);
-    cctx.rotate(p.rot);
-    cctx.fillStyle = p.color;
-    cctx.fillRect(-p.size/2, -p.size/2, p.size, p.size);
+    cctx.globalAlpha = alpha;
+    if(p.shape === 'spark'){
+      cctx.shadowBlur = 8;
+      cctx.shadowColor = p.color;
+      cctx.fillStyle = p.color;
+      cctx.beginPath();
+      cctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+      cctx.fill();
+    } else {
+      cctx.translate(p.x, p.y);
+      cctx.rotate(p.rot);
+      cctx.fillStyle = p.color;
+      cctx.fillRect(-p.size/2, -p.size/2, p.size, p.size);
+    }
     cctx.restore();
   }
   requestAnimationFrame(animateConfetti);
 }
 animateConfetti();
 
-/* ---------- Navegación entre pantallas ---------- */
+/* ---------- Música: "Feliz Cumpleaños" sintetizada con Web Audio ---------- */
+let audioCtx = null;
+let musicPlaying = false;
+let musicTimer = null;
+
+const NOTE_FREQ = { G4:392.00, A4:440.00, B4:493.88, C5:523.25, D5:587.33, E5:659.25, F5:698.46, G5:783.99 };
+const SONG = [
+  ['G4',0.75],['G4',0.25],['A4',1],['G4',1],['C5',1],['B4',2],
+  ['G4',0.75],['G4',0.25],['A4',1],['G4',1],['D5',1],['C5',2],
+  ['G4',0.75],['G4',0.25],['G5',1],['E5',1],['C5',1],['B4',1],['A4',2],
+  ['F5',0.75],['F5',0.25],['E5',1],['C5',1],['D5',1],['C5',2]
+];
+const BEAT = 0.4;
+
+function playNote(freq, startTime, duration){
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, startTime);
+  gain.gain.linearRampToValueAtTime(0.15, startTime + 0.02);
+  gain.gain.exponentialRampToValueAtTime(0.001, startTime + Math.max(duration - 0.02, 0.03));
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  osc.start(startTime);
+  osc.stop(startTime + duration);
+}
+
+function scheduleSong(startTime){
+  let t = startTime;
+  for(const [note, beats] of SONG){
+    const dur = beats*BEAT;
+    playNote(NOTE_FREQ[note], t, dur*0.9);
+    t += dur;
+  }
+  return t;
+}
+
+function loopSong(){
+  if(!musicPlaying) return;
+  const startTime = audioCtx.currentTime + 0.1;
+  const endTime = scheduleSong(startTime);
+  const waitMs = (endTime - audioCtx.currentTime) * 1000;
+  musicTimer = setTimeout(loopSong, waitMs);
+}
+
+document.getElementById('btn-music').addEventListener('click', () => {
+  const btn = document.getElementById('btn-music');
+  if(!musicPlaying){
+    if(!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    if(audioCtx.state === 'suspended') audioCtx.resume();
+    musicPlaying = true;
+    loopSong();
+    btn.textContent = '🔊';
+  } else {
+    musicPlaying = false;
+    clearTimeout(musicTimer);
+    btn.textContent = '🔇';
+  }
+});
+
+/* ---------- Navegación entre pantallas + barra de progreso ---------- */
+const SCREENS = [
+  'screen-intro','screen-cake','screen-counter','screen-timeline',
+  'screen-gallery','screen-quiz','screen-reasons','screen-letter','screen-finale'
+];
+const progressEl = document.getElementById('progress');
+SCREENS.forEach(() => {
+  const d = document.createElement('div');
+  d.className = 'dot';
+  progressEl.appendChild(d);
+});
 function showScreen(id){
   document.querySelectorAll('.screen').forEach(s => s.style.display = 'none');
   document.getElementById(id).style.display = 'flex';
+  const idx = SCREENS.indexOf(id);
+  progressEl.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i === idx));
   window.scrollTo({top:0, behavior:'smooth'});
 }
+showScreen('screen-intro');
 
 /* 1. Sobre */
 const envelope = document.getElementById('envelope');
@@ -422,9 +650,23 @@ setInterval(updateCounter, 1000);
 updateCounter();
 document.getElementById('counter-sub').textContent =
   `Desde el ${CONFIG.fechaInicioRelacion.toLocaleDateString('es-MX', {year:'numeric', month:'long', day:'numeric'})}`;
+document.getElementById('btn-to-timeline').addEventListener('click', () => showScreen('screen-timeline'));
+
+/* 4. Línea de tiempo */
+const timelineEl = document.getElementById('timeline');
+CONFIG.momentos.forEach(m => {
+  const item = document.createElement('div');
+  item.className = 'tl-item';
+  item.innerHTML = `
+    <div class="tl-dot">${m.emoji}</div>
+    <div class="tl-date">${m.fecha}</div>
+    <div class="tl-text">${m.texto}</div>
+  `;
+  timelineEl.appendChild(item);
+});
 document.getElementById('btn-to-gallery').addEventListener('click', () => showScreen('screen-gallery'));
 
-/* 4. Galería */
+/* 5. Galería */
 const galleryEl = document.getElementById('gallery');
 CONFIG.fotos.forEach((src, i) => {
   const div = document.createElement('div');
@@ -436,22 +678,62 @@ CONFIG.fotos.forEach((src, i) => {
   div.appendChild(img);
   galleryEl.appendChild(div);
 });
+document.getElementById('btn-to-quiz').addEventListener('click', () => showScreen('screen-quiz'));
+
+/* 6. Quiz */
+const quizContainer = document.getElementById('quiz-container');
+let quizAnswered = 0;
+let quizCorrect = 0;
+function updateQuizScore(){
+  document.getElementById('quiz-score').textContent =
+    quizAnswered < CONFIG.quiz.length
+      ? `Pregunta ${quizAnswered+1} de ${CONFIG.quiz.length}`
+      : `¡Terminaste! Aciertos: ${quizCorrect} de ${CONFIG.quiz.length} 🎉`;
+  if(quizAnswered >= CONFIG.quiz.length){
+    document.getElementById('btn-to-reasons').style.display = 'inline-block';
+    burstConfetti(120);
+  }
+}
+CONFIG.quiz.forEach((q, qi) => {
+  const card = document.createElement('div');
+  card.className = 'quiz-card';
+  const title = document.createElement('div');
+  title.className = 'quiz-q';
+  title.textContent = `${qi+1}. ${q.pregunta}`;
+  card.appendChild(title);
+  q.opciones.forEach((opt, oi) => {
+    const b = document.createElement('button');
+    b.className = 'quiz-opt';
+    b.textContent = opt;
+    b.addEventListener('click', () => {
+      const buttons = card.querySelectorAll('.quiz-opt');
+      buttons.forEach(bt => bt.disabled = true);
+      if(oi === q.correcta){
+        b.classList.add('correct');
+        quizCorrect++;
+      } else {
+        b.classList.add('wrong');
+        buttons[q.correcta].classList.add('correct');
+      }
+      quizAnswered++;
+      updateQuizScore();
+    });
+    card.appendChild(b);
+  });
+  quizContainer.appendChild(card);
+});
+updateQuizScore();
 document.getElementById('btn-to-reasons').addEventListener('click', () => showScreen('screen-reasons'));
 
-/* 5. Razones */
+/* 7. Razones */
 const reasonsGrid = document.getElementById('reasons-grid');
 CONFIG.razones.forEach((texto, i) => {
   const card = document.createElement('div');
   card.className = 'reason-card';
   card.innerHTML = `<div class="num">#${i+1}</div>`;
   card.addEventListener('click', () => {
-    card.classList.toggle('flipped');
-    card.textContent = card.classList.contains('flipped') ? texto : '';
-    if(card.classList.contains('flipped')){
-      card.textContent = texto;
-    } else {
-      card.innerHTML = `<div class="num">#${i+1}</div>`;
-    }
+    const flipped = card.classList.toggle('flipped');
+    card.innerHTML = flipped ? texto : `<div class="num">#${i+1}</div>`;
   });
   reasonsGrid.appendChild(card);
 });
@@ -461,7 +743,7 @@ document.getElementById('btn-to-letter').addEventListener('click', () => {
   typeLetter();
 });
 
-/* 6. Carta con efecto de máquina de escribir */
+/* 8. Carta con efecto de máquina de escribir */
 let typed = false;
 function typeLetter(){
   if(typed) return;
@@ -481,15 +763,35 @@ function typeLetter(){
       i += 2;
       setTimeout(step, 18);
     } else {
-      document.getElementById('btn-replay').style.display = 'inline-block';
+      renderSongEmbed();
+      document.getElementById('btn-to-finale').style.display = 'inline-block';
     }
   }
   step();
 }
 
-document.getElementById('btn-replay').addEventListener('click', () => {
-  location.reload();
+function renderSongEmbed(){
+  const url = CONFIG.cancionSpotifyUrl;
+  if(!url) return;
+  const embedUrl = url.replace('open.spotify.com/', 'open.spotify.com/embed/');
+  const wrap = document.getElementById('song-embed');
+  wrap.innerHTML = `<iframe src="${embedUrl}" width="100%" height="152" frameborder="0" allow="encrypted-media" loading="lazy"></iframe>`;
+}
+
+document.getElementById('btn-to-finale').addEventListener('click', () => {
+  showScreen('screen-finale');
+  fireworksShow();
 });
+
+/* 9. Gran final */
+document.getElementById('btn-more-fireworks').addEventListener('click', fireworksShow);
+document.getElementById('screen-finale').addEventListener('click', (e) => {
+  if(e.target.closest('button')) return;
+  const x = e.clientX || confettiCanvas.width/2;
+  const y = e.clientY || confettiCanvas.height/2;
+  launchFirework(x, y);
+});
+document.getElementById('btn-replay').addEventListener('click', () => location.reload());
 </script>
 </body>
 </html>
