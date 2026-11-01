@@ -1,0 +1,375 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carrera al 100</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@500;700;800&display=swap">
+<style>
+/* Layout: a sheet of grid paper with two columns of hand-drawn clouds (one per player), and a yellow dice tray below it, like the phone on the table. Single paper look by choice. */
+:root {
+  --paper: #fbfcff;
+  --grid: #e3eaf5;
+  --desk: #ece4da;
+  --ink: #1f2633;
+  --ink-soft: #5d6677;
+  --p1: #8a2fc4;       /* purple marker */
+  --p1-wash: #f1e4fa;
+  --p2: #0b8a74;       /* teal marker */
+  --p2-wash: #dcf3ee;
+  --tray: #eef35c;     /* dice app yellow */
+  --tray-edge: #c9cf2e;
+  --pip: #141414;
+  --bust: #d23b2a;
+  --font-hand: "Gochi Hand", "Comic Sans MS", "Chalkboard SE", cursive;
+  --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--desk); }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 16px 28px;
+}
+.wrap { max-width: 560px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+
+header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h1 { font-family: var(--font-hand); font-weight: 400; font-size: 2.3rem; line-height: 1; margin: 0; letter-spacing: .01em; text-wrap: balance; }
+h1 span { color: var(--p1); }
+.score { font-family: var(--font-hand); font-size: 1.15rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.score b { font-weight: 400; color: var(--ink); }
+
+/* the sheet */
+.sheet {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 18px 18px;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 10px 24px -12px rgba(60,40,20,.35);
+  padding: 14px 10px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.player { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px 10px; border-radius: 10px; transition: background .25s, opacity .25s; min-width: 0; }
+.player.p1 { --c: var(--p1); --wash: var(--p1-wash); }
+.player.p2 { --c: var(--p2); --wash: var(--p2-wash); }
+.player.active { background: color-mix(in srgb, var(--wash) 70%, transparent); }
+.player.idle { opacity: .55; }
+.name {
+  width: 100%; max-width: 160px; text-align: center;
+  font-family: var(--font-hand); font-size: 1.35rem; color: var(--c);
+  background: transparent; border: 0; border-bottom: 2px dashed transparent; padding: 2px 4px;
+}
+.name:hover, .name:focus { border-bottom-color: var(--c); outline: none; }
+.turnTag { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--c); height: 1em; }
+
+.cloud { position: relative; width: 100%; max-width: 150px; aspect-ratio: 115 / 72; display: grid; place-items: center; border: 0; background: none; padding: 0; }
+.cloud svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.cloud svg { fill: var(--paper); stroke: var(--ink); stroke-width: 2.2; stroke-linejoin: round; }
+.cloud.next svg { stroke: var(--c); stroke-dasharray: 5 4; fill: color-mix(in srgb, var(--wash) 60%, var(--paper)); }
+.cloud .val { position: relative; font-family: var(--font-hand); font-size: 1.8rem; color: var(--c); line-height: 1; transform: translateY(2px); }
+.cloud .val.fresh { animation: write .45s ease-out; }
+@keyframes write { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+
+.total { font-family: var(--font-hand); font-size: 1.9rem; line-height: 1; margin-top: 4px; font-variant-numeric: tabular-nums; position: relative; }
+.total small { font-size: 1rem; color: var(--ink-soft); }
+.total.bust { color: var(--bust); }
+.left { font-size: .8rem; color: var(--ink-soft); font-weight: 700; min-height: 1.2em; text-align: center; }
+.left.bust { color: var(--bust); }
+
+/* the tray (phone) */
+.tray {
+  background: var(--tray);
+  border-radius: 22px;
+  border: 6px solid #22201d;
+  padding: 14px 14px 16px;
+  display: flex; flex-direction: column; gap: 12px; align-items: stretch;
+}
+.trayTop { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.msg { font-weight: 800; font-size: 1rem; min-width: 0; }
+.msg .who { font-family: var(--font-hand); font-weight: 400; font-size: 1.3rem; }
+.diceCount { display: flex; align-items: center; gap: 6px; font-size: .78rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.diceCount button { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--ink); background: transparent; font: 800 1.1rem/1 var(--font-body); color: var(--ink); cursor: pointer; }
+.diceCount button:disabled { opacity: .3; cursor: default; }
+.diceCount output { font-family: var(--font-hand); font-size: 1.4rem; min-width: 1ch; text-align: center; }
+
+.diceRow { display: flex; justify-content: center; align-items: center; gap: 16px; min-height: 92px; flex-wrap: wrap; }
+.die { width: 74px; height: 74px; background: #fffef6; border-radius: 14px; box-shadow: inset 0 -4px 0 rgba(0,0,0,.12), 0 3px 0 rgba(0,0,0,.25); display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); padding: 10px; }
+.die.idle { opacity: .45; }
+.die i { width: 13px; height: 13px; border-radius: 50%; background: var(--pip); place-self: center; visibility: hidden; }
+.die i.on { visibility: visible; }
+.die.spin { animation: tumble .12s linear infinite; }
+@keyframes tumble { 0% { transform: rotate(-12deg) translateY(-3px); } 50% { transform: rotate(10deg) translateY(2px); } 100% { transform: rotate(-12deg) translateY(-3px); } }
+.rollTotal { font-family: var(--font-hand); font-size: 1.25rem; text-align: center; min-height: 1.4em; }
+
+.btn {
+  font: 800 1.05rem/1.1 var(--font-body);
+  border-radius: 14px; border: 2.5px solid var(--ink); padding: 14px 16px; cursor: pointer;
+  background: var(--ink); color: var(--tray);
+  box-shadow: 0 4px 0 rgba(0,0,0,.3);
+  transition: transform .08s, box-shadow .08s;
+}
+.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.3); }
+.btn:focus-visible, .choice:focus-visible, .diceCount button:focus-visible, .link:focus-visible { outline: 3px solid var(--p1); outline-offset: 3px; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.choice {
+  border-radius: 14px; border: 2.5px solid var(--ink); background: var(--paper); color: var(--ink);
+  padding: 10px 8px 12px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px;
+  box-shadow: 0 4px 0 rgba(0,0,0,.25); font-family: var(--font-body);
+}
+.choice:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.25); }
+.choice .big { font-family: var(--font-hand); font-size: 2.2rem; line-height: 1; color: var(--c, var(--ink)); }
+.choice .lbl { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.choice .after { font-size: .82rem; color: var(--ink-soft); font-weight: 700; }
+.choice .after.bust { color: var(--bust); }
+
+.result { text-align: center; display: flex; flex-direction: column; gap: 8px; }
+.result h2 { font-family: var(--font-hand); font-weight: 400; font-size: 2rem; margin: 0; line-height: 1.05; text-wrap: balance; }
+.result p { margin: 0; font-weight: 700; }
+.row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.link { background: none; border: 0; font: 700 .85rem var(--font-body); color: var(--ink); text-decoration: underline; cursor: pointer; padding: 4px; }
+
+details.rules { background: var(--paper); border-radius: 12px; padding: 12px 16px; box-shadow: 0 1px 0 rgba(0,0,0,.06); }
+details.rules summary { font-weight: 800; cursor: pointer; }
+details.rules ol { margin: 10px 0 4px; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; max-width: 62ch; line-height: 1.45; }
+
+@media (max-width: 380px) {
+  .cloud .val { font-size: 1.5rem; }
+  .die { width: 62px; height: 62px; padding: 8px; }
+  .die i { width: 11px; height: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .die.spin, .cloud .val.fresh { animation: none; }
+  .player, .btn { transition: none; }
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="cloudShape" viewBox="0 0 115 72">
+      <path d="M22 52 C9 52 7 37 19 34 C16 21 31 14 40 22 C44 9 64 7 70 19 C80 10 97 17 95 31 C108 31 111 47 99 52 C100 63 85 68 77 61 C70 70 52 70 46 62 C37 69 22 66 22 52 Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header>
+    <h1>Carrera al <span>100</span></h1>
+    <div class="score" id="score" aria-live="polite"></div>
+  </header>
+
+  <section class="sheet" aria-label="Hoja de juego">
+    <div class="player p1" id="pl0"></div>
+    <div class="player p2" id="pl1"></div>
+  </section>
+
+  <section class="tray" id="tray" aria-live="polite"></section>
+
+  <details class="rules">
+    <summary>Cómo se juega</summary>
+    <ol>
+      <li>Cada jugador tiene 5 nubes. Juegan por turnos con el mismo teléfono.</li>
+      <li>En tu turno tira el dado. Con el número que salga decides: lo usas como <b>unidades</b> (un 4 vale 4) o como <b>decenas</b> (un 4 vale 40).</li>
+      <li>El número se escribe en tu siguiente nube y se suma a tu total.</li>
+      <li>Cuando los dos llenan sus 5 nubes, gana quien quede más cerca de 100 <b>sin pasarse</b>. Si los dos se pasan, gana quien se pasó por menos.</li>
+      <li>Puedes jugar con 1, 2 o 3 dados (se suman). Con más dados es más fácil pasarse.</li>
+    </ol>
+  </details>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var CLOUDS = 5, TARGET = 100;
+  var PIPS = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
+
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem("carrera100") || "{}") || {}; } catch (e) { saved = {}; }
+
+  var S = {
+    names: saved.names || ["Jugador 1", "Jugador 2"],
+    wins: saved.wins || [0, 0, 0],      // p1, p2, empates
+    nDice: saved.nDice || 1,
+    starter: 0,
+    turn: 0,
+    clouds: [[], []],
+    dice: [],
+    phase: "roll",                      // roll | rolling | choose | over
+    fresh: null
+  };
+
+  function persist() {
+    try { localStorage.setItem("carrera100", JSON.stringify({ names: S.names, wins: S.wins, nDice: S.nDice })); } catch (e) {}
+  }
+  function sum(a) { return a.reduce(function (x, y) { return x + y; }, 0); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function nm(i) { return esc(S.names[i].trim() || ("Jugador " + (i + 1))); }
+  function rollTotal() { return sum(S.dice); }
+  function started() { return S.clouds[0].length + S.clouds[1].length > 0; }
+
+  function dieHTML(v, extra) {
+    var on = PIPS[v] || [];
+    var h = '<div class="die ' + (extra || "") + '" role="img" aria-label="Dado: ' + v + '">';
+    for (var i = 0; i < 9; i++) h += '<i class="' + (on.indexOf(i) >= 0 ? "on" : "") + '"></i>';
+    return h + "</div>";
+  }
+
+  function renderPlayer(p) {
+    var el = document.getElementById("pl" + p);
+    var vals = S.clouds[p];
+    var tot = sum(vals);
+    var active = S.phase !== "over" && S.turn === p;
+    el.className = "player p" + (p + 1) + (active ? " active" : S.phase !== "over" ? " idle" : "");
+    var h = '<input class="name" id="name' + p + '" maxlength="14" aria-label="Nombre del jugador ' + (p + 1) + '" value="' + nm(p) + '">';
+    h += '<div class="turnTag">' + (active ? "Le toca" : "") + "</div>";
+    for (var i = 0; i < CLOUDS; i++) {
+      var v = vals[i];
+      var isNext = active && i === vals.length;
+      var fresh = S.fresh && S.fresh[0] === p && S.fresh[1] === i;
+      h += '<div class="cloud' + (isNext ? " next" : "") + '"><svg aria-hidden="true"><use href="#cloudShape"/></svg>' +
+        (v != null ? '<span class="val' + (fresh ? " fresh" : "") + '">' + v + "</span>" : "") + "</div>";
+    }
+    var bust = tot > TARGET;
+    h += '<div class="total' + (bust ? " bust" : "") + '">' + tot + ' <small>/ 100</small></div>';
+    h += '<div class="left' + (bust ? " bust" : "") + '">' + (bust ? "¡Se pasó por " + (tot - TARGET) + "!" : tot === TARGET ? "¡100 exacto!" : "Faltan " + (TARGET - tot)) + "</div>";
+    el.innerHTML = h;
+    var input = el.querySelector(".name");
+    input.addEventListener("input", function () { S.names[p] = input.value; persist(); renderTrayAndScore(); });
+  }
+
+  function renderScore() {
+    document.getElementById("score").innerHTML =
+      'Ganadas: <b style="color:var(--p1)">' + S.wins[0] + '</b> – <b style="color:var(--p2)">' + S.wins[1] + "</b>" +
+      (S.wins[2] ? " · empates " + S.wins[2] : "");
+  }
+
+  function renderTray() {
+    var t = document.getElementById("tray");
+    var p = S.turn, col = p === 0 ? "var(--p1)" : "var(--p2)";
+    var h = "";
+
+    if (S.phase === "over") {
+      t.innerHTML = resultHTML();
+      t.querySelector("#again").addEventListener("click", newGame);
+      t.querySelector("#resetScore").addEventListener("click", function () { S.wins = [0, 0, 0]; persist(); renderScore(); this.textContent = "Marcador en cero"; });
+      return;
+    }
+
+    var canDice = !started() && S.phase === "roll";
+    h += '<div class="trayTop"><div class="msg">Turno de <span class="who" style="color:' + col + '">' + nm(p) + "</span> · nube " + (S.clouds[p].length + 1) + " de " + CLOUDS + "</div>";
+    h += '<div class="diceCount" title="' + (canDice ? "" : "Se cambia al empezar una partida") + '">Dados <button id="dMinus" aria-label="Menos dados"' + (canDice && S.nDice > 1 ? "" : " disabled") + '>−</button><output id="dOut">' + S.nDice + '</output><button id="dPlus" aria-label="Más dados"' + (canDice && S.nDice < 3 ? "" : " disabled") + ">+</button></div></div>";
+
+    h += '<div class="diceRow" id="diceRow">';
+    if (S.dice.length) S.dice.forEach(function (v) { h += dieHTML(v, S.phase === "rolling" ? "spin" : ""); });
+    else for (var i = 0; i < S.nDice; i++) h += dieHTML(6, "idle");
+    h += "</div>";
+    h += '<div class="rollTotal" id="rollTotal">' + (S.phase === "choose" && S.nDice > 1 ? "Total: " + rollTotal() : S.phase === "roll" ? "Toca el botón para tirar" : "&nbsp;") + "</div>";
+
+    if (S.phase === "roll" || S.phase === "rolling") {
+      h += '<button class="btn" id="rollBtn"' + (S.phase === "rolling" ? " disabled" : "") + ">" + (S.phase === "rolling" ? "Tirando…" : "Tirar " + (S.nDice > 1 ? "dados" : "dado")) + "</button>";
+    } else if (S.phase === "choose") {
+      var n = rollTotal(), cur = sum(S.clouds[p]);
+      h += '<div class="choices" style="--c:' + col + '">' + choiceHTML("u", n, "Unidades", cur) + choiceHTML("d", n * 10, "Decenas", cur) + "</div>";
+    }
+    t.innerHTML = h;
+
+    var rb = t.querySelector("#rollBtn"); if (rb) rb.addEventListener("click", roll);
+    var dm = t.querySelector("#dMinus"); if (dm) dm.addEventListener("click", function () { setDice(S.nDice - 1); });
+    var dp = t.querySelector("#dPlus"); if (dp) dp.addEventListener("click", function () { setDice(S.nDice + 1); });
+    t.querySelectorAll(".choice").forEach(function (b) { b.addEventListener("click", function () { place(+b.dataset.v); }); });
+  }
+
+  function choiceHTML(id, v, lbl, cur) {
+    var after = cur + v, bust = after > TARGET;
+    return '<button class="choice" id="ch-' + id + '" data-v="' + v + '"><span class="lbl">' + lbl + '</span><span class="big">' + v + '</span><span class="after' + (bust ? " bust" : "") + '">' +
+      (bust ? "Te pasas: " + after : "Quedarías en " + after) + "</span></button>";
+  }
+
+  function resultHTML() {
+    var a = sum(S.clouds[0]), b = sum(S.clouds[1]);
+    var w = winner(a, b), title, sub;
+    if (w === -1) { title = "¡Empate!"; sub = "Los dos terminaron con " + a + "."; }
+    else {
+      title = '¡Gana <span style="color:' + (w === 0 ? "var(--p1)" : "var(--p2)") + '">' + nm(w) + "</span>!";
+      var tw = w === 0 ? a : b, tl = w === 0 ? b : a;
+      if (tw === TARGET) sub = "Llegó a 100 exacto.";
+      else if (tw > TARGET) sub = "Los dos se pasaron, pero " + nm(w) + " se pasó por menos (" + tw + " contra " + tl + ").";
+      else if (tl > TARGET) sub = nm(1 - w) + " se pasó con " + tl + ". " + nm(w) + " quedó en " + tw + ".";
+      else sub = tw + " contra " + tl + ": quedó a " + (TARGET - tw) + " del 100.";
+    }
+    return '<div class="result"><h2>' + title + "</h2><p>" + sub + '</p><div class="row"><button class="btn" id="again">Revancha</button></div>' +
+      '<div class="row"><button class="link" id="resetScore">Poner marcador en cero</button></div></div>';
+  }
+
+  function score(t) { return t <= TARGET ? TARGET - t : 1000 + (t - TARGET); }
+  function winner(a, b) { var sa = score(a), sb = score(b); return sa === sb ? -1 : sa < sb ? 0 : 1; }
+
+  function renderTrayAndScore() { renderTray(); renderScore(); }
+  function render() { renderPlayer(0); renderPlayer(1); renderTrayAndScore(); S.fresh = null; }
+
+  function setDice(n) { S.nDice = Math.max(1, Math.min(3, n)); persist(); renderTray(); }
+
+  function rnd() {
+    if (window.crypto && crypto.getRandomValues) { var a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] % 6 + 1; }
+    return Math.floor(Math.random() * 6) + 1;
+  }
+
+  function roll() {
+    if (S.phase !== "roll") return;
+    S.phase = "rolling";
+    S.dice = []; for (var i = 0; i < S.nDice; i++) S.dice.push(rnd());
+    renderTray();
+    var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var ticks = reduce ? 0 : 9, k = 0;
+    var row = document.getElementById("diceRow");
+    var timer = setInterval(function () {
+      if (k++ >= ticks) {
+        clearInterval(timer);
+        S.dice = S.dice.map(function () { return rnd(); });
+        S.phase = "choose";
+        renderTray();
+        return;
+      }
+      var h = ""; for (var j = 0; j < S.nDice; j++) h += dieHTML(rnd(), "spin");
+      row.innerHTML = h;
+    }, 70);
+  }
+
+  function place(v) {
+    if (S.phase !== "choose") return;
+    var p = S.turn;
+    S.clouds[p].push(v);
+    S.fresh = [p, S.clouds[p].length - 1];
+    S.dice = [];
+    var other = 1 - p;
+    if (S.clouds[0].length === CLOUDS && S.clouds[1].length === CLOUDS) {
+      S.phase = "over";
+      var w = winner(sum(S.clouds[0]), sum(S.clouds[1]));
+      S.wins[w === -1 ? 2 : w]++; persist();
+    } else {
+      S.turn = S.clouds[other].length < CLOUDS ? other : p;
+      S.phase = "roll";
+    }
+    render();
+  }
+
+  function newGame() {
+    S.starter = 1 - S.starter;     // alternate who starts
+    S.turn = S.starter;
+    S.clouds = [[], []];
+    S.dice = [];
+    S.phase = "roll";
+    render();
+  }
+
+  render();
+})();
+</script>
