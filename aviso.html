@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje</title>
+  <style>
+    :root {
+      --bg: #0f1226;
+      --card: #1a1f3a;
+      --text: #f4f5ff;
+      --muted: #a9b0d6;
+      --accent: #7c6bff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; height: 100%; }
+    body {
+      background: radial-gradient(1200px 600px at 50% -10%, #2a2f5c 0%, var(--bg) 60%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 40px 28px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .emoji { font-size: 56px; line-height: 1; margin-bottom: 16px; }
+    h1 { font-size: 26px; margin: 0 0 12px; }
+    p { color: var(--muted); font-size: 16px; line-height: 1.5; margin: 0; }
+    .pill {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(124,107,255,0.15);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <!-- ============================================================= -->
+  <!-- 1) CAMBIA AQUÍ EL MENSAJE QUE VERÁ QUIEN ABRA EL ENLACE       -->
+  <!-- ============================================================= -->
+  <div class="card">
+    <div class="emoji">👋</div>
+    <h1>¡Hola!</h1>
+    <p>Gracias por abrir el enlace. Escribe aquí lo que quieras que vea la persona.</p>
+    <span class="pill">Mensaje de Cris</span>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- 2) AVISO AL DUEÑO: cuando alguien abre la página, se manda    -->
+  <!--    una notificación a ntfy.sh (gratis, sin registro).         -->
+  <!--    Instala la app "ntfy" en tu celular y suscríbete al mismo  -->
+  <!--    tema (topic) que está abajo para recibir el aviso.         -->
+  <!-- ============================================================= -->
+  <script>
+    (function () {
+      // Cambia este "tema" por uno tuyo secreto (sin espacios).
+      var TOPIC = "aviso-cris-k7m2qp9x";
+
+      var hora = new Date().toLocaleString("es-MX");
+      try {
+        fetch("https://ntfy.sh/" + TOPIC, {
+          method: "POST",
+          body: "Alguien abrió tu enlace - " + hora,
+          headers: { "Title": "Abrieron tu URL", "Priority": "default" }
+        });
+      } catch (e) { /* si falla el aviso, la página igual se muestra */ }
+    })();
+  </script>
+</body>
+</html>
